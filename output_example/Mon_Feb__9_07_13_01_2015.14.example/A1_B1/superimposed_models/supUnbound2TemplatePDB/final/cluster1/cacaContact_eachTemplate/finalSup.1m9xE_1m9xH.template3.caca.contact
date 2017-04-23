@@ -1,0 +1,57 @@
+# Final contact file (filtered based on the alignment symbols.
+# NOTE: ONly the aligned residues (**, ***) are included in the haddock restaints!!
+
+# Alignment Symbol: 
+# *: not aligned
+# **: aligned but >=5 angstroms
+# ***: aligned but <5 angstroms
+ARG	A	  55	 	ALA	B	  89	 	9.62926	***	***
+ILE	A	  57	 	PRO	B	  90	 	9.23762	***	***
+ILE	A	  57	 	ALA	B	  92	 	8.65935	***	***
+PHE	A	  60	 	PRO	B	  90	 	8.59447	***	***
+PHE	A	  60	 	ILE	B	  91	 	9.56518	***	***
+PHE	A	  60	 	ALA	B	  92	 	8.28619	***	***
+PHE	A	  60	 	PRO	B	  93	 	9.95931	***	***
+MET	A	  61	 	PRO	B	  90	 	8.55814	***	***
+GLN	A	  63	 	PRO	B	  90	 	9.60356	***	***
+GLY	A	  72	 	ALA	B	  87	 	7.43376	***	***
+GLY	A	  72	 	MET	B	  88	 	7.4361	***	***
+GLY	A	  72	 	ALA	B	  89	 	9.43317	***	***
+THR	A	  73	 	PRO	B	  85	 	9.07986	***	***
+THR	A	  73	 	VAL	B	  86	 	9.02998	***	***
+THR	A	  73	 	ALA	B	  87	 	7.08465	***	***
+THR	A	  73	 	MET	B	  88	 	8.4745	***	***
+ALA	A	 101	 	MET	B	  88	 	6.58689	***	***
+ALA	A	 101	 	ALA	B	  89	 	8.22633	***	***
+ALA	A	 101	 	PRO	B	  90	 	8.1202	***	***
+ASN	A	 102	 	VAL	B	  86	 	9.44508	***	***
+ASN	A	 102	 	ALA	B	  87	 	8.20975	***	***
+ASN	A	 102	 	MET	B	  88	 	5.38445	***	***
+ASN	A	 102	 	ALA	B	  89	 	8.18374	***	***
+ASN	A	 102	 	PRO	B	  90	 	9.20259	***	***
+ALA	A	 103	 	PRO	B	  85	 	9.20805	***	***
+ALA	A	 103	 	VAL	B	  86	 	5.9313	***	***
+ALA	A	 103	 	ALA	B	  87	 	5.85351	***	***
+ALA	A	 103	 	MET	B	  88	 	4.61701	***	***
+ALA	A	 103	 	ALA	B	  89	 	7.82611	***	***
+ALA	A	 103	 	PRO	B	  90	 	9.98457	***	***
+GLY	A	 104	 	VAL	B	  86	 	8.0837	***	***
+GLY	A	 104	 	ALA	B	  87	 	8.98079	***	***
+GLY	A	 104	 	MET	B	  88	 	7.58998	***	***
+GLY	A	 104	 	ALA	B	  89	 	9.78915	***	***
+THR	A	 107	 	MET	B	  88	 	9.97173	***	***
+GLN	A	 111	 	MET	B	  88	 	9.22899	***	***
+PHE	A	 113	 	PRO	B	  90	 	9.54503	***	***
+THR	A	 119	 	PRO	B	  90	 	9.78344	***	***
+TRP	A	 121	 	ILE	B	  91	 	9.83918	***	***
+LEU	A	 122	 	PRO	B	  90	 	8.27588	***	***
+LEU	A	 122	 	ILE	B	  91	 	9.38243	***	***
+HIS	A	 126	 	PRO	B	  90	 	9.70671	***	***
+ARG	A	 148	 	ALA	B	  92	 	7.90266	***	***
+ARG	A	 148	 	PRO	B	  93	 	9.71177	***	***
+ASN	A	 149	 	ALA	B	  89	 	9.70413	***	***
+ASN	A	 149	 	ILE	B	  91	 	9.89837	***	***
+ASN	A	 149	 	ALA	B	  92	 	8.07769	***	***
+GLY	A	 150	 	ALA	B	  89	 	9.67067	***	***
+GLY	A	 150	 	PRO	B	  90	 	9.95998	***	***
+GLY	A	 150	 	ALA	B	  92	 	9.88488	***	***

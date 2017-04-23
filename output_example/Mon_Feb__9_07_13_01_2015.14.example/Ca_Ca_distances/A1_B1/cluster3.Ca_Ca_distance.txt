@@ -1,0 +1,39 @@
+Prediction results of Partner-specific interface residues by PS-HomPPI (http://ailab1.ist.psu.edu:8080/PSHOMPPIv1.3).
+
+	*****************
+
+	Interface prediction starts at Mon Feb  9 07:13:01 2015.
+	Interface prediction ends at Mon Feb  9 07:13:18 2015.
+	Total time used: 17 seconds.
+
+	*****************
+
+Notations:
+	1. A|A:B: the interface residues of protein A that interact with protein B.
+	2. MODE: 
+		 Mode = SafeMode: the query protein can find homologous interacting pairs in Safe Zone.
+		 Mode = TwilightMode1: the query protein can find homologous interacting pairs in Twilight Zone 1.
+		 Mode = TwilightMode2: the query protein can find homologous interacting pairs in Twilight Zone 2.
+	 For more details about the Safe/Twilight/Dark Zone, please refer to the paper for PS-HomPPI:
+	Xue, L. C., Dobbs, D., & Honavar, V. (2011). HomPPI: A Class of sequence homology based protein-protein interface prediction methods. BMC Bioinformatics, 12, 244.
+	3. pINT: predicted interface residues. 1: interface. 0: non-interface. ?: no prediction can be made.
+	4. SCORE: prediction score from PS-HomPPI. The higher the score the higher prediction confidence.
+
+
+-----------------------------------------
+
+
+ Mode = SafeMode 
+A1	B1	mean	min	max
+1	10	6.758	6.758	6.758
+1	11	6.337	6.337	6.337
+1	14	7.577	7.577	7.577
+1	7	7.175	7.175	7.175
+1	48	5.707	5.707	5.707
+26	6	8.305	8.305	8.305
+26	8	8.171	8.171	8.171
+26	7	5.272	5.272	5.272
+164	50	6.916	6.916	6.916
+164	51	8.134	8.134	8.134
+25	7	8.119	8.119	8.119
+27	7	8.040	8.040	8.040

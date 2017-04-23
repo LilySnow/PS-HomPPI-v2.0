@@ -1,0 +1,56 @@
+# Final contact file (filtered based on the alignment symbols.
+# NOTE: ONly the aligned residues (**, ***) are included in the haddock restaints!!
+
+# Alignment Symbol: 
+# *: not aligned
+# **: aligned but >=5 angstroms
+# ***: aligned but <5 angstroms
+ARG	A	  55	 	MET	B	  88	 	9.82543	***	***
+ARG	A	  55	 	ALA	B	  89	 	9.96743	***	***
+PHE	A	  60	 	PRO	B	  90	 	9.18382	***	***
+PHE	A	  60	 	ALA	B	  92	 	8.16885	***	***
+MET	A	  61	 	PRO	B	  90	 	9.20428	***	***
+GLN	A	  63	 	MET	B	  88	 	9.82906	***	***
+ASN	A	  71	 	ALA	B	  87	 	9.91965	***	***
+GLY	A	  72	 	VAL	B	  86	 	9.61403	***	***
+GLY	A	  72	 	ALA	B	  87	 	7.37128	***	***
+GLY	A	  72	 	MET	B	  88	 	7.46861	***	***
+THR	A	  73	 	PRO	B	  85	 	8.93283	***	***
+THR	A	  73	 	VAL	B	  86	 	8.62994	***	***
+THR	A	  73	 	ALA	B	  87	 	7.98954	***	***
+THR	A	  73	 	MET	B	  88	 	8.8508	***	***
+ALA	A	 101	 	MET	B	  88	 	6.98396	***	***
+ALA	A	 101	 	ALA	B	  89	 	8.18125	***	***
+ALA	A	 101	 	PRO	B	  90	 	7.70896	***	***
+ASN	A	 102	 	ALA	B	  87	 	9.52304	***	***
+ASN	A	 102	 	MET	B	  88	 	6.28603	***	***
+ASN	A	 102	 	ALA	B	  89	 	8.40832	***	***
+ASN	A	 102	 	PRO	B	  90	 	8.64809	***	***
+ALA	A	 103	 	VAL	B	  86	 	8.00301	***	***
+ALA	A	 103	 	ALA	B	  87	 	7.81702	***	***
+ALA	A	 103	 	MET	B	  88	 	5.70876	***	***
+ALA	A	 103	 	ALA	B	  89	 	8.35987	***	***
+ALA	A	 103	 	PRO	B	  90	 	9.64852	***	***
+GLY	A	 104	 	MET	B	  88	 	8.47977	***	***
+GLY	A	 104	 	ALA	B	  89	 	9.91478	***	***
+GLN	A	 111	 	MET	B	  88	 	9.6563	***	***
+PHE	A	 113	 	PRO	B	  90	 	9.62852	***	***
+THR	A	 119	 	PRO	B	  90	 	8.86544	***	***
+THR	A	 119	 	ILE	B	  91	 	9.06951	***	***
+THR	A	 119	 	ALA	B	  92	 	7.75809	***	***
+THR	A	 119	 	PRO	B	  93	 	8.60531	***	***
+GLU	A	 120	 	ALA	B	  92	 	9.64319	***	***
+GLU	A	 120	 	PRO	B	  93	 	9.45018	***	***
+TRP	A	 121	 	PRO	B	  90	 	8.60221	***	***
+TRP	A	 121	 	ILE	B	  91	 	7.52694	***	***
+TRP	A	 121	 	ALA	B	  92	 	7.55481	***	***
+TRP	A	 121	 	PRO	B	  93	 	7.3362	***	***
+LEU	A	 122	 	PRO	B	  90	 	6.48963	***	***
+LEU	A	 122	 	ILE	B	  91	 	7.19203	***	***
+LEU	A	 122	 	ALA	B	  92	 	8.51478	***	***
+LEU	A	 122	 	PRO	B	  93	 	9.81538	***	***
+LYS	A	 125	 	PRO	B	  90	 	8.26635	***	***
+LYS	A	 125	 	ILE	B	  91	 	9.67721	***	***
+HIS	A	 126	 	PRO	B	  90	 	8.10918	***	***
+ASN	A	 149	 	ALA	B	  89	 	9.8166	***	***
+GLY	A	 150	 	ALA	B	  89	 	9.84467	***	***

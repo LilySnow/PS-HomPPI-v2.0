@@ -1,0 +1,49 @@
+# Final contact file (filtered based on the alignment symbols.
+# NOTE: ONly the aligned residues (**, ***) are included in the haddock restaints!!
+
+# Alignment Symbol: 
+# *: not aligned
+# **: aligned but >=5 angstroms
+# ***: aligned but <5 angstroms
+MET	A	   1	 	LEU	B	  20	 	8.74802	***	***
+MET	A	   1	 	ASN	B	  21	 	7.3636	***	***
+MET	A	   1	 	TRP	B	  23	 	9.6257	***	***
+MET	A	   1	 	VAL	B	  24	 	6.35994	***	***
+MET	A	   1	 	LYS	B	  25	 	8.89163	***	***
+MET	A	   1	 	GLU	B	  28	 	9.58458	***	***
+MET	A	   1	 	MET	B	  55	 	9.82678	***	***
+MET	A	   1	 	ASN	B	  57	 	8.66291	***	***
+MET	A	   1	 	THR	B	  58	 	5.1656	***	***
+MET	A	   1	 	VAL	B	  59	 	6.70248	***	***
+MET	A	   1	 	GLY	B	  60	 	6.66726	***	***
+VAL	A	   2	 	PRO	B	  17	 	7.17512	***	***
+VAL	A	   2	 	ARG	B	  18	 	9.38213	***	***
+VAL	A	   2	 	LEU	B	  20	 	6.75824	***	***
+VAL	A	   2	 	ASN	B	  21	 	6.33663	***	***
+VAL	A	   2	 	ALA	B	  22	 	9.95165	***	***
+VAL	A	   2	 	TRP	B	  23	 	9.67656	***	***
+VAL	A	   2	 	VAL	B	  24	 	7.57727	***	***
+VAL	A	   2	 	THR	B	  54	 	8.86126	***	***
+VAL	A	   2	 	MET	B	  55	 	8.72547	***	***
+VAL	A	   2	 	ASN	B	  57	 	8.64537	***	***
+VAL	A	   2	 	THR	B	  58	 	5.70655	***	***
+VAL	A	   2	 	VAL	B	  59	 	8.78826	***	***
+VAL	A	   2	 	GLY	B	  60	 	9.87433	***	***
+ASN	A	   3	 	PRO	B	  17	 	9.44253	***	***
+ASN	A	   3	 	ASN	B	  21	 	9.53909	***	***
+ASN	A	   3	 	THR	B	  58	 	8.52005	***	***
+PRO	A	   4	 	THR	B	  58	 	8.67883	***	***
+ALA	A	  26	 	PRO	B	  17	 	8.11872	***	***
+ASP	A	  27	 	ILE	B	  15	 	9.97334	***	***
+ASP	A	  27	 	SER	B	  16	 	8.30458	***	***
+ASP	A	  27	 	PRO	B	  17	 	5.27207	***	***
+ASP	A	  27	 	ARG	B	  18	 	8.17102	***	***
+ASP	A	  27	 	LEU	B	  20	 	8.95392	***	***
+ASP	A	  27	 	ASN	B	  21	 	8.96364	***	***
+LYS	A	  28	 	PRO	B	  17	 	8.03953	***	***
+PRO	A	  30	 	ALA	B	  14	 	9.24571	***	***
+PRO	A	  30	 	PRO	B	  17	 	9.24928	***	***
+GLU	A	 165	 	THR	B	  58	 	9.70652	***	***
+GLU	A	 165	 	VAL	B	  59	 	9.60106	***	***
+GLU	A	 165	 	GLY	B	  60	 	6.91588	***	***
+GLU	A	 165	 	GLY	B	  61	 	8.13431	***	***

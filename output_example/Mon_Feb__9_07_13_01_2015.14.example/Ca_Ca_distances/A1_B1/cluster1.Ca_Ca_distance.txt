@@ -1,0 +1,62 @@
+Prediction results of Partner-specific interface residues by PS-HomPPI (http://ailab1.ist.psu.edu:8080/PSHOMPPIv1.3).
+
+	*****************
+
+	Interface prediction starts at Mon Feb  9 07:13:01 2015.
+	Interface prediction ends at Mon Feb  9 07:13:18 2015.
+	Total time used: 17 seconds.
+
+	*****************
+
+Notations:
+	1. A|A:B: the interface residues of protein A that interact with protein B.
+	2. MODE: 
+		 Mode = SafeMode: the query protein can find homologous interacting pairs in Safe Zone.
+		 Mode = TwilightMode1: the query protein can find homologous interacting pairs in Twilight Zone 1.
+		 Mode = TwilightMode2: the query protein can find homologous interacting pairs in Twilight Zone 2.
+	 For more details about the Safe/Twilight/Dark Zone, please refer to the paper for PS-HomPPI:
+	Xue, L. C., Dobbs, D., & Honavar, V. (2011). HomPPI: A Class of sequence homology based protein-protein interface prediction methods. BMC Bioinformatics, 12, 244.
+	3. pINT: predicted interface residues. 1: interface. 0: non-interface. ?: no prediction can be made.
+	4. SCORE: prediction score from PS-HomPPI. The higher the score the higher prediction confidence.
+
+
+-----------------------------------------
+
+
+ Mode = SafeMode 
+A1	B1	mean	min	max
+60	80	8.958	8.495	9.530
+118	82	8.871	8.261	9.690
+103	78	6.955	5.555	7.760
+103	77	8.074	6.741	9.018
+103	79	9.067	8.030	9.852
+103	76	7.860	6.215	9.986
+106	78	9.182	8.149	9.986
+147	82	8.642	7.709	9.917
+100	78	6.181	5.329	6.721
+100	80	7.631	7.114	8.120
+100	79	7.603	6.762	8.231
+101	78	4.727	3.382	5.518
+101	77	7.686	6.221	8.900
+101	80	8.627	7.884	9.219
+101	79	7.500	6.586	8.202
+101	76	8.972	8.327	9.445
+125	80	8.590	7.373	9.799
+121	81	8.315	7.136	9.504
+121	80	7.248	5.838	8.409
+59	82	8.046	7.643	8.286
+71	78	8.087	7.350	9.174
+71	77	7.719	7.371	8.271
+72	78	8.707	8.396	9.250
+72	77	7.376	7.003	8.010
+148	82	8.361	7.867	9.137
+120	82	8.543	8.110	8.976
+120	81	8.859	7.658	9.984
+120	83	8.514	7.718	9.311
+120	80	8.805	8.187	9.176
+124	80	8.076	7.606	8.546
+102	78	4.124	3.215	4.696
+102	77	5.317	3.597	6.922
+102	75	8.628	7.780	9.208
+102	79	7.321	6.720	7.846
+102	76	5.779	4.595	7.430

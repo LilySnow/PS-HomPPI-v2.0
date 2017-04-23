@@ -1,0 +1,1430 @@
+PSIBLAST 2.2.29+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: nr_pdbaa_s2c
+           43,302 sequences; 10,580,565 total letters
+
+Results from round 1
+
+
+Query= A1
+
+Length=164
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+pdb|2RMA|A  Chain A, XRAY 2.10, Crystal Structures Of Cyclophilin...    308   2e-108
+pdb|1RMH|A  Chain A, XRAY 2.4, Recombinant Cyclophilin A From Hum...    308   2e-108
+pdb|1BCK|A  Chain A, XRAY 1.80, Human Cyclophilin A Complexed Wit...    308   2e-108
+pdb|2XGY|B  Chain B, XRAY 1.800, Complex Of Rabbit Endogenous Len...    307   4e-108
+pdb|1M9E|A  Chain A, XRAY 1.72, X-Ray Crystal Structure Of Cyclop...    306   1e-107
+pdb|2X2C|K  Chain K, XRAY 2.41, Acetyl-Cypa:cyclosporine Complex ...    306   1e-107
+pdb|2X2A|A  Chain A, XRAY 1.40, Free Acetyl-Cypa Trigonal Form >p...    304   4e-107
+pdb|4DGA|A  Chain A, XRAY 1.9000, Trimcyp Cyclophilin Domain From...    304   7e-107
+pdb|2X83|B  Chain B, XRAY 1.70, Evolutionary Basis Of Hiv Restric...    302   3e-106
+pdb|4DGE|A  Chain A, XRAY 2.200, Trimcyp Cyclophilin Domain From ...    300   3e-105
+pdb|1AWS|A  Chain A, XRAY 2.55, Secypa Complexed With Hagpia (Pse...    298   2e-104
+pdb|2Z6W|A  Chain A, XRAY 0.96, Crystal Structure Of Human Cyclop...    243   5e-83 
+pdb|4JJM|A  Chain A, XRAY 2.09, Structure Of A Cyclophilin From C...    235   7e-80 
+pdb|4HY7|A  Chain A, XRAY 1.20, Structural And Biochemical Charac...    224   2e-75 
+pdb|4LQW|A  Chain A, XRAY 1.95, Crystal Structure Of Hiv-1 Capsid...    213   4e-71 
+pdb|4I9Y|A  Chain A, XRAY 1.75, Structure Of The C-terminal Domai...    212   9e-71 
+pdb|3PMP|A  Chain A, XRAY 1.47, Crystal Structure Of Cyclophilin ...    208   3e-69 
+pdb|1IST|A  Chain A, XRAY 1.90, Crystal Structure Of Yeast Cyclop...    201   1e-66 
+pdb|2POY|A  Chain A, XRAY 1.80, Cryptosporidium Parvum Cyclophili...    201   2e-66 
+pdb|4EYV|A  Chain A, XRAY 1.9700, Crystal Structure Of Cyclophili...    198   1e-65 
+pdb|1QNG|A  Chain A, XRAY 2.1, Plasmodium Falciparum Cyclophilin ...    193   3e-63 
+pdb|1CYN|A  Chain A, XRAY 1.85, Cyclophilin B Complexed With [d-(...    192   5e-63 
+pdb|3ICI|A  Chain A, XRAY 1.70, Crystal Structure Of Cyclophilin ...    192   6e-63 
+pdb|1QNH|A  Chain A, XRAY 2.1, Plasmodium Falciparum Cyclophilin ...    189   7e-62 
+pdb|3K2C|A  Chain A, XRAY 1.95, Crystal Structure Of Peptidyl-Pro...    190   7e-62 
+pdb|1XO7|A  Chain A, XRAY 1.61, Crystal Structure Of Cyclophilin ...    181   1e-58 
+pdb|3EOV|A  Chain A, XRAY 2.60, Crystal Structure Of Cyclophilin ...    177   4e-57 
+pdb|2RMC|A  Chain A, XRAY 1.64, Crystal Structure Of Murine Cyclo...    173   2e-55 
+pdb|1MZW|A  Chain A, XRAY 2.0, Crystal Structure Of A U4U6 SNRNP ...    170   2e-54 
+pdb|2C3B|A  Chain A, XRAY 1.85, The Crystal Structure Of Aspergil...    168   9e-54 
+pdb|2ESL|A  Chain A, XRAY 1.90, Human Cyclophilin C In Complex Wi...    168   2e-53 
+pdb|2WFJ|A  Chain A, XRAY 0.75, Atomic Resolution Crystal Structu...    153   8e-48 
+pdb|2HE9|A  Chain A, XRAY 2.00, Structure Of The Peptidylprolyl I...    151   1e-46 
+pdb|1C5F|A  Chain A, XRAY 2.47, Crystal Structure Of The Cyclophi...    147   2e-45 
+pdb|2X7K|A  Chain A, XRAY 1.15, The Crystal Structure Of Ppil1 In...    118   2e-34 
+pdb|2A2N|A  Chain A, XRAY 1.65, Crystal Structure Of The Peptidyl...    114   1e-32 
+pdb|2OJU|A  Chain A, XRAY 2.40, X-Ray Structure Of Complex Of Hum...    108   2e-30 
+pdb|1W74|A  Chain A, XRAY 2.60, X-Ray Structure Of Peptidyl-Proly...  90.2    3e-23 
+pdb|1ZKC|A  Chain A, XRAY 1.65, Crystal Structure Of The Cyclophi...  87.8    3e-22 
+pdb|3BO7|A  Chain A, XRAY 2.35, Crystal Structure Of Toxoplasma G...  70.2    9e-16 
+pdb|3T1U|A  Chain A, XRAY 2.0000, Crystal Structure Of The Comple...  63.6    2e-13 
+pdb|1V9T|A  Chain A, XRAY 1.70, Structure Of E. Coli Cyclophilin ...  60.4    3e-12 
+pdb|1LOP|A  Chain A, XRAY 1.8, Cyclophilin A Complexed With Succi...  53.4    6e-10 
+pdb|4DZB|B  Chain B, XRAY 1.70, Mucosal-Associated Invariant T Ce...  30.6    0.17  
+pdb|3O4L|E  Chain E, XRAY 2.5400, Genetic And Structural Basis Fo...  29.2    0.57  
+pdb|2WBJ|D  Chain D, XRAY 3.00, Tcr Complex >pdb|2WBJ|H Chain H, ...  29.2    0.58  
+pdb|3O6F|D  Chain D, XRAY 2.80, Crystal Structure Of A Human Auto...  29.2    0.61  
+pdb|1YMM|E  Chain E, XRAY 3.500, TcrHLA-Dr2bMBP-Peptide Complex       29.2    0.61  
+pdb|1KTK|E  Chain E, XRAY 3.00, Complex Of Streptococcal Pyrogeni...  28.5    1.0   
+pdb|2IJ0|E  Chain E, XRAY 2.250, Structural Basis Of T Cell Speci...  27.5    1.5   
+pdb|1X9R|A  Chain A, XRAY 1.9, Umecyanin From Horse Raddish- Crys...  26.1    4.9   
+
+
+>pdb|2RMA|A Chain A, XRAY 2.10, Crystal Structures Of Cyclophilin A Complexed 
+With Cyclosporin A And N-Methyl-4-[(E)-2-Butenyl]-4,4-Dimethylthreonine 
+Cyclosporin A
+ pdb|2RMA|C Chain C, XRAY 2.10, Crystal Structures Of Cyclophilin A Complexed 
+With Cyclosporin A And N-Methyl-4-[(E)-2-Butenyl]-4,4-Dimethylthreonine 
+Cyclosporin A
+ pdb|2RMA|E Chain E, XRAY 2.10, Crystal Structures Of Cyclophilin A Complexed 
+With Cyclosporin A And N-Methyl-4-[(E)-2-Butenyl]-4,4-Dimethylthreonine 
+Cyclosporin A
+ pdb|2RMA|G Chain G, XRAY 2.10, Crystal Structures Of Cyclophilin A Complexed 
+With Cyclosporin A And N-Methyl-4-[(E)-2-Butenyl]-4,4-Dimethylthreonine 
+Cyclosporin A
+ pdb|2RMA|I Chain I, XRAY 2.10, Crystal Structures Of Cyclophilin A Complexed 
+With Cyclosporin A And N-Methyl-4-[(E)-2-Butenyl]-4,4-Dimethylthreonine 
+Cyclosporin A
+ pdb|2RMA|K Chain K, XRAY 2.10, Crystal Structures Of Cyclophilin A Complexed 
+With Cyclosporin A And N-Methyl-4-[(E)-2-Butenyl]-4,4-Dimethylthreonine 
+Cyclosporin A
+ pdb|2RMA|M Chain M, XRAY 2.10, Crystal Structures Of Cyclophilin A Complexed 
+With Cyclosporin A And N-Methyl-4-[(E)-2-Butenyl]-4,4-Dimethylthreonine 
+Cyclosporin A
+ pdb|2RMA|O Chain O, XRAY 2.10, Crystal Structures Of Cyclophilin A Complexed 
+With Cyclosporin A And N-Methyl-4-[(E)-2-Butenyl]-4,4-Dimethylthreonine 
+Cyclosporin A
+ pdb|2RMA|Q Chain Q, XRAY 2.10, Crystal Structures Of Cyclophilin A Complexed 
+With Cyclosporin A And N-Methyl-4-[(E)-2-Butenyl]-4,4-Dimethylthreonine 
+Cyclosporin A
+ pdb|2RMA|S Chain S, XRAY 2.10, Crystal Structures Of Cyclophilin A Complexed 
+With Cyclosporin A And N-Methyl-4-[(E)-2-Butenyl]-4,4-Dimethylthreonine 
+Cyclosporin A
+ pdb|2RMB|A Chain A, XRAY 2.10, Crystal Structures Of Cyclophilin A Complexed 
+With Cyclosporin A And N-Methyl-4-[(E)-2-Butenyl]-4,4-Dimethylthreonine 
+Cyclosporin A
+ pdb|2RMB|C Chain C, XRAY 2.10, Crystal Structures Of Cyclophilin A Complexed 
+With Cyclosporin A And N-Methyl-4-[(E)-2-Butenyl]-4,4-Dimethylthreonine 
+Cyclosporin A
+ pdb|2RMB|E Chain E, XRAY 2.10, Crystal Structures Of Cyclophilin A Complexed 
+With Cyclosporin A And N-Methyl-4-[(E)-2-Butenyl]-4,4-Dimethylthreonine 
+Cyclosporin A
+ pdb|2RMB|G Chain G, XRAY 2.10, Crystal Structures Of Cyclophilin A Complexed 
+With Cyclosporin A And N-Methyl-4-[(E)-2-Butenyl]-4,4-Dimethylthreonine 
+Cyclosporin A
+ pdb|2RMB|I Chain I, XRAY 2.10, Crystal Structures Of Cyclophilin A Complexed 
+With Cyclosporin A And N-Methyl-4-[(E)-2-Butenyl]-4,4-Dimethylthreonine 
+Cyclosporin A
+ pdb|2RMB|K Chain K, XRAY 2.10, Crystal Structures Of Cyclophilin A Complexed 
+With Cyclosporin A And N-Methyl-4-[(E)-2-Butenyl]-4,4-Dimethylthreonine 
+Cyclosporin A
+ pdb|2RMB|M Chain M, XRAY 2.10, Crystal Structures Of Cyclophilin A Complexed 
+With Cyclosporin A And N-Methyl-4-[(E)-2-Butenyl]-4,4-Dimethylthreonine 
+Cyclosporin A
+ pdb|2RMB|O Chain O, XRAY 2.10, Crystal Structures Of Cyclophilin A Complexed 
+With Cyclosporin A And N-Methyl-4-[(E)-2-Butenyl]-4,4-Dimethylthreonine 
+Cyclosporin A
+ pdb|2RMB|Q Chain Q, XRAY 2.10, Crystal Structures Of Cyclophilin A Complexed 
+With Cyclosporin A And N-Methyl-4-[(E)-2-Butenyl]-4,4-Dimethylthreonine 
+Cyclosporin A
+ pdb|2RMB|S Chain S, XRAY 2.10, Crystal Structures Of Cyclophilin A Complexed 
+With Cyclosporin A And N-Methyl-4-[(E)-2-Butenyl]-4,4-Dimethylthreonine 
+Cyclosporin A
+ pdb|1CWC|A Chain A, XRAY 1.86, Improved Binding Affinity For Cyclophilin 
+A By A Cyclosporin Derivative Singly Modified At Its Effector 
+Domain
+ pdb|1CWB|A Chain A, XRAY 2.20, The X-Ray Structure Of (Mebm2t)1-Cyclosporin 
+Complexed With Cyclophilin A Provides An Explanation For 
+Its Anomalously High Immunosuppressive Activity
+ pdb|1CWA|A Chain A, XRAY 2.10, X-Ray Structure Of A Monomeric Cyclophilin 
+A-Cyclosporin A Crystal Complex At 2.1 Angstroms Resolution
+ pdb|1MIK|A Chain A, XRAY 1.76, The Role Of Water Molecules In The Structure-Based 
+Design Of (5- Hydroxynorvaline)-2-Cyclosporin: Synthesis, 
+Biological Activity, And Crystallographic Analysis With 
+Cyclophilin A
+ pdb|1FGL|A Chain A, XRAY 1.8, Cyclophilin A Complexed With A Fragment Of 
+Hiv-1 Gag Protein
+ pdb|1AK4|A Chain A, XRAY 2.36, Human Cyclophilin A Bound To The Amino-Terminal 
+Domain Of Hiv-1 Capsid
+ pdb|1AK4|B Chain B, XRAY 2.36, Human Cyclophilin A Bound To The Amino-Terminal 
+Domain Of Hiv-1 Capsid
+ pdb|1CWF|A Chain A, XRAY 1.86, Human Cyclophilin A Complexed With 2-Val 
+Cyclosporin
+ pdb|1CWH|A Chain A, XRAY 1.86, Human Cyclophilin A Complexed With 3-D-Ser 
+Cyclosporin
+ pdb|1CWK|A Chain A, XRAY 1.80, Human Cyclophilin A Complexed With 1-(6,7-Dihydro)mebmt 
+2-Val 3-D-(2- S-Methyl)sarcosine Cyclosporin
+ pdb|1CWL|A Chain A, XRAY 1.80, Human Cyclophilin A Complexed With 4 4-Hydroxy-Meleu 
+Cyclosporin
+ pdb|1CWM|A Chain A, XRAY 2.00, Human Cyclophilin A Complexed With 4 Meile 
+Cyclosporin
+ pdb|1CWI|A Chain A, XRAY 1.90, Human Cyclophilin A Complexed With 2-Val 
+3-(N-Methyl)-D-Alanine Cyclosporin
+ pdb|1CWJ|A Chain A, XRAY 1.80, Human Cyclophilin A Complexed With 2-Val 
+3-S-Methyl-Sarcosine Cyclosporin
+ pdb|1VBS|A Chain A, XRAY 2.0, Structure Of Cyclophilin Complexed With (D)ala 
+Containing Tetrapeptide
+ pdb|1VBT|A Chain A, XRAY 2.3, Structure Of Cyclophilin Complexed With Sulfur-Substituted 
+Tetrapeptide Aapf
+ pdb|1VBT|B Chain B, XRAY 2.3, Structure Of Cyclophilin Complexed With Sulfur-Substituted 
+Tetrapeptide Aapf
+ pdb|1M63|C Chain C, XRAY 2.80, Crystal Structure Of Calcineurin-Cyclophilin-Cyclosporin 
+Shows Common But Distinct Recognition Of Immunophilin-Drug 
+Complexes
+ pdb|1M63|G Chain G, XRAY 2.80, Crystal Structure Of Calcineurin-Cyclophilin-Cyclosporin 
+Shows Common But Distinct Recognition Of Immunophilin-Drug 
+Complexes
+ pdb|1MF8|C Chain C, XRAY 3.10, Crystal Structure Of Human Calcineurin Complexed 
+With Cyclosporin A And Human Cyclophilin
+ pdb|1NMK|A Chain A, XRAY 2.10, The Sanglifehrin-Cyclophilin Interaction: 
+Degradation Work, Synthetic Macrocyclic Analogues, X-Ray Crystal 
+Structure And Binding Data
+ pdb|1NMK|B Chain B, XRAY 2.10, The Sanglifehrin-Cyclophilin Interaction: 
+Degradation Work, Synthetic Macrocyclic Analogues, X-Ray Crystal 
+Structure And Binding Data
+ pdb|1M9C|A Chain A, XRAY 2.00, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type Complex.
+ pdb|1M9C|B Chain B, XRAY 2.00, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type Complex.
+ pdb|1M9D|A Chain A, XRAY 1.900, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) O-Type Chimera Complex.
+ pdb|1M9D|B Chain B, XRAY 1.900, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) O-Type Chimera Complex.
+ pdb|1M9F|A Chain A, XRAY 1.730, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a,A88m Complex.
+ pdb|1M9F|B Chain B, XRAY 1.730, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a,A88m Complex.
+ pdb|1M9X|A Chain A, XRAY 1.70, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a,A88m,G89a Complex.
+ pdb|1M9X|B Chain B, XRAY 1.70, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a,A88m,G89a Complex.
+ pdb|1M9X|E Chain E, XRAY 1.70, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a,A88m,G89a Complex.
+ pdb|1M9X|F Chain F, XRAY 1.70, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a,A88m,G89a Complex.
+ pdb|1M9Y|A Chain A, XRAY 1.90, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a,G89a Complex.
+ pdb|1M9Y|B Chain B, XRAY 1.90, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a,G89a Complex.
+ pdb|1M9Y|E Chain E, XRAY 1.90, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a,G89a Complex.
+ pdb|1M9Y|F Chain F, XRAY 1.90, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a,G89a Complex.
+ pdb|1YND|A Chain A, XRAY 1.60, Structure Of Human Cyclophilin A In Complex 
+With The Novel Immunosuppressant Sanglifehrin A At 1.6a Resolution
+ pdb|1YND|B Chain B, XRAY 1.60, Structure Of Human Cyclophilin A In Complex 
+With The Novel Immunosuppressant Sanglifehrin A At 1.6a Resolution
+ pdb|1ZKF|A Chain A, XRAY 2.55, Cyrstal Structure Of Human Cyclophilin-A 
+In Complex With Suc-Agpf-Pna
+ pdb|1ZKF|B Chain B, XRAY 2.55, Cyrstal Structure Of Human Cyclophilin-A 
+In Complex With Suc-Agpf-Pna
+ pdb|3CYS|A Chain A, NMR -, Determination Of The Nmr Solution Structure Of 
+The Cyclophilin A- Cyclosporin A Complex
+ pdb|3ODI|A Chain A, XRAY 2.20, Crystal Structure Of Cyclophilin A In Complex 
+With Voclosporin E- Isa247
+ pdb|3ODI|C Chain C, XRAY 2.20, Crystal Structure Of Cyclophilin A In Complex 
+With Voclosporin E- Isa247
+ pdb|3ODI|E Chain E, XRAY 2.20, Crystal Structure Of Cyclophilin A In Complex 
+With Voclosporin E- Isa247
+ pdb|3ODI|G Chain G, XRAY 2.20, Crystal Structure Of Cyclophilin A In Complex 
+With Voclosporin E- Isa247
+ pdb|3ODI|I Chain I, XRAY 2.20, Crystal Structure Of Cyclophilin A In Complex 
+With Voclosporin E- Isa247
+ pdb|3ODI|K Chain K, XRAY 2.20, Crystal Structure Of Cyclophilin A In Complex 
+With Voclosporin E- Isa247
+ pdb|3ODI|M Chain M, XRAY 2.20, Crystal Structure Of Cyclophilin A In Complex 
+With Voclosporin E- Isa247
+ pdb|3ODI|O Chain O, XRAY 2.20, Crystal Structure Of Cyclophilin A In Complex 
+With Voclosporin E- Isa247
+ pdb|3ODI|Q Chain Q, XRAY 2.20, Crystal Structure Of Cyclophilin A In Complex 
+With Voclosporin E- Isa247
+ pdb|3ODI|S Chain S, XRAY 2.20, Crystal Structure Of Cyclophilin A In Complex 
+With Voclosporin E- Isa247
+ pdb|3ODL|A Chain A, XRAY 2.31, Crystal Structure Of Cyclophilin A In Complex 
+With Voclosporin Z- Isa247
+ pdb|3ODL|C Chain C, XRAY 2.31, Crystal Structure Of Cyclophilin A In Complex 
+With Voclosporin Z- Isa247
+ pdb|3ODL|E Chain E, XRAY 2.31, Crystal Structure Of Cyclophilin A In Complex 
+With Voclosporin Z- Isa247
+ pdb|3ODL|G Chain G, XRAY 2.31, Crystal Structure Of Cyclophilin A In Complex 
+With Voclosporin Z- Isa247
+ pdb|3ODL|I Chain I, XRAY 2.31, Crystal Structure Of Cyclophilin A In Complex 
+With Voclosporin Z- Isa247
+ pdb|3ODL|K Chain K, XRAY 2.31, Crystal Structure Of Cyclophilin A In Complex 
+With Voclosporin Z- Isa247
+ pdb|3ODL|M Chain M, XRAY 2.31, Crystal Structure Of Cyclophilin A In Complex 
+With Voclosporin Z- Isa247
+ pdb|3ODL|O Chain O, XRAY 2.31, Crystal Structure Of Cyclophilin A In Complex 
+With Voclosporin Z- Isa247
+ pdb|3ODL|Q Chain Q, XRAY 2.31, Crystal Structure Of Cyclophilin A In Complex 
+With Voclosporin Z- Isa247
+ pdb|3ODL|S Chain S, XRAY 2.31, Crystal Structure Of Cyclophilin A In Complex 
+With Voclosporin Z- Isa247
+Length=165
+
+ Score =   308 bits (864),  Expect = 2e-108, Method: Compositional matrix adjust.
+ Identities = 164/164 (100%), Positives = 164/164 (100%), Gaps = 0/164 (0%)
+
+Query  1    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  60
+            VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM
+Sbjct  2    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  61
+
+Query  61   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  120
+            CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW
+Sbjct  62   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  121
+
+Query  121  LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE  164
+            LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE
+Sbjct  122  LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE  165
+
+
+>pdb|1RMH|A Chain A, XRAY 2.4, Recombinant Cyclophilin A From Human T Cell
+ pdb|1RMH|B Chain B, XRAY 2.4, Recombinant Cyclophilin A From Human T Cell
+ pdb|1AWQ|A Chain A, XRAY 1.58, Cypa Complexed With Hagpia (Pseudo-Symmetric 
+Monomer)
+ pdb|1AWR|A Chain A, XRAY 1.58, Cypa Complexed With Hagpia
+ pdb|1AWR|B Chain B, XRAY 1.58, Cypa Complexed With Hagpia
+ pdb|1AWR|C Chain C, XRAY 1.58, Cypa Complexed With Hagpia
+ pdb|1AWR|D Chain D, XRAY 1.58, Cypa Complexed With Hagpia
+ pdb|1AWR|E Chain E, XRAY 1.58, Cypa Complexed With Hagpia
+ pdb|1AWR|F Chain F, XRAY 1.58, Cypa Complexed With Hagpia
+ pdb|1AWU|A Chain A, XRAY 2.34, Cypa Complexed With Hvgpia (Pseudo-Symmetric 
+Monomer)
+ pdb|1AWV|A Chain A, XRAY 2.34, Cypa Complexed With Hvgpia
+ pdb|1AWV|B Chain B, XRAY 2.34, Cypa Complexed With Hvgpia
+ pdb|1AWV|C Chain C, XRAY 2.34, Cypa Complexed With Hvgpia
+ pdb|1AWV|D Chain D, XRAY 2.34, Cypa Complexed With Hvgpia
+ pdb|1AWV|E Chain E, XRAY 2.34, Cypa Complexed With Hvgpia
+ pdb|1AWV|F Chain F, XRAY 2.34, Cypa Complexed With Hvgpia
+Length=164
+
+ Score =   308 bits (864),  Expect = 2e-108, Method: Compositional matrix adjust.
+ Identities = 164/164 (100%), Positives = 164/164 (100%), Gaps = 0/164 (0%)
+
+Query  1    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  60
+            VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM
+Sbjct  1    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  60
+
+Query  61   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  120
+            CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW
+Sbjct  61   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  120
+
+Query  121  LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE  164
+            LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE
+Sbjct  121  LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE  164
+
+
+>pdb|1BCK|A Chain A, XRAY 1.80, Human Cyclophilin A Complexed With 2-Thr 
+Cyclosporin
+ pdb|1CWO|A Chain A, XRAY 1.86, Human Cyclophilin A Complexed With Thr2, 
+Leu5, D-Hiv8, Leu10 Cyclosporin
+Length=165
+
+ Score =   308 bits (864),  Expect = 2e-108, Method: Compositional matrix adjust.
+ Identities = 164/164 (100%), Positives = 164/164 (100%), Gaps = 0/164 (0%)
+
+Query  1    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  60
+            VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM
+Sbjct  2    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  61
+
+Query  61   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  120
+            CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW
+Sbjct  62   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  121
+
+Query  121  LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE  164
+            LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE
+Sbjct  122  LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE  165
+
+
+>pdb|2XGY|B Chain B, XRAY 1.800, Complex Of Rabbit Endogenous Lentivirus 
+(Relik)capsid With Cyclophilin A
+Length=173
+
+ Score =   307 bits (862),  Expect = 4e-108, Method: Compositional matrix adjust.
+ Identities = 164/164 (100%), Positives = 164/164 (100%), Gaps = 0/164 (0%)
+
+Query  1    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  60
+            VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM
+Sbjct  10   VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  69
+
+Query  61   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  120
+            CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW
+Sbjct  70   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  129
+
+Query  121  LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE  164
+            LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE
+Sbjct  130  LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE  173
+
+
+>pdb|1M9E|A Chain A, XRAY 1.72, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a Complex.
+ pdb|1M9E|B Chain B, XRAY 1.72, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a Complex
+Length=164
+
+ Score =   306 bits (859),  Expect = 1e-107, Method: Compositional matrix adjust.
+ Identities = 163/163 (100%), Positives = 163/163 (100%), Gaps = 0/163 (0%)
+
+Query  1    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  60
+            VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM
+Sbjct  2    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  61
+
+Query  61   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  120
+            CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW
+Sbjct  62   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  121
+
+Query  121  LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQL  163
+            LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQL
+Sbjct  122  LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQL  164
+
+
+>pdb|2X2C|K Chain K, XRAY 2.41, Acetyl-Cypa:cyclosporine Complex
+ pdb|2X2C|M Chain M, XRAY 2.41, Acetyl-Cypa:cyclosporine Complex
+ pdb|2X2C|O Chain O, XRAY 2.41, Acetyl-Cypa:cyclosporine Complex
+ pdb|2X2C|Q Chain Q, XRAY 2.41, Acetyl-Cypa:cyclosporine Complex
+ pdb|2X2C|S Chain S, XRAY 2.41, Acetyl-Cypa:cyclosporine Complex
+ pdb|2X2D|B Chain B, XRAY 1.95, Acetyl-Cypa:hiv-1 N-Term Capsid Domain Complex
+ pdb|2X2D|C Chain C, XRAY 1.95, Acetyl-Cypa:hiv-1 N-Term Capsid Domain Complex
+Length=165
+
+ Score =   306 bits (859),  Expect = 1e-107, Method: Compositional matrix adjust.
+ Identities = 163/164 (99%), Positives = 163/164 (99%), Gaps = 0/164 (0%)
+
+Query  1    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  60
+            VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM
+Sbjct  2    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  61
+
+Query  61   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  120
+            CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW
+Sbjct  62   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  121
+
+Query  121  LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE  164
+            LDG HVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE
+Sbjct  122  LDGXHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE  165
+
+
+>pdb|2X2A|A Chain A, XRAY 1.40, Free Acetyl-Cypa Trigonal Form
+ pdb|2X2A|B Chain B, XRAY 1.40, Free Acetyl-Cypa Trigonal Form
+Length=165
+
+ Score =   304 bits (854),  Expect = 4e-107, Method: Compositional matrix adjust.
+ Identities = 162/164 (99%), Positives = 163/164 (99%), Gaps = 0/164 (0%)
+
+Query  1    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  60
+            VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM
+Sbjct  2    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  61
+
+Query  61   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  120
+            CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKT+W
+Sbjct  62   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTKW  121
+
+Query  121  LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE  164
+            LDG HVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE
+Sbjct  122  LDGXHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE  165
+
+
+>pdb|4DGA|A Chain A, XRAY 1.9000, Trimcyp Cyclophilin Domain From Macaca 
+Mulatta: Hiv-1 Ca(O-Loop) Complex
+ pdb|4DGA|B Chain B, XRAY 1.9000, Trimcyp Cyclophilin Domain From Macaca 
+Mulatta: Hiv-1 Ca(O-Loop) Complex
+ pdb|4DGB|A Chain A, XRAY 1.702, Trimcyp Cyclophilin Domain From Macaca Mulatta: 
+Hiv-2 Ca Cyclophilin- Binding Loop Complex
+ pdb|4DGC|A Chain A, XRAY 2.650, Trimcyp Cyclophilin Domain From Macaca Mulatta: 
+Cyclosporin A Complex
+ pdb|4DGC|B Chain B, XRAY 2.650, Trimcyp Cyclophilin Domain From Macaca Mulatta: 
+Cyclosporin A Complex
+ pdb|4DGC|C Chain C, XRAY 2.650, Trimcyp Cyclophilin Domain From Macaca Mulatta: 
+Cyclosporin A Complex
+ pdb|4DGC|D Chain D, XRAY 2.650, Trimcyp Cyclophilin Domain From Macaca Mulatta: 
+Cyclosporin A Complex
+ pdb|4DGC|E Chain E, XRAY 2.650, Trimcyp Cyclophilin Domain From Macaca Mulatta: 
+Cyclosporin A Complex
+Length=165
+
+ Score =   304 bits (853),  Expect = 7e-107, Method: Compositional matrix adjust.
+ Identities = 162/164 (99%), Positives = 163/164 (99%), Gaps = 0/164 (0%)
+
+Query  1    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  60
+            VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM
+Sbjct  2    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  61
+
+Query  61   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  120
+            CQGG+FT HNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW
+Sbjct  62   CQGGNFTHHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  121
+
+Query  121  LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE  164
+            LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE
+Sbjct  122  LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE  165
+
+
+>pdb|2X83|B Chain B, XRAY 1.70, Evolutionary Basis Of Hiv Restriction By 
+The Antiretroviral Trimcyp
+ pdb|2X83|D Chain D, XRAY 1.70, Evolutionary Basis Of Hiv Restriction By 
+The Antiretroviral Trimcyp
+Length=163
+
+ Score =   302 bits (848),  Expect = 3e-106, Method: Compositional matrix adjust.
+ Identities = 161/163 (99%), Positives = 162/163 (99%), Gaps = 0/163 (0%)
+
+Query  1    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  60
+            VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM
+Sbjct  1    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  60
+
+Query  61   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  120
+            CQGGDFT HNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW
+Sbjct  61   CQGGDFTHHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  120
+
+Query  121  LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQL  163
+            LDGKHVVFGKVKEGMNIVEAM+RFGSRNGKTSKKITIADCGQL
+Sbjct  121  LDGKHVVFGKVKEGMNIVEAMKRFGSRNGKTSKKITIADCGQL  163
+
+
+>pdb|4DGE|A Chain A, XRAY 2.200, Trimcyp Cyclophilin Domain From Macaca Mulatta: 
+H70c Mutant, Hiv-1 Ca(O-Loop) Complex
+ pdb|4DGE|B Chain B, XRAY 2.200, Trimcyp Cyclophilin Domain From Macaca Mulatta: 
+H70c Mutant, Hiv-1 Ca(O-Loop) Complex
+Length=165
+
+ Score =   300 bits (842),  Expect = 3e-105, Method: Compositional matrix adjust.
+ Identities = 161/164 (98%), Positives = 162/164 (99%), Gaps = 0/164 (0%)
+
+Query  1    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  60
+            VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM
+Sbjct  2    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  61
+
+Query  61   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  120
+            CQGG+FT  NGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW
+Sbjct  62   CQGGNFTHCNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  121
+
+Query  121  LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE  164
+            LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE
+Sbjct  122  LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE  165
+
+
+>pdb|1AWS|A Chain A, XRAY 2.55, Secypa Complexed With Hagpia (Pseudo-Symmetric 
+Monomer)
+ pdb|1AWT|A Chain A, XRAY 2.55, Secypa Complexed With Hagpia
+ pdb|1AWT|B Chain B, XRAY 2.55, Secypa Complexed With Hagpia
+ pdb|1AWT|C Chain C, XRAY 2.55, Secypa Complexed With Hagpia
+ pdb|1AWT|D Chain D, XRAY 2.55, Secypa Complexed With Hagpia
+ pdb|1AWT|E Chain E, XRAY 2.55, Secypa Complexed With Hagpia
+ pdb|1AWT|F Chain F, XRAY 2.55, Secypa Complexed With Hagpia
+Length=164
+
+ Score =   298 bits (835),  Expect = 2e-104, Method: Compositional matrix adjust.
+ Identities = 160/164 (98%), Positives = 160/164 (98%), Gaps = 0/164 (0%)
+
+Query  1    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  60
+            VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGF 
+Sbjct  1    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFX  60
+
+Query  61   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  120
+            CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILS ANAGPNTNGSQFFICTAKTEW
+Sbjct  61   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSXANAGPNTNGSQFFICTAKTEW  120
+
+Query  121  LDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE  164
+            LDGKHVVFGKVKEG NIVEA ERFGSRNGKTSKKITIADCGQLE
+Sbjct  121  LDGKHVVFGKVKEGXNIVEAXERFGSRNGKTSKKITIADCGQLE  164
+
+
+>pdb|2Z6W|A Chain A, XRAY 0.96, Crystal Structure Of Human Cyclophilin D 
+In Complex With Cyclosporin A
+ pdb|2Z6W|B Chain B, XRAY 0.96, Crystal Structure Of Human Cyclophilin D 
+In Complex With Cyclosporin A
+Length=165
+
+ Score =   243 bits (679),  Expect = 5e-83, Method: Compositional matrix adjust.
+ Identities = 123/163 (75%), Positives = 138/163 (85%), Gaps = 0/163 (0%)
+
+Query  2    NPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFMC  61
+            NP V+ D+  +G+PLGRV  EL AD VPKTAENFRAL TGEKGFGYKGS FHR+IP FMC
+Sbjct  3    NPLVYLDVDANGKPLGRVVLELKADVVPKTAENFRALCTGEKGFGYKGSTFHRVIPSFMC  62
+
+Query  62   QGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEWL  121
+            Q GDFT HNGTGGKSIYG +F DENF LKH GPG+LSMANAGPNTNGSQFFICT KT+WL
+Sbjct  63   QAGDFTNHNGTGGKSIYGSRFPDENFTLKHVGPGVLSMANAGPNTNGSQFFICTIKTDWL  122
+
+Query  122  DGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE  164
+            DGKHVVFG V EGM++V+ +E FGS++G+TSKKI I DCGQL 
+Sbjct  123  DGKHVVFGHVIEGMDVVKKIESFGSKSGRTSKKIVITDCGQLS  165
+
+
+>pdb|4JJM|A Chain A, XRAY 2.09, Structure Of A Cyclophilin From Citrus Sinensis 
+(cscyp) In Complex With Cycloporin A
+ pdb|4JJM|B Chain B, XRAY 2.09, Structure Of A Cyclophilin From Citrus Sinensis 
+(cscyp) In Complex With Cycloporin A
+Length=175
+
+ Score =   235 bits (657),  Expect = 7e-80, Method: Compositional matrix adjust.
+ Identities = 122/170 (72%), Positives = 140/170 (82%), Gaps = 7/170 (4%)
+
+Query  2    NPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFG-------YKGSCFHR  54
+            NP VFFD+ V G+P GR+  ELFAD  P+TAENFRAL TGEKG G       YKGS FHR
+Sbjct  6    NPKVFFDMTVGGQPAGRIVMELFADVTPRTAENFRALCTGEKGIGKSGKPLHYKGSSFHR  65
+
+Query  55   IIPGFMCQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFIC  114
+            +IPGFMCQGGDFT  NGTGG+SIYG KF DENF+ KHTGPGILSMANAGP TNGSQFF+C
+Sbjct  66   VIPGFMCQGGDFTAGNGTGGESIYGSKFADENFVKKHTGPGILSMANAGPGTNGSQFFVC  125
+
+Query  115  TAKTEWLDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQLE  164
+            TAKTEWLDGKHVVFG+V EGM++V+A+E+ GS +G+T+K + IADCGQL 
+Sbjct  126  TAKTEWLDGKHVVFGQVVEGMDVVKAIEKVGSSSGRTNKPVVIADCGQLS  175
+
+
+>pdb|4HY7|A Chain A, XRAY 1.20, Structural And Biochemical Characterization 
+Of A Cytosolic Wheat Cyclophilin Tacypa-1
+Length=171
+
+ Score =   224 bits (624),  Expect = 2e-75, Method: Compositional matrix adjust.
+ Identities = 117/169 (69%), Positives = 133/169 (79%), Gaps = 7/169 (4%)
+
+Query  2    NPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFG-------YKGSCFHR  54
+            NP VFFD+ V G P GR+  EL+ D VP+T ENFRAL TGEKG G       YKGS FHR
+Sbjct  3    NPRVFFDMTVGGAPAGRIVMELYKDAVPRTVENFRALCTGEKGVGKSGKPLHYKGSAFHR  62
+
+Query  55   IIPGFMCQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFIC  114
+            +IP FMCQGGDFTR NGTGG+SIYGEKF DE F+ KHT PGILSMANAGPNTNGSQFFIC
+Sbjct  63   VIPDFMCQGGDFTRGNGTGGESIYGEKFADEKFVHKHTKPGILSMANAGPNTNGSQFFIC  122
+
+Query  115  TAKTEWLDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQL  163
+            T    WLDGKHVVFG+V EGM++V+ +E+ GSR+G  SK++ IADCGQL
+Sbjct  123  TVPCNWLDGKHVVFGEVVEGMDVVKNIEKVGSRSGTCSKQVVIADCGQL  171
+
+
+>pdb|4LQW|A Chain A, XRAY 1.95, Crystal Structure Of Hiv-1 Capsid N-terminal 
+Domain In Complex With Nup358 Cyclophilin
+ pdb|4LQW|B Chain B, XRAY 1.95, Crystal Structure Of Hiv-1 Capsid N-terminal 
+Domain In Complex With Nup358 Cyclophilin
+Length=177
+
+ Score =   213 bits (593),  Expect = 4e-71, Method: Compositional matrix adjust.
+ Identities = 108/162 (67%), Positives = 131/162 (81%), Gaps = 0/162 (0%)
+
+Query  2    NPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFMC  61
+            NP VFFD+  DGEPLGR++ ELF++ VP+TAENFRAL TGEKGFG+K S FHR+IP F+C
+Sbjct  16   NPVVFFDVCADGEPLGRITMELFSNIVPRTAENFRALCTGEKGFGFKNSIFHRVIPDFVC  75
+
+Query  62   QGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEWL  121
+            QGGD T+H+GTGG+SIYG+KFEDENF +KHTGPG+LSMAN G NTN SQF I   K E L
+Sbjct  76   QGGDITKHDGTGGQSIYGDKFEDENFDVKHTGPGLLSMANQGQNTNNSQFVITLKKAEHL  135
+
+Query  122  DGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQL  163
+            D KHVVFG VK+GM+ V+ +E FGS  G   ++ITI +CGQ+
+Sbjct  136  DFKHVVFGFVKDGMDTVKKIESFGSPKGSVCRRITITECGQI  177
+
+
+>pdb|4I9Y|A Chain A, XRAY 1.75, Structure Of The C-terminal Domain Of Nup358
+ pdb|4I9Y|B Chain B, XRAY 1.75, Structure Of The C-terminal Domain Of Nup358
+ pdb|4I9Y|C Chain C, XRAY 1.75, Structure Of The C-terminal Domain Of Nup358
+ pdb|4I9Y|D Chain D, XRAY 1.75, Structure Of The C-terminal Domain Of Nup358
+ pdb|4I9Y|E Chain E, XRAY 1.75, Structure Of The C-terminal Domain Of Nup358
+ pdb|4I9Y|F Chain F, XRAY 1.75, Structure Of The C-terminal Domain Of Nup358
+Length=167
+
+ Score =   212 bits (590),  Expect = 9e-71, Method: Compositional matrix adjust.
+ Identities = 108/162 (67%), Positives = 131/162 (81%), Gaps = 0/162 (0%)
+
+Query  2    NPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFMC  61
+            NP VFFD+  DGEPLGR++ ELF++ VP+TAENFRAL TGEKGFG+K S FHR+IP F+C
+Sbjct  6    NPVVFFDVCADGEPLGRITMELFSNIVPRTAENFRALCTGEKGFGFKNSIFHRVIPDFVC  65
+
+Query  62   QGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEWL  121
+            QGGD T+H+GTGG+SIYG+KFEDENF +KHTGPG+LSMAN G NTN SQF I   K E L
+Sbjct  66   QGGDITKHDGTGGQSIYGDKFEDENFDVKHTGPGLLSMANQGQNTNNSQFVITLKKAEHL  125
+
+Query  122  DGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQL  163
+            D KHVVFG VK+GM+ V+ +E FGS  G   ++ITI +CGQ+
+Sbjct  126  DFKHVVFGFVKDGMDTVKKIESFGSPKGSVCRRITITECGQI  167
+
+
+>pdb|3PMP|A Chain A, XRAY 1.47, Crystal Structure Of Cyclophilin A From Moniliophthora 
+Perniciosa In Complex With Cyclosporin A
+ pdb|3PMP|B Chain B, XRAY 1.47, Crystal Structure Of Cyclophilin A From Moniliophthora 
+Perniciosa In Complex With Cyclosporin A
+Length=164
+
+ Score =   208 bits (578),  Expect = 3e-69, Method: Compositional matrix adjust.
+ Identities = 107/159 (67%), Positives = 129/159 (81%), Gaps = 0/159 (0%)
+
+Query  5    VFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFMCQGG  64
+            VFF+I+++ +P GR+ F+L+ + VPKTA+NFR L+TG+ GFGYK S FHR+IP FM QGG
+Sbjct  5    VFFNISINDKPEGRIVFKLYDEAVPKTAKNFRELATGQHGFGYKDSIFHRVIPQFMLQGG  64
+
+Query  65   DFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEWLDGK  124
+            DFTRHNGTGGKSIYGEKF DENF +KHT PG+LSMANAG NTNGSQFFI T  T WLDGK
+Sbjct  65   DFTRHNGTGGKSIYGEKFADENFQVKHTKPGLLSMANAGANTNGSQFFITTVPTSWLDGK  124
+
+Query  125  HVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQL  163
+            HVVFG+V EG++IV  +E  GS +GKT+  I I DCG +
+Sbjct  125  HVVFGEVIEGLDIVRKVEGKGSASGKTNATIKITDCGTV  163
+
+
+>pdb|1IST|A Chain A, XRAY 1.90, Crystal Structure Of Yeast Cyclophilin A, 
+Cpr1
+ pdb|1IST|B Chain B, XRAY 1.90, Crystal Structure Of Yeast Cyclophilin A, 
+Cpr1
+ pdb|1VDN|A Chain A, XRAY 1.6, Crystal Structure Of Yeast Cyclophilin A Complexed 
+With Ace-Ala-Ala- Pro-Ala-7-Amino-4-Methylcoumarin
+Length=162
+
+ Score =   201 bits (560),  Expect = 1e-66, Method: Compositional matrix adjust.
+ Identities = 106/159 (67%), Positives = 123/159 (77%), Gaps = 0/159 (0%)
+
+Query  5    VFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFMCQGG  64
+            V+FD+  DG+P+GRV F+L+ D VPKTAENFRAL TGEKGFGY GS FHR+IP FM QGG
+Sbjct  4    VYFDVEADGQPIGRVVFKLYNDIVPKTAENFRALCTGEKGFGYAGSPFHRVIPDFMLQGG  63
+
+Query  65   DFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEWLDGK  124
+            DFT  NGTGGKSIYG KF DENF   H  PG+LSMANAGPNTNGSQFFI T    WLDGK
+Sbjct  64   DFTAGNGTGGKSIYGGKFPDENFKKHHDRPGLLSMANAGPNTNGSQFFITTVPCPWLDGK  123
+
+Query  125  HVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQL  163
+            HVVFG+V +G +IV+ +E  GS +G T  +I +A  G+L
+Sbjct  124  HVVFGEVVDGYDIVKKVESLGSPSGATKARIVVAKSGEL  162
+
+
+>pdb|2POY|A Chain A, XRAY 1.80, Cryptosporidium Parvum Cyclophilin Type Peptidyl-Prolyl 
+Cis-Trans Isomerase Cgd2_4120 In Complex With 
+Cyclosporin A
+ pdb|2POY|B Chain B, XRAY 1.80, Cryptosporidium Parvum Cyclophilin Type Peptidyl-Prolyl 
+Cis-Trans Isomerase Cgd2_4120 In Complex With 
+Cyclosporin A
+ pdb|2POY|C Chain C, XRAY 1.80, Cryptosporidium Parvum Cyclophilin Type Peptidyl-Prolyl 
+Cis-Trans Isomerase Cgd2_4120 In Complex With 
+Cyclosporin A
+Length=186
+
+ Score =   201 bits (560),  Expect = 2e-66, Method: Compositional matrix adjust.
+ Identities = 108/167 (65%), Positives = 125/167 (75%), Gaps = 7/167 (4%)
+
+Query  2    NPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFG-------YKGSCFHR  54
+            NP V+FDI++   P GR++ ELFADKVP TAENFRAL TGEKG G       Y GS FHR
+Sbjct  19   NPVVYFDISIGQTPAGRITMELFADKVPITAENFRALCTGEKGMGQSGKPLCYTGSFFHR  78
+
+Query  55   IIPGFMCQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFIC  114
+            IIP FM QGGDFTR +GTGG+SIYG KF DENF+  H  P +LSMANAGPNTNGSQFFI 
+Sbjct  79   IIPQFMIQGGDFTRGDGTGGESIYGSKFRDENFVYTHDAPFLLSMANAGPNTNGSQFFIT  138
+
+Query  115  TAKTEWLDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCG  161
+            T    WLDGKHVVFGKV EGM +V+++E+ GS+NGK +K + I   G
+Sbjct  139  TVPCPWLDGKHVVFGKVLEGMEVVKSIEKCGSQNGKPTKSVCITASG  185
+
+
+>pdb|4EYV|A Chain A, XRAY 1.9700, Crystal Structure Of Cyclophilin A Like 
+Protein From Piriformospora Indica
+ pdb|4EYV|B Chain B, XRAY 1.9700, Crystal Structure Of Cyclophilin A Like 
+Protein From Piriformospora Indica
+ pdb|4EYV|C Chain C, XRAY 1.9700, Crystal Structure Of Cyclophilin A Like 
+Protein From Piriformospora Indica
+Length=167
+
+ Score =   198 bits (552),  Expect = 1e-65, Method: Compositional matrix adjust.
+ Identities = 101/161 (63%), Positives = 124/161 (77%), Gaps = 0/161 (0%)
+
+Query  3    PTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFMCQ  62
+            P V+FDI++D +  GR+ F+L+ D VP TA+NFR L+    G GY GS FHRIIP FM Q
+Sbjct  7    PNVYFDISIDNQNAGRIVFKLYDDVVPLTAKNFRELAKNPAGQGYTGSTFHRIIPQFMLQ  66
+
+Query  63   GGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEWLD  122
+            GGDFT HNGTGG+SIYG KF+DENF LKHT PG+LSMANAGP+TNGSQFFI T  T WLD
+Sbjct  67   GGDFTNHNGTGGRSIYGNKFKDENFQLKHTKPGLLSMANAGPHTNGSQFFITTVVTSWLD  126
+
+Query  123  GKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQL  163
+            GKHVVFG+V EGM++V+ +E  G+++GK SK + I   G +
+Sbjct  127  GKHVVFGEVVEGMDVVKKVEAVGTQSGKPSKVVKITASGTV  167
+
+
+>pdb|1QNG|A Chain A, XRAY 2.1, Plasmodium Falciparum Cyclophilin Complexed 
+With Cyclosporin A
+Length=170
+
+ Score =   193 bits (536),  Expect = 3e-63, Method: Compositional matrix adjust.
+ Identities = 101/165 (61%), Positives = 118/165 (72%), Gaps = 6/165 (4%)
+
+Query  5    VFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEK------GFGYKGSCFHRIIPG  58
+            VFFDI++D    GR+ FELF+D  P+T ENFRAL TGEK         YK S FHRIIP 
+Sbjct  6    VFFDISIDNSNAGRIIFELFSDITPRTCENFRALCTGEKIGSRGKNLHYKNSIFHRIIPQ  65
+
+Query  59   FMCQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKT  118
+            FMCQGGD T  NG+GG+SIYG  F DENF +KH  PG+LSMANAGPNTN SQFFI     
+Sbjct  66   FMCQGGDITNGNGSGGESIYGRSFTDENFNMKHDQPGLLSMANAGPNTNSSQFFITLVPC  125
+
+Query  119  EWLDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQL  163
+             WLDGKHVVFGKV EGMN+V  ME+ G+++G   + + I DCG+L
+Sbjct  126  PWLDGKHVVFGKVIEGMNVVREMEKEGAKSGYVKRSVVITDCGEL  170
+
+
+>pdb|1CYN|A Chain A, XRAY 1.85, Cyclophilin B Complexed With [d-(Cholinylester)ser8]-Cyclosporin
+Length=178
+
+ Score =   192 bits (534),  Expect = 5e-63, Method: Compositional matrix adjust.
+ Identities = 107/166 (64%), Positives = 125/166 (75%), Gaps = 3/166 (2%)
+
+Query  1    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  60
+            V   V+FD+ +  E +GRV F LF   VPKT +NF AL+TGEKGFGYK S FHR+I  FM
+Sbjct  4    VTVKVYFDLRIGDEDVGRVIFGLFGKTVPKTVDNFVALATGEKGFGYKNSKFHRVIKDFM  63
+
+Query  61   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  120
+             QGGDFTR +GTGGKSIYGE+F DENF LKH GPG +SMANAG +TNGSQFFI T KT W
+Sbjct  64   IQGGDFTRGDGTGGKSIYGERFPDENFKLKHYGPGWVSMANAGKDTNGSQFFITTVKTAW  123
+
+Query  121  LDGKHVVFGKVKEGMNIVEAME--RFGSRNGKTSKKITIADCGQLE  164
+            LDGKHVVFGKV EGM +V  +E  +  SR+ K  K + IADCG++E
+Sbjct  124  LDGKHVVFGKVLEGMEVVRKVESTKTDSRD-KPLKDVIIADCGKIE  168
+
+
+>pdb|3ICI|A Chain A, XRAY 1.70, Crystal Structure Of Cyclophilin B In Complex 
+With Calmegin Fragment
+ pdb|3ICI|B Chain B, XRAY 1.70, Crystal Structure Of Cyclophilin B In Complex 
+With Calmegin Fragment
+Length=188
+
+ Score =   192 bits (534),  Expect = 6e-63, Method: Compositional matrix adjust.
+ Identities = 107/166 (64%), Positives = 125/166 (75%), Gaps = 3/166 (2%)
+
+Query  1    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  60
+            V   V+FD+ +  E +GRV F LF   VPKT +NF AL+TGEKGFGYK S FHR+I  FM
+Sbjct  14   VTVKVYFDLRIGDEDVGRVIFGLFGKTVPKTVDNFVALATGEKGFGYKNSKFHRVIKDFM  73
+
+Query  61   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  120
+             QGGDFTR +GTGGKSIYGE+F DENF LKH GPG +SMANAG +TNGSQFFI T KT W
+Sbjct  74   IQGGDFTRGDGTGGKSIYGERFPDENFKLKHYGPGWVSMANAGKDTNGSQFFITTVKTAW  133
+
+Query  121  LDGKHVVFGKVKEGMNIVEAME--RFGSRNGKTSKKITIADCGQLE  164
+            LDGKHVVFGKV EGM +V  +E  +  SR+ K  K + IADCG++E
+Sbjct  134  LDGKHVVFGKVLEGMEVVRKVESTKTDSRD-KPLKDVIIADCGKIE  178
+
+
+>pdb|1QNH|A Chain A, XRAY 2.1, Plasmodium Falciparum Cyclophilin (Double 
+Mutant) Complexed With Cyclosporin A
+ pdb|1QNH|B Chain B, XRAY 2.1, Plasmodium Falciparum Cyclophilin (Double 
+Mutant) Complexed With Cyclosporin A
+Length=170
+
+ Score =   189 bits (525),  Expect = 7e-62, Method: Compositional matrix adjust.
+ Identities = 99/164 (60%), Positives = 116/164 (71%), Gaps = 6/164 (4%)
+
+Query  5    VFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEK------GFGYKGSCFHRIIPG  58
+            VFFDI++D    GR+ FELF+D  P+T ENFRAL TGEK         YK S FHRIIP 
+Sbjct  6    VFFDISIDNSNAGRIIFELFSDITPRTCENFRALCTGEKIGSRGKNLHYKNSIFHRIIPQ  65
+
+Query  59   FMCQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKT  118
+            FMCQGGD T  NG+GG+SIYG  F DENF +KH  PG+LSMANAGPNTN SQF I     
+Sbjct  66   FMCQGGDITNGNGSGGESIYGRSFTDENFNMKHDQPGLLSMANAGPNTNSSQFLITLVPC  125
+
+Query  119  EWLDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSKKITIADCGQ  162
+             WLDGKHVVFGKV EGMN+V  ME+ G+++G   + + I DCG+
+Sbjct  126  PWLDGKHVVFGKVIEGMNVVREMEKEGAKSGYVKRSVVITDCGE  169
+
+
+>pdb|3K2C|A Chain A, XRAY 1.95, Crystal Structure Of Peptidyl-Prolyl Cis-Trans 
+Isomerase From Encephalitozoon Cuniculi At 1.9 A Resolution
+ pdb|3K2C|B Chain B, XRAY 1.95, Crystal Structure Of Peptidyl-Prolyl Cis-Trans 
+Isomerase From Encephalitozoon Cuniculi At 1.9 A Resolution
+ pdb|3K2C|C Chain C, XRAY 1.95, Crystal Structure Of Peptidyl-Prolyl Cis-Trans 
+Isomerase From Encephalitozoon Cuniculi At 1.9 A Resolution
+ pdb|3K2C|D Chain D, XRAY 1.95, Crystal Structure Of Peptidyl-Prolyl Cis-Trans 
+Isomerase From Encephalitozoon Cuniculi At 1.9 A Resolution
+Length=193
+
+ Score =   190 bits (527),  Expect = 7e-62, Method: Compositional matrix adjust.
+ Identities = 102/161 (63%), Positives = 121/161 (75%), Gaps = 2/161 (1%)
+
+Query  5    VFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFMCQGG  64
+            V+FD+  + E LGR+  +L  D VPKTA+NFR L    KG GYKGS FHRIIPGFM QGG
+Sbjct  30   VYFDVYANEESLGRIVMKLEDDIVPKTAKNFRTLCERPKGEGYKGSTFHRIIPGFMVQGG  89
+
+Query  65   DFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEWLDGK  124
+            D+T HNGTGG+SIYGEKF DENF LKHT  GILSMAN G +TNGSQFFI   KT+WLD K
+Sbjct  90   DYTAHNGTGGRSIYGEKFPDENFELKHTKEGILSMANCGAHTNGSQFFITLGKTQWLDEK  149
+
+Query  125  HVVFGKVKEGMNIVEAMERFGSRNGKTSK--KITIADCGQL  163
+            HVVFG+V EGM++V  + ++GS +G+  K  +I I DCG L
+Sbjct  150  HVVFGEVVEGMDVVHKIAKYGSESGQVKKGYRIEIRDCGVL  190
+
+
+>pdb|1XO7|A Chain A, XRAY 1.61, Crystal Structure Of Cyclophilin From Trypanosoma 
+Cruzi
+ pdb|1XO7|B Chain B, XRAY 1.61, Crystal Structure Of Cyclophilin From Trypanosoma 
+Cruzi
+ pdb|1XO7|C Chain C, XRAY 1.61, Crystal Structure Of Cyclophilin From Trypanosoma 
+Cruzi
+ pdb|1XO7|D Chain D, XRAY 1.61, Crystal Structure Of Cyclophilin From Trypanosoma 
+Cruzi
+ pdb|1XQ7|A Chain A, XRAY 2.07, Cyclophilin From Trypanosoma Cruzi Bound 
+To Cyclosporin A
+ pdb|1XQ7|B Chain B, XRAY 2.07, Cyclophilin From Trypanosoma Cruzi Bound 
+To Cyclosporin A
+ pdb|1XQ7|C Chain C, XRAY 2.07, Cyclophilin From Trypanosoma Cruzi Bound 
+To Cyclosporin A
+Length=166
+
+ Score =   181 bits (502),  Expect = 1e-58, Method: Compositional matrix adjust.
+ Identities = 98/164 (60%), Positives = 120/164 (73%), Gaps = 2/164 (1%)
+
+Query  1    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  60
+            V   V+FDI +  EP+GRV   LF + VPKT ENF+ L++GE GFGYKGS FHR+I  FM
+Sbjct  4    VTDKVYFDITIGDEPVGRVVIGLFGNDVPKTVENFKQLASGENGFGYKGSIFHRVIRNFM  63
+
+Query  61   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  120
+             QGGDFT  +GTGGKSIYG +F+DEN  +KH   G +SMANAGPN+NGSQFF+ TA T W
+Sbjct  64   IQGGDFTNFDGTGGKSIYGTRFDDENLKIKHF-VGAVSMANAGPNSNGSQFFVTTAPTPW  122
+
+Query  121  LDGKHVVFGKVKEGMNIVEAMERFGS-RNGKTSKKITIADCGQL  163
+            LDG+HVVFGKV EGM++V+ +E   +  N K  K + I DCG L
+Sbjct  123  LDGRHVVFGKVVEGMDVVKKVENTKTGLNDKPKKAVKINDCGVL  166
+
+
+>pdb|3EOV|A Chain A, XRAY 2.60, Crystal Structure Of Cyclophilin From Leishmania 
+Donovani Ligated With Cyclosporin A
+ pdb|3EOV|B Chain B, XRAY 2.60, Crystal Structure Of Cyclophilin From Leishmania 
+Donovani Ligated With Cyclosporin A
+Length=172
+
+ Score =   177 bits (490),  Expect = 4e-57, Method: Compositional matrix adjust.
+ Identities = 97/164 (59%), Positives = 116/164 (71%), Gaps = 2/164 (1%)
+
+Query  1    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  60
+            V   V+FD+ +D EPLGR++  LF    P T ENFR L TGE GFGYK S FHR+I  FM
+Sbjct  10   VTAKVYFDVMIDSEPLGRITIGLFGKDAPLTTENFRQLCTGEHGFGYKDSIFHRVIQNFM  69
+
+Query  61   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  120
+             QGGDFT  +GTGGKSIYGEKF DEN  +KH   G LSMANAGPNTNGSQFFI TA T W
+Sbjct  70   IQGGDFTNFDGTGGKSIYGEKFADENLNVKHF-VGALSMANAGPNTNGSQFFITTAPTPW  128
+
+Query  121  LDGKHVVFGKVKEGMNIVEAMERFGSR-NGKTSKKITIADCGQL  163
+            LDG+HVVFGKV +GM++V  +E+  +  + +  K + I   G+L
+Sbjct  129  LDGRHVVFGKVLDGMDVVLRIEKTKTNSHDRPVKPVKIVASGEL  172
+
+
+>pdb|2RMC|A Chain A, XRAY 1.64, Crystal Structure Of Murine Cyclophilin C 
+Complexed With Immunosuppressive Drug Cyclosporin A
+ pdb|2RMC|C Chain C, XRAY 1.64, Crystal Structure Of Murine Cyclophilin C 
+Complexed With Immunosuppressive Drug Cyclosporin A
+ pdb|2RMC|E Chain E, XRAY 1.64, Crystal Structure Of Murine Cyclophilin C 
+Complexed With Immunosuppressive Drug Cyclosporin A
+ pdb|2RMC|G Chain G, XRAY 1.64, Crystal Structure Of Murine Cyclophilin C 
+Complexed With Immunosuppressive Drug Cyclosporin A
+Length=182
+
+ Score =   173 bits (479),  Expect = 2e-55, Method: Compositional matrix adjust.
+ Identities = 94/165 (57%), Positives = 117/165 (71%), Gaps = 1/165 (1%)
+
+Query  1    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  60
+            V   VFFD+ +  + +GR+   LF + VPKT ENF AL+TGEKG+GYKGS FHR+I  FM
+Sbjct  6    VTDKVFFDVRIGDKDVGRIVIGLFGNVVPKTVENFVALATGEKGYGYKGSIFHRVIKDFM  65
+
+Query  61   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  120
+             QGGDFT  +GTGG SIYGE F DENF LKH G G +SMANAGP+TNGSQFFI   K  W
+Sbjct  66   IQGGDFTARDGTGGMSIYGETFPDENFKLKHYGIGWVSMANAGPDTNGSQFFITLTKPTW  125
+
+Query  121  LDGKHVVFGKVKEGMNIVEAMERFGSR-NGKTSKKITIADCGQLE  164
+            LDGKHVVFGKV +GM +V ++E   +  + +     TI + G+++
+Sbjct  126  LDGKHVVFGKVLDGMTVVHSIELQATDGHDRPLTDCTIVNSGKID  170
+
+
+>pdb|1MZW|A Chain A, XRAY 2.0, Crystal Structure Of A U4U6 SNRNP COMPLEX 
+BETWEEN HUMAN Spliceosomal Cyclophilin H And A U4U6-60k Peptide
+Length=177
+
+ Score =   170 bits (471),  Expect = 2e-54, Method: Compositional matrix adjust.
+ Identities = 91/169 (54%), Positives = 117/169 (69%), Gaps = 6/169 (4%)
+
+Query  1    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGE-----KGFGYKGSCFHRI  55
+            VNP VFFD+++ G+ +GR+  ELFAD VPKTAENFR   TGE        GYKGS FHR+
+Sbjct  9    VNPVVFFDVSIGGQEVGRMKIELFADVVPKTAENFRQFCTGEFRKDGVPIGYKGSTFHRV  68
+
+Query  56   IPGFMCQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICT  115
+            I  FM QGGDF   +GTG  SIY   F DENF L+H+ PG+LSMAN+GP+TNG QFFI  
+Sbjct  69   IKDFMIQGGDFVNGDGTGVASIYRGPFADENFKLRHSAPGLLSMANSGPSTNGCQFFITC  128
+
+Query  116  AKTEWLDGKHVVFGKVKEGMNIVEAMERFGS-RNGKTSKKITIADCGQL  163
+            +K +WLDGKHVVFGK+ +G+ ++  +E   +  N K    + I+ CG++
+Sbjct  129  SKCDWLDGKHVVFGKIIDGLLVMRKIENVPTGPNNKPKLPVVISQCGEM  177
+
+
+>pdb|2C3B|A Chain A, XRAY 1.85, The Crystal Structure Of Aspergillus Fumigatus 
+Cyclophilin Reveals 3d Domain Swapping Of A Central Element
+ pdb|2C3B|B Chain B, XRAY 1.85, The Crystal Structure Of Aspergillus Fumigatus 
+Cyclophilin Reveals 3d Domain Swapping Of A Central Element
+Length=172
+
+ Score =   168 bits (466),  Expect = 9e-54, Method: Compositional matrix adjust.
+ Identities = 96/168 (57%), Positives = 117/168 (70%), Gaps = 9/168 (5%)
+
+Query  5    VFFDI-----AVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGF  59
+            VFFD+           +GR+ F LF   VPKTA+NFR L     G GY+ S FHRIIP F
+Sbjct  5    VFFDVEYAPVGTAETKVGRIVFNLFDKDVPKTAKNFRELCKRPAGEGYRESTFHRIIPNF  64
+
+Query  60   MCQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTE  119
+            M QGGDFTR NGTGG+SIYG+KF DENF  KH   GILSMANAGPNTNGSQFFI TA T 
+Sbjct  65   MIQGGDFTRGNGTGGRSIYGDKFADENFSRKHDKKGILSMANAGPNTNGSQFFITTAVTS  124
+
+Query  120  WLDGKHVVFGKV--KEGMNIVEAMERFGSRNG--KTSKKITIADCGQL  163
+            WLDGKHVVFG+V  ++  ++V+ +E  GS +G  +++ +  I +CG+L
+Sbjct  125  WLDGKHVVFGEVADEKSYSVVKEIEALGSSSGSVRSNTRPKIVNCGEL  172
+
+
+>pdb|2ESL|A Chain A, XRAY 1.90, Human Cyclophilin C In Complex With Cyclosporin 
+A
+ pdb|2ESL|B Chain B, XRAY 1.90, Human Cyclophilin C In Complex With Cyclosporin 
+A
+ pdb|2ESL|C Chain C, XRAY 1.90, Human Cyclophilin C In Complex With Cyclosporin 
+A
+ pdb|2ESL|D Chain D, XRAY 1.90, Human Cyclophilin C In Complex With Cyclosporin 
+A
+ pdb|2ESL|E Chain E, XRAY 1.90, Human Cyclophilin C In Complex With Cyclosporin 
+A
+ pdb|2ESL|F Chain F, XRAY 1.90, Human Cyclophilin C In Complex With Cyclosporin 
+A
+Length=190
+
+ Score =   168 bits (465),  Expect = 2e-53, Method: Compositional matrix adjust.
+ Identities = 90/142 (63%), Positives = 105/142 (74%), Gaps = 0/142 (0%)
+
+Query  1    VNPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFM  60
+            V   VFFD+ +  + +GR+   LF   VPKT ENF AL+TGEKG+GYKGS FHR+I  FM
+Sbjct  14   VTAKVFFDVRIGDKDVGRIVIGLFGKVVPKTVENFVALATGEKGYGYKGSKFHRVIKDFM  73
+
+Query  61   CQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEW  120
+             QGGD T  +GTGG SIYGE F DENF LKH G G +SMANAGP+TNGSQFFI   K  W
+Sbjct  74   IQGGDITTGDGTGGVSIYGETFPDENFKLKHYGIGWVSMANAGPDTNGSQFFITLTKPTW  133
+
+Query  121  LDGKHVVFGKVKEGMNIVEAME  142
+            LDGKHVVFGKV +GM +V ++E
+Sbjct  134  LDGKHVVFGKVIDGMTVVHSIE  155
+
+
+>pdb|2WFJ|A Chain A, XRAY 0.75, Atomic Resolution Crystal Structure Of The 
+Ppiase Domain Of Human Cyclophilin G In Complex With Cyclosporin 
+A
+Length=179
+
+ Score =   153 bits (423),  Expect = 8e-48, Method: Compositional matrix adjust.
+ Identities = 90/172 (52%), Positives = 109/172 (63%), Gaps = 13/172 (8%)
+
+Query  3    PTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFG--------YKGSCFHR  54
+            P  FFDIA++ +P GRV FELF+D  PKT ENFR L TGEKG G        YK   FHR
+Sbjct  10   PRCFFDIAINNQPAGRVVFELFSDVCPKTCENFRCLCTGEKGTGKSTQKPLHYKSCLFHR  69
+
+Query  55   IIPGFMCQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFIC  114
+            ++  FM QGGDF+  NG GG+SIYG  FEDE+F +KH    +LSMAN G +TNGSQFFI 
+Sbjct  70   VVKDFMVQGGDFSEGNGRGGESIYGGFFEDESFAVKHNKEFLLSMANRGKDTNGSQFFIT  129
+
+Query  115  TAKTEWLDGKHVVFGKVKEGMNIVEAMERFGSRNGKTSK---KITIADCGQL  163
+            T  T  LDG HVVFG+V  G  +V  +E    +    SK   ++ I  CG+L
+Sbjct  130  TKPTPHLDGHHVVFGQVISGQEVVREIE--NQKTDAASKPFAEVRILSCGEL  179
+
+
+>pdb|2HE9|A Chain A, XRAY 2.00, Structure Of The Peptidylprolyl Isomerase 
+Domain Of The Human Nk-Tumour Recognition Protein
+ pdb|2HE9|B Chain B, XRAY 2.00, Structure Of The Peptidylprolyl Isomerase 
+Domain Of The Human Nk-Tumour Recognition Protein
+Length=192
+
+ Score =   151 bits (416),  Expect = 1e-46, Method: Compositional matrix adjust.
+ Identities = 85/171 (50%), Positives = 108/171 (63%), Gaps = 9/171 (5%)
+
+Query  2    NPTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFG--------YKGSCFH  53
+            +P   FDI ++ EP+GR+ F+LF+D  PKT +NF  L +GEKG G        YKGS FH
+Sbjct  19   SPQCHFDIEINREPVGRIMFQLFSDICPKTCKNFLCLCSGEKGLGKTTGKKLCYKGSTFH  78
+
+Query  54   RIIPGFMCQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFI  113
+            R++  FM QGGDF+  NG GG+SIYG  F+DENFILKH    +LSMAN G +TNGSQFFI
+Sbjct  79   RVVKNFMIQGGDFSEGNGKGGESIYGGYFKDENFILKHDRAFLLSMANRGKHTNGSQFFI  138
+
+Query  114  CTAKTEWLDGKHVVFGKVKEGMNIVEAMERFGSRNG-KTSKKITIADCGQL  163
+             T     LDG HVVFG V  G  ++E +E   +    +    + + DCG L
+Sbjct  139  TTKPAPHLDGVHVVFGLVISGFEVIEQIENLKTDAASRPYADVRVIDCGVL  189
+
+
+>pdb|1C5F|A Chain A, XRAY 2.47, Crystal Structure Of The Cyclophilin-Like 
+Domain From Brugia Malayi Complexed With Cyclosporin A
+ pdb|1C5F|C Chain C, XRAY 2.47, Crystal Structure Of The Cyclophilin-Like 
+Domain From Brugia Malayi Complexed With Cyclosporin A
+ pdb|1C5F|E Chain E, XRAY 2.47, Crystal Structure Of The Cyclophilin-Like 
+Domain From Brugia Malayi Complexed With Cyclosporin A
+ pdb|1C5F|G Chain G, XRAY 2.47, Crystal Structure Of The Cyclophilin-Like 
+Domain From Brugia Malayi Complexed With Cyclosporin A
+ pdb|1C5F|I Chain I, XRAY 2.47, Crystal Structure Of The Cyclophilin-Like 
+Domain From Brugia Malayi Complexed With Cyclosporin A
+ pdb|1C5F|K Chain K, XRAY 2.47, Crystal Structure Of The Cyclophilin-Like 
+Domain From Brugia Malayi Complexed With Cyclosporin A
+ pdb|1C5F|M Chain M, XRAY 2.47, Crystal Structure Of The Cyclophilin-Like 
+Domain From Brugia Malayi Complexed With Cyclosporin A
+ pdb|1C5F|O Chain O, XRAY 2.47, Crystal Structure Of The Cyclophilin-Like 
+Domain From Brugia Malayi Complexed With Cyclosporin A
+Length=177
+
+ Score =   147 bits (405),  Expect = 2e-45, Method: Compositional matrix adjust.
+ Identities = 83/169 (49%), Positives = 106/169 (63%), Gaps = 11/169 (7%)
+
+Query  5    VFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFG--------YKGSCFHRII  56
+            VF D+ +DG   GR+  EL+ D  P+T  NF  L TG  G G        YKGS FHR+I
+Sbjct  9    VFLDVTIDGNLAGRIVMELYNDIAPRTCNNFLMLCTGMAGTGKISGKPLHYKGSTFHRVI  68
+
+Query  57   PGFMCQGGDFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTA  116
+              FM QGGDFT+ +GTGG+SIYG  F+DE F++KH  P ++SMAN GPNTNGSQFFI T 
+Sbjct  69   KNFMIQGGDFTKGDGTGGESIYGGMFDDEEFVMKHDEPFVVSMANKGPNTNGSQFFITTT  128
+
+Query  117  KTEWLDGKHVVFGKVKEGMNIVEAME--RFGSRNGKTSKKITIADCGQL  163
+                L+  HVVFGKV  G  +V  +E  +  S+N +    + I +CG+L
+Sbjct  129  PAPHLNNIHVVFGKVVSGQEVVTKIEYLKTNSKN-RPLADVVILNCGEL  176
+
+
+>pdb|2X7K|A Chain A, XRAY 1.15, The Crystal Structure Of Ppil1 In Complex 
+With Cyclosporine A Suggests A Binding Mode For Skip
+Length=166
+
+ Score =   118 bits (324),  Expect = 2e-34, Method: Compositional matrix adjust.
+ Identities = 70/137 (51%), Positives = 93/137 (68%), Gaps = 10/137 (7%)
+
+Query  3    PTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFMCQ  62
+            P V+ + +     +G +  EL+    PKT +NF  L+   +G+ Y G+ FHRII  FM Q
+Sbjct  12   PNVYLETS-----MGIIVLELYWKHAPKTCKNFAELA--RRGY-YNGTKFHRIIKDFMIQ  63
+
+Query  63   GGDFTRHNGTGGKSIYGEKFEDE-NFILKHTGPGILSMANAGPNTNGSQFFICTAKTEWL  121
+            GGD T   G GG SIYG++FEDE +  LK TG GIL+MANAGP+TNGSQFF+  A T+WL
+Sbjct  64   GGDPT-GTGRGGASIYGKQFEDELHPDLKFTGAGILAMANAGPDTNGSQFFVTLAPTQWL  122
+
+Query  122  DGKHVVFGKVKEGMNIV  138
+            DGKH +FG+V +G+ +V
+Sbjct  123  DGKHTIFGRVCQGIGMV  139
+
+
+>pdb|2A2N|A Chain A, XRAY 1.65, Crystal Structure Of The Peptidylprolyl Isomerase 
+Domain Of Human Ppwd1
+ pdb|2A2N|B Chain B, XRAY 1.65, Crystal Structure Of The Peptidylprolyl Isomerase 
+Domain Of Human Ppwd1
+ pdb|2A2N|C Chain C, XRAY 1.65, Crystal Structure Of The Peptidylprolyl Isomerase 
+Domain Of Human Ppwd1
+Length=176
+
+ Score =   114 bits (311),  Expect = 1e-32, Method: Compositional matrix adjust.
+ Identities = 74/152 (49%), Positives = 90/152 (59%), Gaps = 6/152 (4%)
+
+Query  3    PTVFFDIAVDGEPLGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFMCQ  62
+            P    D A+    +G +  +LF  + PKT ENF   S    G+ Y G  FHRII GFM Q
+Sbjct  17   PKRVSDSAIIHTSMGDIHTKLFPVECPKTVENFCVHS--RNGY-YNGHTFHRIIKGFMIQ  73
+
+Query  63   GGDFTRHNGTGGKSIYGEKFEDE-NFILKHTGPGILSMANAGPNTNGSQFFICTAKTEWL  121
+             GD T   G GG+SI+G +FEDE +  L+H  P  LSMANAG NTNGSQFFI    T WL
+Sbjct  74   TGDPTG-TGMGGESIWGGEFEDEFHSTLRHDRPYTLSMANAGSNTNGSQFFITVVPTPWL  132
+
+Query  122  DGKHVVFGKVKEGMNIVEAMERFGSRNGKTSK  153
+            D KH VFG+V +GM +V+ +      N KT K
+Sbjct  133  DNKHTVFGRVTKGMEVVQRISNV-KVNPKTDK  163
+
+
+>pdb|2OJU|A Chain A, XRAY 2.40, X-Ray Structure Of Complex Of Human Cyclophilin 
+J With Cyclosporin A
+ pdb|2OJU|B Chain B, XRAY 2.40, X-Ray Structure Of Complex Of Human Cyclophilin 
+J With Cyclosporin A
+Length=167
+
+ Score =   108 bits (294),  Expect = 2e-30, Method: Compositional matrix adjust.
+ Identities = 68/141 (48%), Positives = 87/141 (62%), Gaps = 6/141 (4%)
+
+Query  16   LGRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFMCQGGDFTRHNGTGGK  75
+            +G +  E+F ++ PKT ENF AL        Y G  FHR I GFM Q GD T   G GG 
+Sbjct  15   VGDIKIEVFCERTPKTCENFLALCASNY---YNGCIFHRNIKGFMVQTGDPTG-TGRGGN  70
+
+Query  76   SIYGEKFEDE-NFILKHTGPGILSMANAGPNTNGSQFFICTAKTEWLDGKHVVFGKVKEG  134
+            SI+G+KFEDE +  LKH   G++SMAN GPNTNGSQFFI   K   LD K+ VFGKV +G
+Sbjct  71   SIWGKKFEDEYSEYLKHNVRGVVSMANNGPNTNGSQFFITYGKQPHLDMKYTVFGKVIDG  130
+
+Query  135  MNIVEAMERFGSRNGKTSKKI  155
+            +  ++ +E+    N KT + +
+Sbjct  131  LETLDELEKL-PVNEKTYRPL  150
+
+
+>pdb|1W74|A Chain A, XRAY 2.60, X-Ray Structure Of Peptidyl-Prolyl Cis-Trans 
+Isomerase A, Ppia, Rv0009, From Mycobacterium Tuberculosis.
+ pdb|1W74|B Chain B, XRAY 2.60, X-Ray Structure Of Peptidyl-Prolyl Cis-Trans 
+Isomerase A, Ppia, Rv0009, From Mycobacterium Tuberculosis
+Length=191
+
+ Score = 90.2 bits (242),  Expect = 3e-23, Method: Compositional matrix adjust.
+ Identities = 58/156 (37%), Positives = 81/156 (52%), Gaps = 18/156 (12%)
+
+Query  17   GRVSFELFADKVPKTAENFRALSTGEKGFG------------YKGSCFHRIIPGFMCQGG  64
+            G +   LF +  PKT  NF  L+ G K +             Y G+ FHR+I GFM QGG
+Sbjct  33   GDIKIALFGNHAPKTVANFVGLAQGTKDYSTQNASGGPSGPFYDGAVFHRVIQGFMIQGG  92
+
+Query  65   DFTRHNGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEWLDGK  124
+            D T     G    + ++F  E   L+   P +L+MANAGP TNGSQFFI   KT  L+ +
+Sbjct  93   DPTGTGRGGPGYKFADEFHPE---LQFDKPYLLAMANAGPGTNGSQFFITVGKTPHLNRR  149
+
+Query  125  HVVFGKV--KEGMNIVEAMERFGSR-NGKTSKKITI  157
+            H +FG+V   E   +VEA+ +  +  N + +  + I
+Sbjct  150  HTIFGEVIDAESQRVVEAISKTATDGNDRPTDPVVI  185
+
+
+>pdb|1ZKC|A Chain A, XRAY 1.65, Crystal Structure Of The Cyclophiln_ring 
+Domain Of Human Peptidylprolyl Isomerase (Cyclophilin)-Like 
+2 Isoform B
+ pdb|1ZKC|B Chain B, XRAY 1.65, Crystal Structure Of The Cyclophiln_ring 
+Domain Of Human Peptidylprolyl Isomerase (Cyclophilin)-Like 
+2 Isoform B
+Length=197
+
+ Score = 87.8 bits (235),  Expect = 3e-22, Method: Compositional matrix adjust.
+ Identities = 66/138 (48%), Positives = 84/138 (61%), Gaps = 6/138 (4%)
+
+Query  17   GRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFMCQGGDFTRHNGTGGKS  76
+            G ++ EL  D  PKT ENF  L    K   Y G+ FHR I  F+ QGGD     GTGG+S
+Sbjct  29   GDLNLELHCDLTPKTCENFIRLC---KKHYYDGTIFHRSIRNFVIQGGD-PTGTGTGGES  84
+
+Query  77   IYGEKFEDE-NFILKHTGPGILSMANAGPNTNGSQFFICTAKTEWLDGKHVVFGKVKEGM  135
+             +G+ F+DE    L HTG GILSMAN+GPN+N SQFFI      +LD KH +FG+V  G 
+Sbjct  85   YWGKPFKDEFRPNLSHTGRGILSMANSGPNSNRSQFFITFRSCAYLDKKHTIFGRVVGGF  144
+
+Query  136  NIVEAMERFGSRNGKTSK  153
+            +++ AME   S + KT +
+Sbjct  145  DVLTAMENVES-DPKTDR  161
+
+
+>pdb|3BO7|A Chain A, XRAY 2.35, Crystal Structure Of Toxoplasma Gondii Peptidyl-Prolyl 
+Cis-Trans Isomerase, 541.M00136
+ pdb|3BO7|B Chain B, XRAY 2.35, Crystal Structure Of Toxoplasma Gondii Peptidyl-Prolyl 
+Cis-Trans Isomerase, 541.M00136
+ pdb|3BO7|C Chain C, XRAY 2.35, Crystal Structure Of Toxoplasma Gondii Peptidyl-Prolyl 
+Cis-Trans Isomerase, 541.M00136
+ pdb|3BO7|D Chain D, XRAY 2.35, Crystal Structure Of Toxoplasma Gondii Peptidyl-Prolyl 
+Cis-Trans Isomerase, 541.M00136
+Length=201
+
+ Score = 70.2 bits (185),  Expect = 9e-16, Method: Compositional matrix adjust.
+ Identities = 47/140 (34%), Positives = 70/140 (50%), Gaps = 15/140 (11%)
+
+Query  17   GRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFMCQGGDFTRHNGTGGKS  76
+            G ++ EL AD  P+  ++F  L   +    +  + FHR I  FM QGG       +  K 
+Sbjct  16   GSLNIELHADMAPRACDSFLRLCAVKY---FDDTIFHRCIRNFMIQGGRAELRQPSKKKE  72
+
+Query  77   IY-----------GEKFEDE-NFILKHTGPGILSMANAGPNTNGSQFFICTAKTEWLDGK  124
+            +            G  FEDE +  L H G G+LSMAN G ++N S+FFI     E L+ K
+Sbjct  73   VQQSPRSISGFPGGAPFEDEFDNRLVHQGIGVLSMANDGKHSNLSEFFITFKSCEHLNNK  132
+
+Query  125  HVVFGKVKEGMNIVEAMERF  144
+            H +FG+V  G++++   E+ 
+Sbjct  133  HTIFGRVVGGLDVLRQWEKL  152
+
+
+>pdb|3T1U|A Chain A, XRAY 2.0000, Crystal Structure Of The Complex Of Cyclophilin-a 
+Enzyme From Azotobacter Vinelandii With Sucafpfpna 
+Peptide
+Length=163
+
+ Score = 63.6 bits (166),  Expect = 2e-13, Method: Compositional matrix adjust.
+ Identities = 49/143 (34%), Positives = 68/143 (48%), Gaps = 15/143 (10%)
+
+Query  17   GRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFMCQGGDFTRHNGTGGKS  76
+            G ++ +LFADK P+TA NF       K   Y G+ FHR+I GFM QGG F    G   KS
+Sbjct  9    GTITLKLFADKAPETAANFEQYV---KDGHYDGTIFHRVIDGFMIQGGGF--EPGMKQKS  63
+
+Query  77   IYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEWLDGK--------HVVF  128
+                   + N  L +    I       P++  +QFFI      +LD          + VF
+Sbjct  64   TRAPIKNEANNGLSNKKYTIAMARTPDPHSASAQFFINVKDNAFLDHTAPTAHGWGYAVF  123
+
+Query  129  GKVKEGMNIVEAMERF--GSRNG  149
+            G+V EG ++V+ ++    GSR G
+Sbjct  124  GEVVEGTDVVDRIKSVATGSRAG  146
+
+
+>pdb|1V9T|A Chain A, XRAY 1.70, Structure Of E. Coli Cyclophilin B K163t 
+Mutant Bound To Succinyl-Ala- Pro-Ala-P-Nitroanilide
+ pdb|1V9T|B Chain B, XRAY 1.70, Structure Of E. Coli Cyclophilin B K163t 
+Mutant Bound To Succinyl-Ala- Pro-Ala-P-Nitroanilide
+ pdb|1VAI|A Chain A, XRAY 1.80, Structure Of E. Coli Cyclophilin B K163t 
+Mutant Bound To N- Acetyl-Ala-Ala-Pro-Ala-7-Amino-4-Methylcoumarin
+ pdb|1VAI|B Chain B, XRAY 1.80, Structure Of E. Coli Cyclophilin B K163t 
+Mutant Bound To N- Acetyl-Ala-Ala-Pro-Ala-7-Amino-4-Methylcoumarin
+Length=166
+
+ Score = 60.4 bits (157),  Expect = 3e-12, Method: Compositional matrix adjust.
+ Identities = 54/158 (34%), Positives = 77/158 (49%), Gaps = 17/158 (11%)
+
+Query  17   GRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFMCQGGDFTRHNGTGGKS  76
+            G +  EL   K P + +NF  +     GF Y  + FHR+IPGFM QGG FT       K 
+Sbjct  14   GNIELELDKQKAPVSVQNF--VDYVNSGF-YNNTTFHRVIPGFMIQGGGFTEQ-MQQKKP  69
+
+Query  77   IYGEKFEDENFILKHTGPGILSMA-NAGPNTNGSQFFICTAKTEWLD-GK----HVVFGK  130
+                K E +N  L++T  G ++MA  A  ++  SQFFI  A   +LD G+    + VFGK
+Sbjct  70   NPPIKNEADNG-LRNTR-GTIAMARTADKDSATSQFFINVADNAFLDHGQRDFGYAVFGK  127
+
+Query  131  VKEGMNIVEAMER-----FGSRNGKTSKKITIADCGQL  163
+            V +GM++ + + +      G      SK + I     L
+Sbjct  128  VVKGMDVADKISQVPTHDVGPYQNVPSKPVVILSATVL  165
+
+
+>pdb|1LOP|A Chain A, XRAY 1.8, Cyclophilin A Complexed With Succinyl-Ala-Pro-Ala-P-Nitroanilide
+Length=164
+
+ Score = 53.4 bits (137),  Expect = 6e-10, Method: Compositional matrix adjust.
+ Identities = 45/135 (33%), Positives = 69/135 (51%), Gaps = 15/135 (11%)
+
+Query  17   GRVSFELFADKVPKTAENFRALSTGEKGFGYKGSCFHRIIPGFMCQGGDFTRHNGTGGKS  76
+            G +  + F DK P+T +NF  L    +GF Y  + FHR+I GFM QGG F    G   K+
+Sbjct  9    GDIVIKTFDDKAPETVKNF--LDYCREGF-YNNTIFHRVINGFMIQGGGF--EPGMKQKA  63
+
+Query  77   IYGEKFEDENFILKHTGPGILSMANA-GPNTNGSQFFICTAKTEWLDGK--------HVV  127
+                   + N  LK+T  G L+MA    P++  +QFFI     ++L+          + V
+Sbjct  64   TKEPIKNEANNGLKNT-RGTLAMARTQAPHSATAQFFINVVDNDFLNFSGESLQGWGYCV  122
+
+Query  128  FGKVKEGMNIVEAME  142
+            F +V +GM+ V+ ++
+Sbjct  123  FAEVVDGMDEVDKIK  137
+
+
+>pdb|4DZB|B Chain B, XRAY 1.70, Mucosal-Associated Invariant T Cell Receptor, 
+Valpha7.2jalpha33-Vbeta2
+Length=246
+
+ Score = 30.6 bits (72),  Expect = 0.17, Method: Compositional matrix adjust.
+ Identities = 12/46 (26%), Positives = 24/46 (52%), Gaps = 0/46 (0%)
+
+Query  73   GGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAKT  118
+            G K+ Y +  E + F++ H    + ++     +   S F+IC+A+T
+Sbjct  53   GSKATYEQGVEKDKFLINHASLTLSTLTVTSAHPEDSSFYICSART  98
+
+
+>pdb|3O4L|E Chain E, XRAY 2.5400, Genetic And Structural Basis For Selection 
+Of A Ubiquitous T Cell Receptor Deployed In Epstein-Barr 
+Virus
+Length=245
+
+ Score = 29.2 bits (68),  Expect = 0.57, Method: Compositional matrix adjust.
+ Identities = 11/45 (24%), Positives = 23/45 (51%), Gaps = 0/45 (0%)
+
+Query  73   GGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAK  117
+            G K+ Y +  E + F++ H    + ++     +   S F+IC+A+
+Sbjct  53   GSKATYEQGVEKDKFLINHASLTLSTLTVTSAHPEDSSFYICSAR  97
+
+
+>pdb|2WBJ|D Chain D, XRAY 3.00, Tcr Complex
+ pdb|2WBJ|H Chain H, XRAY 3.00, Tcr Complex
+Length=279
+
+ Score = 29.2 bits (68),  Expect = 0.58, Method: Compositional matrix adjust.
+ Identities = 11/45 (24%), Positives = 23/45 (51%), Gaps = 0/45 (0%)
+
+Query  73   GGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAK  117
+            G K+ Y +  E + F++ H    + ++     +   S F+IC+A+
+Sbjct  76   GSKATYEQGVEKDKFLINHASLTLSTLTVTSAHPEDSSFYICSAR  120
+
+
+>pdb|3O6F|D Chain D, XRAY 2.80, Crystal Structure Of A Human Autoimmune Tcr 
+Ms2-3c8 Bound To Mhc Class Ii Self-Ligand MbpHLA-Dr4
+ pdb|3O6F|H Chain H, XRAY 2.80, Crystal Structure Of A Human Autoimmune Tcr 
+Ms2-3c8 Bound To Mhc Class Ii Self-Ligand MbpHLA-Dr4
+ pdb|3T0E|D Chain D, XRAY 4.000, Crystal Structure Of A Complete Ternary 
+Complex Of T Cell Receptor, Peptide-Mhc And Cd4
+Length=245
+
+ Score = 29.2 bits (68),  Expect = 0.61, Method: Compositional matrix adjust.
+ Identities = 11/45 (24%), Positives = 23/45 (51%), Gaps = 0/45 (0%)
+
+Query  73   GGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAK  117
+            G K+ Y +  E + F++ H    + ++     +   S F+IC+A+
+Sbjct  51   GSKATYEQGVEKDKFLINHASLTLSTLTVTSAHPEDSSFYICSAR  95
+
+
+>pdb|1YMM|E Chain E, XRAY 3.500, TcrHLA-Dr2bMBP-Peptide Complex
+Length=249
+
+ Score = 29.2 bits (68),  Expect = 0.61, Method: Compositional matrix adjust.
+ Identities = 11/45 (24%), Positives = 23/45 (51%), Gaps = 0/45 (0%)
+
+Query  73   GGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTAK  117
+            G K+ Y +  E + F++ H    + ++     +   S F+IC+A+
+Sbjct  53   GSKATYEQGVEKDKFLINHASLTLSTLTVTSAHPEDSSFYICSAR  97
+
+
+>pdb|1KTK|E Chain E, XRAY 3.00, Complex Of Streptococcal Pyrogenic Enterotoxin 
+C (Spec) With A Human T Cell Receptor Beta Chain (Vbeta2.1)
+ pdb|1KTK|F Chain F, XRAY 3.00, Complex Of Streptococcal Pyrogenic Enterotoxin 
+C (Spec) With A Human T Cell Receptor Beta Chain (Vbeta2.1)
+Length=247
+
+ Score = 28.5 bits (66),  Expect = 1.0, Method: Compositional matrix adjust.
+ Identities = 11/47 (23%), Positives = 23/47 (49%), Gaps = 0/47 (0%)
+
+Query  70   NGTGGKSIYGEKFEDENFILKHTGPGILSMANAGPNTNGSQFFICTA  116
+            +  G K+ Y +  E + F++ H    + ++     +   S F+IC+A
+Sbjct  50   SAEGSKATYEQGVEKDKFLINHASLTLSTLTVTSAHPEDSSFYICSA  96
+
+
+>pdb|2IJ0|E Chain E, XRAY 2.250, Structural Basis Of T Cell Specificity And 
+Activation By The Bacterial Superantigen Toxic Shock Syndrome 
+Toxin-1
+ pdb|2IJ0|C Chain C, XRAY 2.250, Structural Basis Of T Cell Specificity And 
+Activation By The Bacterial Superantigen Toxic Shock Syndrome 
+Toxin-1
+Length=118
+
+ Score = 27.5 bits (63),  Expect = 1.5, Method: Compositional matrix adjust.
+ Identities = 15/52 (29%), Positives = 28/52 (54%), Gaps = 6/52 (12%)
+
+Query  67   TRHNGTGGKSIYGEKFEDENFILKHTGPGI--LSMANAGPNTNGSQFFICTA  116
+            T H G    +IY +    + F++ H  P +  L++ +A P  +G  F++C+A
+Sbjct  49   TSHQG--FNAIYEQGVVKDKFLINHASPTLSTLTVTSAHPEDSG--FYVCSA  96
+
+
+>pdb|1X9R|A Chain A, XRAY 1.9, Umecyanin From Horse Raddish- Crystal Structure 
+Of The Oxidised Form
+ pdb|1X9R|B Chain B, XRAY 1.9, Umecyanin From Horse Raddish- Crystal Structure 
+Of The Oxidised Form
+ pdb|1X9U|A Chain A, XRAY 1.8, Umecyanin From Horse Raddish- Crystal Structure 
+Of The Reduced Form
+ pdb|1X9U|B Chain B, XRAY 1.8, Umecyanin From Horse Raddish- Crystal Structure 
+Of The Reduced Form
+Length=116
+
+ Score = 26.1 bits (59),  Expect = 4.9, Method: Compositional matrix adjust.
+ Identities = 19/54 (35%), Positives = 25/54 (46%), Gaps = 11/54 (20%)
+
+Query  85   ENFILKHTGPGILSMANAGPNTNGSQFFICTAKTEWLDGKHVVFGKVKEGMNIV  138
+            EN I   T P +  M N    T G Q++ICT       G H   G+ K  +N+V
+Sbjct  61   ENPISHMTTPPVKIMLN----TTGPQYYICTV------GDHCRVGQ-KLSINVV  103
+
+
+
+Lambda      K        H        a         alpha
+   0.319    0.140    0.428    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.243   0.0240    0.100     2.50     83.2     85.1 
+
+Effective search space used: 446214375
+
+
+  Database: nr_pdbaa_s2c
+    Posted date:  Nov 28, 2013  4:25 AM
+  Number of letters in database: 10,580,565
+  Number of sequences in database:  43,302
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 10, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

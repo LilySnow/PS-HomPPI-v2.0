@@ -1,0 +1,3 @@
+#Predictions marked with question marks are replaced with zeros, i.e., these residues are considered predicted non-interface.
+TN=; TP=; FN=; FP=
+F1= ; CC= ; specificity= ; sensitivity = ; accuracy= 

@@ -1,0 +1,818 @@
+PSIBLAST 2.2.29+
+
+
+Reference: Stephen F. Altschul, Thomas L. Madden, Alejandro A.
+Schaffer, Jinghui Zhang, Zheng Zhang, Webb Miller, and David J.
+Lipman (1997), "Gapped BLAST and PSI-BLAST: a new generation of
+protein database search programs", Nucleic Acids Res. 25:3389-3402.
+
+
+Reference for compositional score matrix adjustment: Stephen F.
+Altschul, John C. Wootton, E. Michael Gertz, Richa Agarwala,
+Aleksandr Morgulis, Alejandro A. Schaffer, and Yi-Kuo Yu (2005)
+"Protein database searches using compositionally adjusted
+substitution matrices", FEBS J. 272:5101-5109.
+
+
+Reference for composition-based statistics starting in round 2:
+Alejandro A. Schaffer, L. Aravind, Thomas L. Madden, Sergei
+Shavirin, John L. Spouge, Yuri I. Wolf, Eugene V. Koonin, and
+Stephen F. Altschul (2001), "Improving the accuracy of PSI-BLAST
+protein database searches with composition-based statistics and
+other refinements", Nucleic Acids Res. 29:2994-3005.
+
+
+
+Database: nr_pdbaa_s2c
+           43,302 sequences; 10,580,565 total letters
+
+Results from round 1
+
+
+Query= B1
+
+Length=137
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+pdb|1E6J|P  Chain P, XRAY 3.0, Crystal Structure Of Hiv-1 Capsid ...    260   1e-89
+pdb|3NTE|A  Chain A, XRAY 1.95, Crystal Structure Of The Wild-Typ...    260   1e-89
+pdb|1AFV|A  Chain A, XRAY 3.7, Hiv-1 Capsid Protein (P24) Complex...    255   3e-88
+pdb|3GV2|A  Chain A, XRAY 7.0, X-Ray Structure Of Hexameric Hiv-1...    259   7e-88
+pdb|2X2D|D  Chain D, XRAY 1.95, Acetyl-Cypa:hiv-1 N-Term Capsid D...    253   2e-87
+pdb|1M9C|C  Chain C, XRAY 2.00, X-Ray Crystal Structure Of Cyclop...    253   2e-87
+pdb|3P05|A  Chain A, XRAY 2.500, X-Ray Structure Of Pentameric Hi...    254   3e-87
+pdb|3H4E|A  Chain A, XRAY 2.704, X-Ray Structure Of Hexameric Hiv...    254   3e-87
+pdb|1AK4|C  Chain C, XRAY 2.36, Human Cyclophilin A Bound To The ...    251   9e-87
+pdb|2PWM|A  Chain A, XRAY 1.900, Crystal Structure Of Hiv-1 Ca146...    251   1e-86
+pdb|1M9E|C  Chain C, XRAY 1.72, X-Ray Crystal Structure Of Cyclop...    250   3e-86
+pdb|3P0A|A  Chain A, XRAY 5.954, X-Ray Structure Of Pentameric Hi...    251   7e-86
+pdb|1M9Y|C  Chain C, XRAY 1.90, X-Ray Crystal Structure Of Cyclop...    248   1e-85
+pdb|1M9F|C  Chain C, XRAY 1.730, X-Ray Crystal Structure Of Cyclo...    248   1e-85
+pdb|1M9X|C  Chain C, XRAY 1.70, X-Ray Crystal Structure Of Cyclop...    246   7e-85
+pdb|3VRL|C  Chain C, XRAY 3.20, Crystal Structure Of Bmj4 P24 Cap...    246   6e-84
+pdb|4ARG|A  Chain A, EM 7.00, Structure Of The Immature Retrovira...    240   1e-82
+pdb|1M9D|C  Chain C, XRAY 1.900, X-Ray Crystal Structure Of Cyclo...    240   2e-82
+pdb|4DGA|C  Chain C, XRAY 1.9000, Trimcyp Cyclophilin Domain From...    236   6e-81
+pdb|2GON|A  Chain A, XRAY 1.90, Xray Structure Of Gag133-278 >pdb...    236   1e-80
+pdb|2XDE|A  Chain A, XRAY 1.40, Crystal Structure Of The Complex ...    224   3e-76
+pdb|2X82|A  Chain A, XRAY 2.60, Evolutionary Basis Of Hiv Restric...    176   3e-57
+pdb|2WLV|A  Chain A, XRAY 1.25, Structure Of The N-terminal Capsi...    171   2e-55
+pdb|2WLV|B  Chain B, XRAY 1.25, Structure Of The N-terminal Capsi...    169   1e-54
+pdb|1FGL|B  Chain B, XRAY 1.8, Cyclophilin A Complexed With A Fra...  47.8    2e-08
+pdb|2XGU|A  Chain A, XRAY 1.502, Structure Of The N-Terminal Doma...  45.7    2e-07
+pdb|2EIA|A  Chain A, XRAY 2.7, X-Ray Crystal Structure Of Equine ...  42.5    4e-06
+pdb|1SJE|C  Chain C, XRAY 2.45, Hla-Dr1 Complexed With A 16 Resid...  33.1    0.004
+pdb|1SJH|C  Chain C, XRAY 2.25, Hla-Dr1 Complexed With A 13 Resid...  28.2    0.39 
+pdb|3DAH|A  Chain A, XRAY 2.300, 2.3 A Crystal Structure Of Ribos...  26.8    3.3  
+pdb|1QHM|A  Chain A, XRAY 2.80, Escherichia Coli Pyruvate Formate...  26.8    3.6  
+pdb|4FAJ|A  Chain A, XRAY 1.9000, Structure And Mode Of Peptide B...  26.4    4.3  
+
+
+>pdb|1E6J|P Chain P, XRAY 3.0, Crystal Structure Of Hiv-1 Capsid Protein 
+(P24) In Complex With Fab13b5
+Length=210
+
+ Score =   260 bits (729),  Expect = 1e-89, Method: Compositional matrix adjust.
+ Identities = 137/137 (100%), Positives = 137/137 (100%), Gaps = 0/137 (0%)
+
+Query  1    VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+            VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK
+Sbjct  1    VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+
+Query  61   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  120
+            ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY
+Sbjct  61   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  120
+
+Query  121  KRWIILGLNKIVRMYSP  137
+            KRWIILGLNKIVRMYSP
+Sbjct  121  KRWIILGLNKIVRMYSP  137
+
+
+>pdb|3NTE|A Chain A, XRAY 1.95, Crystal Structure Of The Wild-Type Full-Length 
+Hiv-1 Capsid Protein
+ pdb|3NTE|B Chain B, XRAY 1.95, Crystal Structure Of The Wild-Type Full-Length 
+Hiv-1 Capsid Protein
+Length=221
+
+ Score =   260 bits (729),  Expect = 1e-89, Method: Compositional matrix adjust.
+ Identities = 137/137 (100%), Positives = 137/137 (100%), Gaps = 0/137 (0%)
+
+Query  1    VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+            VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK
+Sbjct  11   VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  70
+
+Query  61   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  120
+            ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY
+Sbjct  71   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  130
+
+Query  121  KRWIILGLNKIVRMYSP  137
+            KRWIILGLNKIVRMYSP
+Sbjct  131  KRWIILGLNKIVRMYSP  147
+
+
+>pdb|1AFV|A Chain A, XRAY 3.7, Hiv-1 Capsid Protein (P24) Complex With Fab25.3
+ pdb|1AFV|B Chain B, XRAY 3.7, Hiv-1 Capsid Protein (P24) Complex With Fab25.3
+Length=151
+
+ Score =   255 bits (714),  Expect = 3e-88, Method: Compositional matrix adjust.
+ Identities = 135/137 (99%), Positives = 137/137 (100%), Gaps = 0/137 (0%)
+
+Query  1    VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+            VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK
+Sbjct  11   VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  70
+
+Query  61   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  120
+            ETINEEAAEWDR+HPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMT+NPPIPVGEIY
+Sbjct  71   ETINEEAAEWDRLHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTHNPPIPVGEIY  130
+
+Query  121  KRWIILGLNKIVRMYSP  137
+            KRWIILGLNKIVRMYSP
+Sbjct  131  KRWIILGLNKIVRMYSP  147
+
+
+>pdb|3GV2|A Chain A, XRAY 7.0, X-Ray Structure Of Hexameric Hiv-1 Ca
+ pdb|3GV2|B Chain B, XRAY 7.0, X-Ray Structure Of Hexameric Hiv-1 Ca
+ pdb|3GV2|C Chain C, XRAY 7.0, X-Ray Structure Of Hexameric Hiv-1 Ca
+ pdb|3GV2|D Chain D, XRAY 7.0, X-Ray Structure Of Hexameric Hiv-1 Ca
+ pdb|3GV2|E Chain E, XRAY 7.0, X-Ray Structure Of Hexameric Hiv-1 Ca
+ pdb|3GV2|F Chain F, XRAY 7.0, X-Ray Structure Of Hexameric Hiv-1 Ca
+Length=342
+
+ Score =   259 bits (725),  Expect = 7e-88, Method: Compositional matrix adjust.
+ Identities = 135/137 (99%), Positives = 137/137 (100%), Gaps = 0/137 (0%)
+
+Query  1    VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+            VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK
+Sbjct  11   VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  70
+
+Query  61   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  120
+            ETINEEAAEWDR+HPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMT+NPPIPVGEIY
+Sbjct  71   ETINEEAAEWDRLHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTHNPPIPVGEIY  130
+
+Query  121  KRWIILGLNKIVRMYSP  137
+            KRWIILGLNKIVRMYSP
+Sbjct  131  KRWIILGLNKIVRMYSP  147
+
+
+>pdb|2X2D|D Chain D, XRAY 1.95, Acetyl-Cypa:hiv-1 N-Term Capsid Domain Complex
+ pdb|2X2D|E Chain E, XRAY 1.95, Acetyl-Cypa:hiv-1 N-Term Capsid Domain Complex
+Length=147
+
+ Score =   253 bits (708),  Expect = 2e-87, Method: Compositional matrix adjust.
+ Identities = 134/136 (99%), Positives = 136/136 (100%), Gaps = 0/136 (0%)
+
+Query  1    VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+            VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK
+Sbjct  12   VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  71
+
+Query  61   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  120
+            ETINEEAAEWDR+HPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMT+NPPIPVGEIY
+Sbjct  72   ETINEEAAEWDRLHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTHNPPIPVGEIY  131
+
+Query  121  KRWIILGLNKIVRMYS  136
+            KRWIILGLNKIVRMYS
+Sbjct  132  KRWIILGLNKIVRMYS  147
+
+
+>pdb|1M9C|C Chain C, XRAY 2.00, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type Complex.
+ pdb|1M9C|D Chain D, XRAY 2.00, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type Complex.
+ pdb|2GOL|B Chain B, XRAY 2.20, Xray Structure Of Gag278
+ pdb|2GOL|D Chain D, XRAY 2.20, Xray Structure Of Gag278
+ pdb|2X83|A Chain A, XRAY 1.70, Evolutionary Basis Of Hiv Restriction By 
+The Antiretroviral Trimcyp
+ pdb|2X83|C Chain C, XRAY 1.70, Evolutionary Basis Of Hiv Restriction By 
+The Antiretroviral Trimcyp
+ pdb|4E91|A Chain A, XRAY 1.700, Crystal Structure Of The N-terminal Domain 
+Of Hiv-1 Capsid In Complex With Inhibitor Bd3
+ pdb|4E91|B Chain B, XRAY 1.700, Crystal Structure Of The N-terminal Domain 
+Of Hiv-1 Capsid In Complex With Inhibitor Bd3
+ pdb|4E92|A Chain A, XRAY 1.800, Crystal Structure Of The N-terminal Domain 
+Of Hiv-1 Capsid In Complex With Inhibitor Bm4
+ pdb|4E92|B Chain B, XRAY 1.800, Crystal Structure Of The N-terminal Domain 
+Of Hiv-1 Capsid In Complex With Inhibitor Bm4
+ pdb|4B4N|A Chain A, XRAY 1.813, Cpsf6 Defines A Conserved Capsid Interface 
+That Modulates Hiv-1 Replication
+ pdb|4LQW|C Chain C, XRAY 1.95, Crystal Structure Of Hiv-1 Capsid N-terminal 
+Domain In Complex With Nup358 Cyclophilin
+ pdb|4LQW|D Chain D, XRAY 1.95, Crystal Structure Of Hiv-1 Capsid N-terminal 
+Domain In Complex With Nup358 Cyclophilin
+Length=146
+
+ Score =   253 bits (707),  Expect = 2e-87, Method: Compositional matrix adjust.
+ Identities = 134/136 (99%), Positives = 136/136 (100%), Gaps = 0/136 (0%)
+
+Query  1    VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+            VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK
+Sbjct  11   VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  70
+
+Query  61   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  120
+            ETINEEAAEWDR+HPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMT+NPPIPVGEIY
+Sbjct  71   ETINEEAAEWDRLHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTHNPPIPVGEIY  130
+
+Query  121  KRWIILGLNKIVRMYS  136
+            KRWIILGLNKIVRMYS
+Sbjct  131  KRWIILGLNKIVRMYS  146
+
+
+>pdb|3P05|A Chain A, XRAY 2.500, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P05|B Chain B, XRAY 2.500, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P05|C Chain C, XRAY 2.500, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P05|D Chain D, XRAY 2.500, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P05|E Chain E, XRAY 2.500, X-Ray Structure Of Pentameric Hiv-1 Ca
+Length=231
+
+ Score =   254 bits (712),  Expect = 3e-87, Method: Compositional matrix adjust.
+ Identities = 133/137 (97%), Positives = 135/137 (99%), Gaps = 0/137 (0%)
+
+Query  1    VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+            VHQAISPRTL  WVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK
+Sbjct  11   VHQAISPRTLCCWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  70
+
+Query  61   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  120
+            ETINEEAAEWDR+HPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMT+NPPIPVGEIY
+Sbjct  71   ETINEEAAEWDRLHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTHNPPIPVGEIY  130
+
+Query  121  KRWIILGLNKIVRMYSP  137
+            KRWIILGLNKIVRMYSP
+Sbjct  131  KRWIILGLNKIVRMYSP  147
+
+
+>pdb|3H4E|A Chain A, XRAY 2.704, X-Ray Structure Of Hexameric Hiv-1 Ca
+ pdb|3H4E|B Chain B, XRAY 2.704, X-Ray Structure Of Hexameric Hiv-1 Ca
+ pdb|3H4E|C Chain C, XRAY 2.704, X-Ray Structure Of Hexameric Hiv-1 Ca
+ pdb|3H4E|D Chain D, XRAY 2.704, X-Ray Structure Of Hexameric Hiv-1 Ca
+ pdb|3H4E|E Chain E, XRAY 2.704, X-Ray Structure Of Hexameric Hiv-1 Ca
+ pdb|3H4E|F Chain F, XRAY 2.704, X-Ray Structure Of Hexameric Hiv-1 Ca
+ pdb|3H4E|G Chain G, XRAY 2.704, X-Ray Structure Of Hexameric Hiv-1 Ca
+ pdb|3H4E|H Chain H, XRAY 2.704, X-Ray Structure Of Hexameric Hiv-1 Ca
+ pdb|3H4E|I Chain I, XRAY 2.704, X-Ray Structure Of Hexameric Hiv-1 Ca
+ pdb|3H4E|J Chain J, XRAY 2.704, X-Ray Structure Of Hexameric Hiv-1 Ca
+ pdb|3H4E|K Chain K, XRAY 2.704, X-Ray Structure Of Hexameric Hiv-1 Ca
+ pdb|3H4E|L Chain L, XRAY 2.704, X-Ray Structure Of Hexameric Hiv-1 Ca
+Length=231
+
+ Score =   254 bits (712),  Expect = 3e-87, Method: Compositional matrix adjust.
+ Identities = 133/137 (97%), Positives = 135/137 (99%), Gaps = 0/137 (0%)
+
+Query  1    VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+            VHQ ISPRTLNAWVKVVEEKAFSPEVIPMFSALS GATPQDLNTMLNTVGGHQAAMQMLK
+Sbjct  11   VHQCISPRTLNAWVKVVEEKAFSPEVIPMFSALSCGATPQDLNTMLNTVGGHQAAMQMLK  70
+
+Query  61   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  120
+            ETINEEAAEWDR+HPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMT+NPPIPVGEIY
+Sbjct  71   ETINEEAAEWDRLHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTHNPPIPVGEIY  130
+
+Query  121  KRWIILGLNKIVRMYSP  137
+            KRWIILGLNKIVRMYSP
+Sbjct  131  KRWIILGLNKIVRMYSP  147
+
+
+>pdb|1AK4|C Chain C, XRAY 2.36, Human Cyclophilin A Bound To The Amino-Terminal 
+Domain Of Hiv-1 Capsid
+ pdb|1AK4|D Chain D, XRAY 2.36, Human Cyclophilin A Bound To The Amino-Terminal 
+Domain Of Hiv-1 Capsid
+Length=145
+
+ Score =   251 bits (703),  Expect = 9e-87, Method: Compositional matrix adjust.
+ Identities = 133/135 (99%), Positives = 135/135 (100%), Gaps = 0/135 (0%)
+
+Query  1    VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+            VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK
+Sbjct  11   VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  70
+
+Query  61   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  120
+            ETINEEAAEWDR+HPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMT+NPPIPVGEIY
+Sbjct  71   ETINEEAAEWDRLHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTHNPPIPVGEIY  130
+
+Query  121  KRWIILGLNKIVRMY  135
+            KRWIILGLNKIVRMY
+Sbjct  131  KRWIILGLNKIVRMY  145
+
+
+>pdb|2PWM|A Chain A, XRAY 1.900, Crystal Structure Of Hiv-1 Ca146 A92e Real 
+Cell
+ pdb|2PWM|B Chain B, XRAY 1.900, Crystal Structure Of Hiv-1 Ca146 A92e Real 
+Cell
+ pdb|2PWM|C Chain C, XRAY 1.900, Crystal Structure Of Hiv-1 Ca146 A92e Real 
+Cell
+ pdb|2PWM|D Chain D, XRAY 1.900, Crystal Structure Of Hiv-1 Ca146 A92e Real 
+Cell
+ pdb|2PWM|E Chain E, XRAY 1.900, Crystal Structure Of Hiv-1 Ca146 A92e Real 
+Cell
+ pdb|2PWM|F Chain F, XRAY 1.900, Crystal Structure Of Hiv-1 Ca146 A92e Real 
+Cell
+ pdb|2PWM|G Chain G, XRAY 1.900, Crystal Structure Of Hiv-1 Ca146 A92e Real 
+Cell
+ pdb|2PWM|H Chain H, XRAY 1.900, Crystal Structure Of Hiv-1 Ca146 A92e Real 
+Cell
+ pdb|2PWO|A Chain A, XRAY 1.450, Crystal Structure Of Hiv-1 Ca146 A92e Psuedo 
+Cell
+ pdb|2PWO|B Chain B, XRAY 1.450, Crystal Structure Of Hiv-1 Ca146 A92e Psuedo 
+Cell
+ pdb|2PWO|C Chain C, XRAY 1.450, Crystal Structure Of Hiv-1 Ca146 A92e Psuedo 
+Cell
+ pdb|2PWO|D Chain D, XRAY 1.450, Crystal Structure Of Hiv-1 Ca146 A92e Psuedo 
+Cell
+Length=146
+
+ Score =   251 bits (702),  Expect = 1e-86, Method: Compositional matrix adjust.
+ Identities = 133/136 (98%), Positives = 135/136 (99%), Gaps = 0/136 (0%)
+
+Query  1    VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+            VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK
+Sbjct  11   VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  70
+
+Query  61   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  120
+            ETINEEAAEWDR+HPVHAGPI PGQMREPRGSDIAGTTSTLQEQIGWMT+NPPIPVGEIY
+Sbjct  71   ETINEEAAEWDRLHPVHAGPIEPGQMREPRGSDIAGTTSTLQEQIGWMTHNPPIPVGEIY  130
+
+Query  121  KRWIILGLNKIVRMYS  136
+            KRWIILGLNKIVRMYS
+Sbjct  131  KRWIILGLNKIVRMYS  146
+
+
+>pdb|1M9E|C Chain C, XRAY 1.72, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a Complex.
+ pdb|1M9E|D Chain D, XRAY 1.72, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a Complex
+Length=146
+
+ Score =   250 bits (699),  Expect = 3e-86, Method: Compositional matrix adjust.
+ Identities = 133/136 (98%), Positives = 135/136 (99%), Gaps = 0/136 (0%)
+
+Query  1    VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+            VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK
+Sbjct  11   VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  70
+
+Query  61   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  120
+            ETINEEAAEWDR+HPV AGPIAPGQMREPRGSDIAGTTSTLQEQIGWMT+NPPIPVGEIY
+Sbjct  71   ETINEEAAEWDRLHPVAAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTHNPPIPVGEIY  130
+
+Query  121  KRWIILGLNKIVRMYS  136
+            KRWIILGLNKIVRMYS
+Sbjct  131  KRWIILGLNKIVRMYS  146
+
+
+>pdb|3P0A|A Chain A, XRAY 5.954, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P0A|B Chain B, XRAY 5.954, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P0A|C Chain C, XRAY 5.954, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P0A|D Chain D, XRAY 5.954, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P0A|E Chain E, XRAY 5.954, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P0A|F Chain F, XRAY 5.954, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P0A|G Chain G, XRAY 5.954, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P0A|H Chain H, XRAY 5.954, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P0A|I Chain I, XRAY 5.954, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P0A|J Chain J, XRAY 5.954, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P0A|K Chain K, XRAY 5.954, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P0A|L Chain L, XRAY 5.954, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P0A|M Chain M, XRAY 5.954, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P0A|N Chain N, XRAY 5.954, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P0A|O Chain O, XRAY 5.954, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P0A|P Chain P, XRAY 5.954, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P0A|Q Chain Q, XRAY 5.954, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P0A|R Chain R, XRAY 5.954, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P0A|S Chain S, XRAY 5.954, X-Ray Structure Of Pentameric Hiv-1 Ca
+ pdb|3P0A|T Chain T, XRAY 5.954, X-Ray Structure Of Pentameric Hiv-1 Ca
+Length=231
+
+ Score =   251 bits (702),  Expect = 7e-86, Method: Compositional matrix adjust.
+ Identities = 132/137 (96%), Positives = 134/137 (98%), Gaps = 0/137 (0%)
+
+Query  1    VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+            VHQAIS   LNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK
+Sbjct  11   VHQAISCLCLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  70
+
+Query  61   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  120
+            ETINEEAAEWDR+HPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMT+NPPIPVGEIY
+Sbjct  71   ETINEEAAEWDRLHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTHNPPIPVGEIY  130
+
+Query  121  KRWIILGLNKIVRMYSP  137
+            KRWIILGLNKIVRMYSP
+Sbjct  131  KRWIILGLNKIVRMYSP  147
+
+
+>pdb|1M9Y|C Chain C, XRAY 1.90, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a,G89a Complex.
+ pdb|1M9Y|D Chain D, XRAY 1.90, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a,G89a Complex.
+ pdb|1M9Y|G Chain G, XRAY 1.90, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a,G89a Complex.
+ pdb|1M9Y|H Chain H, XRAY 1.90, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a,G89a Complex
+Length=146
+
+ Score =   248 bits (694),  Expect = 1e-85, Method: Compositional matrix adjust.
+ Identities = 132/136 (97%), Positives = 134/136 (99%), Gaps = 0/136 (0%)
+
+Query  1    VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+            VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK
+Sbjct  11   VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  70
+
+Query  61   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  120
+            ETINEEAAEWDR+HPV A PIAPGQMREPRGSDIAGTTSTLQEQIGWMT+NPPIPVGEIY
+Sbjct  71   ETINEEAAEWDRLHPVAAAPIAPGQMREPRGSDIAGTTSTLQEQIGWMTHNPPIPVGEIY  130
+
+Query  121  KRWIILGLNKIVRMYS  136
+            KRWIILGLNKIVRMYS
+Sbjct  131  KRWIILGLNKIVRMYS  146
+
+
+>pdb|1M9F|C Chain C, XRAY 1.730, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a,A88m Complex.
+ pdb|1M9F|D Chain D, XRAY 1.730, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a,A88m Complex
+Length=146
+
+ Score =   248 bits (694),  Expect = 1e-85, Method: Compositional matrix adjust.
+ Identities = 132/136 (97%), Positives = 134/136 (99%), Gaps = 0/136 (0%)
+
+Query  1    VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+            VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK
+Sbjct  11   VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  70
+
+Query  61   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  120
+            ETINEEAAEWDR+HPV  GPIAPGQMREPRGSDIAGTTSTLQEQIGWMT+NPPIPVGEIY
+Sbjct  71   ETINEEAAEWDRLHPVAMGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTHNPPIPVGEIY  130
+
+Query  121  KRWIILGLNKIVRMYS  136
+            KRWIILGLNKIVRMYS
+Sbjct  131  KRWIILGLNKIVRMYS  146
+
+
+>pdb|1M9X|C Chain C, XRAY 1.70, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a,A88m,G89a Complex.
+ pdb|1M9X|D Chain D, XRAY 1.70, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a,A88m,G89a Complex.
+ pdb|1M9X|G Chain G, XRAY 1.70, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a,A88m,G89a Complex.
+ pdb|1M9X|H Chain H, XRAY 1.70, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) M-Type H87a,A88m,G89a Complex
+Length=146
+
+ Score =   246 bits (689),  Expect = 7e-85, Method: Compositional matrix adjust.
+ Identities = 131/136 (96%), Positives = 133/136 (98%), Gaps = 0/136 (0%)
+
+Query  1    VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+            VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK
+Sbjct  11   VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  70
+
+Query  61   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  120
+            ETINEEAAEWDR+HPV   PIAPGQMREPRGSDIAGTTSTLQEQIGWMT+NPPIPVGEIY
+Sbjct  71   ETINEEAAEWDRLHPVAMAPIAPGQMREPRGSDIAGTTSTLQEQIGWMTHNPPIPVGEIY  130
+
+Query  121  KRWIILGLNKIVRMYS  136
+            KRWIILGLNKIVRMYS
+Sbjct  131  KRWIILGLNKIVRMYS  146
+
+
+>pdb|3VRL|C Chain C, XRAY 3.20, Crystal Structure Of Bmj4 P24 Capsid Protein 
+In Complex With A10f9 Fab
+ pdb|3VRL|D Chain D, XRAY 3.20, Crystal Structure Of Bmj4 P24 Capsid Protein 
+In Complex With A10f9 Fab
+Length=231
+
+ Score =   246 bits (688),  Expect = 6e-84, Method: Compositional matrix adjust.
+ Identities = 126/137 (92%), Positives = 134/137 (98%), Gaps = 0/137 (0%)
+
+Query  1    VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+            VHQ ISPRTLNAWVKV+EEK FSPEVIPMF+ALSEGATPQDLNTMLNTVGGHQAAMQMLK
+Sbjct  11   VHQPISPRTLNAWVKVIEEKGFSPEVIPMFTALSEGATPQDLNTMLNTVGGHQAAMQMLK  70
+
+Query  61   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  120
+            +TINEEAAEWDR+HPV AGP+APGQMR+PRGSDIAGTTSTLQEQIGWMT+NPPIPVG+IY
+Sbjct  71   DTINEEAAEWDRLHPVQAGPVAPGQMRDPRGSDIAGTTSTLQEQIGWMTHNPPIPVGDIY  130
+
+Query  121  KRWIILGLNKIVRMYSP  137
+            KRWIILGLNKIVRMYSP
+Sbjct  131  KRWIILGLNKIVRMYSP  147
+
+
+>pdb|4ARG|A Chain A, EM 7.00, Structure Of The Immature Retroviral Capsid 
+At 8a Resolution By Cryo-Electron Microscopy
+ pdb|4ARG|C Chain C, EM 7.00, Structure Of The Immature Retroviral Capsid 
+At 8a Resolution By Cryo-Electron Microscopy
+Length=129
+
+ Score =   240 bits (672),  Expect = 1e-82, Method: Compositional matrix adjust.
+ Identities = 127/129 (98%), Positives = 129/129 (100%), Gaps = 0/129 (0%)
+
+Query  7    PRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLKETINEE  66
+            PRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLKETINEE
+Sbjct  1    PRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLKETINEE  60
+
+Query  67   AAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIYKRWIIL  126
+            AAEWDR+HPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMT+NPPIPVGEIYKRWIIL
+Sbjct  61   AAEWDRLHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTHNPPIPVGEIYKRWIIL  120
+
+Query  127  GLNKIVRMY  135
+            GLNKIVRMY
+Sbjct  121  GLNKIVRMY  129
+
+
+>pdb|1M9D|C Chain C, XRAY 1.900, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) O-Type Chimera Complex.
+ pdb|1M9D|D Chain D, XRAY 1.900, X-Ray Crystal Structure Of Cyclophilin AHIV-1 
+Ca N- Terminal Domain (1-146) O-Type Chimera Complex
+Length=146
+
+ Score =   240 bits (671),  Expect = 2e-82, Method: Compositional matrix adjust.
+ Identities = 128/136 (94%), Positives = 131/136 (96%), Gaps = 0/136 (0%)
+
+Query  1    VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+            VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK
+Sbjct  11   VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  70
+
+Query  61   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  120
+            ETINEEAAEWDR HP   GP+ PGQ+REPRGSDIAGTTSTLQEQIGWMT+NPPIPVGEIY
+Sbjct  71   ETINEEAAEWDRTHPPAMGPLPPGQIREPRGSDIAGTTSTLQEQIGWMTHNPPIPVGEIY  130
+
+Query  121  KRWIILGLNKIVRMYS  136
+            KRWIILGLNKIVRMYS
+Sbjct  131  KRWIILGLNKIVRMYS  146
+
+
+>pdb|4DGA|C Chain C, XRAY 1.9000, Trimcyp Cyclophilin Domain From Macaca 
+Mulatta: Hiv-1 Ca(O-Loop) Complex
+ pdb|4DGA|D Chain D, XRAY 1.9000, Trimcyp Cyclophilin Domain From Macaca 
+Mulatta: Hiv-1 Ca(O-Loop) Complex
+ pdb|4DGE|C Chain C, XRAY 2.200, Trimcyp Cyclophilin Domain From Macaca Mulatta: 
+H70c Mutant, Hiv-1 Ca(O-Loop) Complex
+ pdb|4DGE|D Chain D, XRAY 2.200, Trimcyp Cyclophilin Domain From Macaca Mulatta: 
+H70c Mutant, Hiv-1 Ca(O-Loop) Complex
+Length=146
+
+ Score =   236 bits (660),  Expect = 6e-81, Method: Compositional matrix adjust.
+ Identities = 126/135 (93%), Positives = 129/135 (96%), Gaps = 0/135 (0%)
+
+Query  1    VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+            VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK
+Sbjct  12   VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  71
+
+Query  61   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  120
+            ETINEEAAEWDR HP   GP+ PGQ+REP GSDIAGTTSTLQEQIGWMT+NPPIPVGEIY
+Sbjct  72   ETINEEAAEWDRTHPPAMGPLPPGQIREPTGSDIAGTTSTLQEQIGWMTHNPPIPVGEIY  131
+
+Query  121  KRWIILGLNKIVRMY  135
+            KRWIILGLNKIVRMY
+Sbjct  132  KRWIILGLNKIVRMY  146
+
+
+>pdb|2GON|A Chain A, XRAY 1.90, Xray Structure Of Gag133-278
+ pdb|2GON|B Chain B, XRAY 1.90, Xray Structure Of Gag133-278
+ pdb|2GON|C Chain C, XRAY 1.90, Xray Structure Of Gag133-278
+ pdb|2GON|D Chain D, XRAY 1.90, Xray Structure Of Gag133-278
+Length=146
+
+ Score =   236 bits (658),  Expect = 1e-80, Method: Compositional matrix adjust.
+ Identities = 126/136 (93%), Positives = 128/136 (94%), Gaps = 0/136 (0%)
+
+Query  1    VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+            VHQAISPRTLNAWVKVVEEKAFSPEVIP FSALSEGATPQDLNT LNTVGGHQAA Q LK
+Sbjct  11   VHQAISPRTLNAWVKVVEEKAFSPEVIPXFSALSEGATPQDLNTXLNTVGGHQAAXQXLK  70
+
+Query  61   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  120
+            ETINEEAAEWDR+HPVHAGPI PGQ REPRGSDIAGTTSTLQEQIGW T+NPPIPVGEIY
+Sbjct  71   ETINEEAAEWDRLHPVHAGPIEPGQXREPRGSDIAGTTSTLQEQIGWXTHNPPIPVGEIY  130
+
+Query  121  KRWIILGLNKIVRMYS  136
+            KRWIILGLNKIVR YS
+Sbjct  131  KRWIILGLNKIVRXYS  146
+
+
+>pdb|2XDE|A Chain A, XRAY 1.40, Crystal Structure Of The Complex Of Pf-3450074 
+With An Engineered Hiv Capsid N Terminal Domain
+ pdb|2XDE|B Chain B, XRAY 1.40, Crystal Structure Of The Complex Of Pf-3450074 
+With An Engineered Hiv Capsid N Terminal Domain
+Length=145
+
+ Score =   224 bits (626),  Expect = 3e-76, Method: Compositional matrix adjust.
+ Identities = 123/136 (90%), Positives = 125/136 (92%), Gaps = 10/136 (7%)
+
+Query  1    VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+            VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK
+Sbjct  12   VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  71
+
+Query  61   ETINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTNNPPIPVGEIY  120
+            ETINEEAAEWDR+HPV           EPRGSDIAGTTSTLQEQIGWMT+NPPIPVGEIY
+Sbjct  72   ETINEEAAEWDRLHPVG----------EPRGSDIAGTTSTLQEQIGWMTHNPPIPVGEIY  121
+
+Query  121  KRWIILGLNKIVRMYS  136
+            KRWIILGLNKIVRMYS
+Sbjct  122  KRWIILGLNKIVRMYS  137
+
+
+>pdb|2X82|A Chain A, XRAY 2.60, Evolutionary Basis Of Hiv Restriction By 
+The Antiretroviral Trimcyp
+ pdb|2X82|B Chain B, XRAY 2.60, Evolutionary Basis Of Hiv Restriction By 
+The Antiretroviral Trimcyp
+ pdb|2X82|C Chain C, XRAY 2.60, Evolutionary Basis Of Hiv Restriction By 
+The Antiretroviral Trimcyp
+ pdb|2X82|D Chain D, XRAY 2.60, Evolutionary Basis Of Hiv Restriction By 
+The Antiretroviral Trimcyp
+Length=145
+
+ Score =   176 bits (488),  Expect = 3e-57, Method: Compositional matrix adjust.
+ Identities = 92/135 (68%), Positives = 107/135 (79%), Gaps = 1/135 (1%)
+
+Query  2    HQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLKE  61
+            H  +SPRTLNAWVK+VEEK F  EV+P F ALSEG TP D+N MLN VG HQAAMQ+++E
+Sbjct  11   HIPLSPRTLNAWVKLVEEKKFGAEVVPGFQALSEGCTPYDINQMLNCVGDHQAAMQIIRE  70
+
+Query  62   TINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTN-NPPIPVGEIY  120
+             INEEAAEWD  HP+ AGP+  GQ+REPRGSDIAGTTST++EQI WM     P+PVG IY
+Sbjct  71   IINEEAAEWDVQHPIPAGPLPAGQLREPRGSDIAGTTSTVEEQIQWMFRPQNPVPVGNIY  130
+
+Query  121  KRWIILGLNKIVRMY  135
+            +RWI +GL K VRMY
+Sbjct  131  RRWIQIGLQKCVRMY  145
+
+
+>pdb|2WLV|A Chain A, XRAY 1.25, Structure Of The N-terminal Capsid Domain 
+Of Hiv-2
+Length=144
+
+ Score =   171 bits (474),  Expect = 2e-55, Method: Compositional matrix adjust.
+ Identities = 91/135 (67%), Positives = 106/135 (79%), Gaps = 2/135 (1%)
+
+Query  2    HQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLKE  61
+            H  +SPRTLNAWVK+VEEK F  EV+P F ALSEG TP D+N MLN VG HQAAMQ+++E
+Sbjct  11   HIPLSPRTLNAWVKLVEEKKFGAEVVPGFQALSEGCTPYDINQMLNCVGDHQAAMQIIRE  70
+
+Query  62   TINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTN-NPPIPVGEIY  120
+             INEEAAEWD  HP+  GP+  GQ+REPRGSDIAGTTST++EQI WM     P+PVG IY
+Sbjct  71   IINEEAAEWDVQHPI-PGPLPAGQLREPRGSDIAGTTSTVEEQIQWMFRPQNPVPVGNIY  129
+
+Query  121  KRWIILGLNKIVRMY  135
+            +RWI +GL K VRMY
+Sbjct  130  RRWIQIGLQKCVRMY  144
+
+
+>pdb|2WLV|B Chain B, XRAY 1.25, Structure Of The N-terminal Capsid Domain 
+Of Hiv-2
+Length=144
+
+ Score =   169 bits (468),  Expect = 1e-54, Method: Compositional matrix adjust.
+ Identities = 89/135 (66%), Positives = 106/135 (79%), Gaps = 2/135 (1%)
+
+Query  2    HQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLKE  61
+            H  +SPRTLNAWVK+V++K F  EV+P F ALSEG TP D+N MLN VG HQAAMQ+++E
+Sbjct  11   HIPLSPRTLNAWVKLVQQKKFGAEVVPGFQALSEGCTPYDINQMLNCVGDHQAAMQIIRE  70
+
+Query  62   TINEEAAEWDRVHPVHAGPIAPGQMREPRGSDIAGTTSTLQEQIGWMTN-NPPIPVGEIY  120
+             INEEAAEWD  HP+  GP+  GQ+REPRGSDIAGTTST++EQI WM     P+PVG IY
+Sbjct  71   IINEEAAEWDVQHPI-PGPLPAGQLREPRGSDIAGTTSTVEEQIQWMFRPQNPVPVGNIY  129
+
+Query  121  KRWIILGLNKIVRMY  135
+            +RWI +GL K VRMY
+Sbjct  130  RRWIQIGLQKCVRMY  144
+
+
+>pdb|1FGL|B Chain B, XRAY 1.8, Cyclophilin A Complexed With A Fragment Of 
+Hiv-1 Gag Protein
+Length=25
+
+ Score = 47.8 bits (121),  Expect = 2e-08, Method: Compositional matrix adjust.
+ Identities = 23/25 (92%), Positives = 23/25 (92%), Gaps = 0/25 (0%)
+
+Query  71  DRVHPVHAGPIAPGQMREPRGSDIA  95
+           DR HPVHAGPIAPGQ REPRGSDIA
+Sbjct  1   DRXHPVHAGPIAPGQXREPRGSDIA  25
+
+
+>pdb|2XGU|A Chain A, XRAY 1.502, Structure Of The N-Terminal Domain Of Capsid 
+Protein From Rabbit Endogenous Lentivirus (Relik)
+ pdb|2XGU|B Chain B, XRAY 1.502, Structure Of The N-Terminal Domain Of Capsid 
+Protein From Rabbit Endogenous Lentivirus (Relik)
+ pdb|2XGY|A Chain A, XRAY 1.800, Complex Of Rabbit Endogenous Lentivirus 
+(Relik)capsid With Cyclophilin A
+Length=149
+
+ Score = 45.7 bits (115),  Expect = 2e-07, Method: Compositional matrix adjust.
+ Identities = 24/74 (32%), Positives = 39/74 (53%), Gaps = 1/74 (1%)
+
+Query  2   HQAISPRTLNAWVKVVEEKAFS-PEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLK  60
+           ++ + P  + AW+K V+E   + P  I  F  +S   T  D+N +LN   G  A  Q++ 
+Sbjct  11  YEPVGPGLIAAWLKQVQEHGLTHPATITYFGVISINFTSVDINMLLNVTPGFAAEKQLVI  70
+
+Query  61  ETINEEAAEWDRVH  74
+           + I E+A  WD +H
+Sbjct  71  DKIKEKAIAWDEMH  84
+
+
+>pdb|2EIA|A Chain A, XRAY 2.7, X-Ray Crystal Structure Of Equine Infectious 
+Anemia Virus (Eiav) Capsid Protein P26
+ pdb|2EIA|B Chain B, XRAY 2.7, X-Ray Crystal Structure Of Equine Infectious 
+Anemia Virus (Eiav) Capsid Protein P26
+Length=206
+
+ Score = 42.5 bits (106),  Expect = 4e-06, Method: Compositional matrix adjust.
+ Identities = 25/81 (31%), Positives = 39/81 (48%), Gaps = 2/81 (2%)
+
+Query  7   PRTLNAWVKVVEEKAFSPEVIP-MFSALSEGATPQDLNTMLNTVGGHQAAMQMLKETINE  65
+           PR    WV  ++      E    +F  LS   T +++N  L+ V G     Q+L + I++
+Sbjct  1   PRGYTTWVNTIQTNGLLNEASQNLFGILSVDCTSEEMNAFLDVVPGQAGQKQILLDAIDK  60
+
+Query  66  EAAEWDRVHPVHAGP-IAPGQ  85
+            A +WD  HP+   P +AP Q
+Sbjct  61  IADDWDNRHPLPNAPLVAPPQ  81
+
+
+>pdb|1SJE|C Chain C, XRAY 2.45, Hla-Dr1 Complexed With A 16 Residue Hiv Capsid 
+Peptide Bound In A Hairpin Conformation
+Length=16
+
+ Score = 33.1 bits (79),  Expect = 0.004, Method: Compositional matrix adjust.
+ Identities = 16/16 (100%), Positives = 16/16 (100%), Gaps = 0/16 (0%)
+
+Query  24  PEVIPMFSALSEGATP  39
+           PEVIPMFSALSEGATP
+Sbjct  1   PEVIPMFSALSEGATP  16
+
+
+>pdb|1SJH|C Chain C, XRAY 2.25, Hla-Dr1 Complexed With A 13 Residue Hiv Capsid 
+Peptide
+Length=13
+
+ Score = 28.2 bits (65),  Expect = 0.39, Method: Compositional matrix adjust.
+ Identities = 13/13 (100%), Positives = 13/13 (100%), Gaps = 0/13 (0%)
+
+Query  24  PEVIPMFSALSEG  36
+           PEVIPMFSALSEG
+Sbjct  1   PEVIPMFSALSEG  13
+
+
+>pdb|3DAH|A Chain A, XRAY 2.300, 2.3 A Crystal Structure Of Ribose-phosphate 
+Pyrophosphokinase From Burkholderia Pseudomallei
+ pdb|3DAH|B Chain B, XRAY 2.300, 2.3 A Crystal Structure Of Ribose-phosphate 
+Pyrophosphokinase From Burkholderia Pseudomallei
+ pdb|3DAH|C Chain C, XRAY 2.300, 2.3 A Crystal Structure Of Ribose-phosphate 
+Pyrophosphokinase From Burkholderia Pseudomallei
+Length=319
+
+ Score = 26.8 bits (61),  Expect = 3.3, Method: Compositional matrix adjust.
+ Identities = 21/75 (28%), Positives = 39/75 (52%), Gaps = 5/75 (7%)
+
+Query  8    RTLNAWVKVVEE---KAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLKETIN  64
+            + LN  + ++++   KA   EV+ +   + EG T   ++ M++T G    A Q+LKE   
+Sbjct  186  KQLNCDLAIIDKRRPKANVAEVMNIIGEV-EGRTCVIMDDMVDTAGTLCKAAQVLKERGA  244
+
+Query  65   EEAAEWDRVHPVHAG  79
+            ++   +   HPV +G
+Sbjct  245  KQVFAY-ATHPVLSG  258
+
+
+>pdb|1QHM|A Chain A, XRAY 2.80, Escherichia Coli Pyruvate Formate Lyase Large 
+Domain
+ pdb|1QHM|B Chain B, XRAY 2.80, Escherichia Coli Pyruvate Formate Lyase Large 
+Domain
+Length=624
+
+ Score = 26.8 bits (61),  Expect = 3.6, Method: Composition-based stats.
+ Identities = 21/54 (39%), Positives = 26/54 (48%), Gaps = 14/54 (26%)
+
+Query  59   LKETIN--EEAAEWDRVHPVHAGPIAPGQMRE---PRGSDIAGTTSTLQEQIGW  107
+            L++TI   EE AE  R         A GQM+E     G DI+G  +  QE I W
+Sbjct  213  LEQTIRLREEIAEQHR---------ALGQMKEMAAKYGYDISGPATNAQEAIQW  257
+
+
+>pdb|4FAJ|A Chain A, XRAY 1.9000, Structure And Mode Of Peptide Binding Of 
+Pheromone Receptor Prgz
+Length=564
+
+ Score = 26.4 bits (60),  Expect = 4.3, Method: Composition-based stats.
+ Identities = 19/64 (30%), Positives = 28/64 (44%), Gaps = 10/64 (16%)
+
+Query  12   AWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLKETINEEAAEWD  71
+            AW +VV+ K  SP V  +FSA+                 G QA   +  ++I E+  E +
+Sbjct  145  AWQRVVDPKTVSPNV-ELFSAIKNAK---------EIASGKQAKDTLAVKSIGEKTLEIE  194
+
+Query  72   RVHP  75
+             V P
+Sbjct  195  LVEP  198
+
+
+
+Lambda      K        H        a         alpha
+   0.315    0.131    0.401    0.792     4.96 
+
+Gapped
+Lambda      K        H        a         alpha    sigma
+   0.243   0.0240    0.100     2.50     83.2     85.1 
+
+Effective search space used: 444666393
+
+
+  Database: nr_pdbaa_s2c
+    Posted date:  Nov 28, 2013  4:25 AM
+  Number of letters in database: 10,580,565
+  Number of sequences in database:  43,302
+
+
+
+Matrix: BLOSUM62
+Gap Penalties: Existence: 10, Extension: 1
+Neighboring words threshold: 11
+Window for multiple hits: 40

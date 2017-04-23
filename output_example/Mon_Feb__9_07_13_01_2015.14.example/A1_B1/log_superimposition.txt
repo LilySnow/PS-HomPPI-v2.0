@@ -1,0 +1,834 @@
+
+
+--------------- NOTE: Preparing template files skipped !! 
+
+Qry ID pair: A1_B1
+
+Write hom-complexes used in predictions into FL ...
+
+homologsUsedInPredictionFL_rec:/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/A1/homointerologs_used_in_prediction.txt
+homologsUsedInPredictionFL_lig:/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/B1/homointerologs_used_in_prediction.txt
+
+Template ID for rec: 1m9x	A:G.
+LAL_BBprime: 136
+Template ID for rec: 1m9x	B:C.
+LAL_BBprime: 136
+Template ID for rec: 1m9x	E:H.
+LAL_BBprime: 136
+Template ID for rec: 1m9x	F:G.
+LAL_BBprime: 136
+Template ID for rec: 1m9x	A:D.
+LAL_BBprime: 136
+Template ID for rec: 1m9d	A:D.
+LAL_BBprime: 136
+Template ID for rec: 1m9d	B:C.
+LAL_BBprime: 136
+Template ID for rec: 4dga	A:C.
+LAL_BBprime: 135
+Template ID for rec: 4dga	B:D.
+LAL_BBprime: 135
+Template ID for rec: 4dge	A:C.
+LAL_BBprime: 135
+Template ID for lig: 1m9x	A:G.
+The information of this template has been written in the output file using the for loop of @$homcomplexes_rec
+Template ID for lig: 1m9x	B:C.
+The information of this template has been written in the output file using the for loop of @$homcomplexes_rec
+Template ID for lig: 1m9x	E:H.
+The information of this template has been written in the output file using the for loop of @$homcomplexes_rec
+Template ID for lig: 1m9x	F:G.
+The information of this template has been written in the output file using the for loop of @$homcomplexes_rec
+Template ID for lig: 1m9x	A:D.
+The information of this template has been written in the output file using the for loop of @$homcomplexes_rec
+Template ID for lig: 1m9d	A:D.
+The information of this template has been written in the output file using the for loop of @$homcomplexes_rec
+Template ID for lig: 1m9d	B:C.
+The information of this template has been written in the output file using the for loop of @$homcomplexes_rec
+Template ID for lig: 4dga	A:C.
+The information of this template has been written in the output file using the for loop of @$homcomplexes_rec
+Template ID for lig: 4dga	B:D.
+The information of this template has been written in the output file using the for loop of @$homcomplexes_rec
+Template ID for lig: 4dge	A:C.
+The information of this template has been written in the output file using the for loop of @$homcomplexes_rec
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/hom-complexes_used_in_prediction.lst generated.
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/hom-complexes_used_in_prediction.lst is copied to /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed.
+
+
+
+prepare PDB file of templates ...
+
+prepare PDB file of template 1m9x	A:G ...
+Extract the part of chain A out of /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9x.pdb ...
+All template chains A from /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9x.pdb are written into /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template1.rec.1m9xA.pdb.
+Extract the part of chain G out of /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9x.pdb ...
+All template chains G from /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9x.pdb are written into /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template1.lig.1m9xG.pdb.
+prepare PDB file of template 1m9x	B:C ...
+Extract the part of chain B out of /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9x.pdb ...
+All template chains B from /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9x.pdb are written into /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template2.rec.1m9xB.pdb.
+Extract the part of chain C out of /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9x.pdb ...
+All template chains C from /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9x.pdb are written into /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template2.lig.1m9xC.pdb.
+prepare PDB file of template 1m9x	E:H ...
+Extract the part of chain E out of /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9x.pdb ...
+All template chains E from /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9x.pdb are written into /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template3.rec.1m9xE.pdb.
+Extract the part of chain H out of /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9x.pdb ...
+All template chains H from /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9x.pdb are written into /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template3.lig.1m9xH.pdb.
+prepare PDB file of template 1m9x	F:G ...
+Extract the part of chain F out of /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9x.pdb ...
+All template chains F from /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9x.pdb are written into /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template4.rec.1m9xF.pdb.
+Extract the part of chain G out of /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9x.pdb ...
+All template chains G from /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9x.pdb are written into /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template4.lig.1m9xG.pdb.
+prepare PDB file of template 1m9x	A:D ...
+Extract the part of chain A out of /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9x.pdb ...
+All template chains A from /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9x.pdb are written into /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template5.rec.1m9xA.pdb.
+Extract the part of chain D out of /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9x.pdb ...
+All template chains D from /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9x.pdb are written into /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template5.lig.1m9xD.pdb.
+prepare PDB file of template 1m9d	A:D ...
+Extract the part of chain A out of /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9d.pdb ...
+All template chains A from /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9d.pdb are written into /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template6.rec.1m9dA.pdb.
+Extract the part of chain D out of /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9d.pdb ...
+All template chains D from /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9d.pdb are written into /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template6.lig.1m9dD.pdb.
+prepare PDB file of template 1m9d	B:C ...
+Extract the part of chain B out of /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9d.pdb ...
+All template chains B from /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9d.pdb are written into /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template7.rec.1m9dB.pdb.
+Extract the part of chain C out of /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9d.pdb ...
+All template chains C from /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/1m9d.pdb are written into /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template7.lig.1m9dC.pdb.
+prepare PDB file of template 4dga	A:C ...
+Extract the part of chain A out of /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/4dga.pdb ...
+All template chains A from /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/4dga.pdb are written into /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template8.rec.4dgaA.pdb.
+Extract the part of chain C out of /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/4dga.pdb ...
+All template chains C from /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/4dga.pdb are written into /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template8.lig.4dgaC.pdb.
+prepare PDB file of template 4dga	B:D ...
+Extract the part of chain B out of /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/4dga.pdb ...
+All template chains B from /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/4dga.pdb are written into /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template9.rec.4dgaB.pdb.
+Extract the part of chain D out of /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/4dga.pdb ...
+All template chains D from /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/4dga.pdb are written into /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template9.lig.4dgaD.pdb.
+prepare PDB file of template 4dge	A:C ...
+Extract the part of chain A out of /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/4dge.pdb ...
+All template chains A from /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/4dge.pdb are written into /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template10.rec.4dgeA.pdb.
+Extract the part of chain C out of /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/4dge.pdb ...
+All template chains C from /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/4dge.pdb are written into /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template10.lig.4dgeC.pdb.
+
+Template Number is based on the order in /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/hom-complexes_used_in_prediction.lst
+
+Superimpose template 1 (as if it is the query unbound pdbs) to other templates  ...
+
+
+
+	============================================================
+
+		Generate superimposed model for this case   ... 
+
+	============================================================
+
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein2.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein1.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+pdb files for qry prepared: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein1.pdb, /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein2.pdb
+
+
+	--------------------------------------------------------------
+
+		Generate superimposed model based on template1 ... 
+
+	--------------------------------------------------------------
+
+Template rec PDB: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template1.rec.1m9xA.pdb
+Template lig PDB: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template1.lig.1m9xG.pdb
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template1.rec.1m9xA.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template1.lig.1m9xG.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+
+
+*** Superimpose rec and lig to the template... ***
+
+
+
+Align rec to template ...
+
+
+TMALIGN COMMAND: /home/lxue/tools/TMtool/TMalign /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein1.pdb /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template1/template1.rec.1m9xA.pdb -o /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template1/original_TMalign_output/protein1.sup  > /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template1/original_TMalign_output/protein1.sup.align
+
+Reformat alignment file done: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template1/original_TMalign_output/protein1.sup.aligned_resiNum generated.
+seqResNum in /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template1/original_TMalign_output/protein1.sup.aligned_resiNum is replaced with atomResNum.
+
+
+
+Align lig to template ...
+
+
+TMALIGN COMMAND: /home/lxue/tools/TMtool/TMalign /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein2.pdb /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template1/template1.lig.1m9xG.pdb -o /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template1/original_TMalign_output/protein2.sup  > /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template1/original_TMalign_output/protein2.sup.align
+
+Reformat alignment file done: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template1/original_TMalign_output/protein2.sup.aligned_resiNum generated.
+seqResNum in /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template1/original_TMalign_output/protein2.sup.aligned_resiNum is replaced with atomResNum.
+
+
+
+callTMalign done.
+
+
+Extracting the new coordinates of rec/lig PDB FL from TMalign output ....
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template1/protein1.sup.pdb generated.
+
+Add HETATM to /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template1/protein1.sup.pdb
+
+Extracting the new coordinates of rec/lig PDB FL from TMalign output ....
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template1/protein2.sup.pdb generated.
+
+Add HETATM to /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template1/protein2.sup.pdb
+
+Combine the coordinates of lig and rec into one PDB file...
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template1/finalSup.1m9xA_1m9xG.pdb generated. Chn A is rec, and Chn B is lig.
+
+
+	--------------------------------------------------------------
+
+		Generate superimposed model based on template10 ... 
+
+	--------------------------------------------------------------
+
+Template rec PDB: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template10.rec.4dgeA.pdb
+Template lig PDB: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template10.lig.4dgeC.pdb
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template10.rec.4dgeA.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template10.lig.4dgeC.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+
+
+*** Superimpose rec and lig to the template... ***
+
+
+
+Align rec to template ...
+
+
+TMALIGN COMMAND: /home/lxue/tools/TMtool/TMalign /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein1.pdb /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template10/template10.rec.4dgeA.pdb -o /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template10/original_TMalign_output/protein1.sup  > /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template10/original_TMalign_output/protein1.sup.align
+
+Reformat alignment file done: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template10/original_TMalign_output/protein1.sup.aligned_resiNum generated.
+seqResNum in /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template10/original_TMalign_output/protein1.sup.aligned_resiNum is replaced with atomResNum.
+
+
+
+Align lig to template ...
+
+
+TMALIGN COMMAND: /home/lxue/tools/TMtool/TMalign /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein2.pdb /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template10/template10.lig.4dgeC.pdb -o /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template10/original_TMalign_output/protein2.sup  > /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template10/original_TMalign_output/protein2.sup.align
+
+Reformat alignment file done: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template10/original_TMalign_output/protein2.sup.aligned_resiNum generated.
+seqResNum in /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template10/original_TMalign_output/protein2.sup.aligned_resiNum is replaced with atomResNum.
+
+
+
+callTMalign done.
+
+
+Extracting the new coordinates of rec/lig PDB FL from TMalign output ....
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template10/protein1.sup.pdb generated.
+
+Add HETATM to /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template10/protein1.sup.pdb
+
+Extracting the new coordinates of rec/lig PDB FL from TMalign output ....
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template10/protein2.sup.pdb generated.
+
+Add HETATM to /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template10/protein2.sup.pdb
+
+Combine the coordinates of lig and rec into one PDB file...
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template10/finalSup.4dgeA_4dgeC.pdb generated. Chn A is rec, and Chn B is lig.
+
+
+	--------------------------------------------------------------
+
+		Generate superimposed model based on template2 ... 
+
+	--------------------------------------------------------------
+
+Template rec PDB: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template2.rec.1m9xB.pdb
+Template lig PDB: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template2.lig.1m9xC.pdb
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template2.rec.1m9xB.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template2.lig.1m9xC.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+
+
+*** Superimpose rec and lig to the template... ***
+
+
+
+Align rec to template ...
+
+
+TMALIGN COMMAND: /home/lxue/tools/TMtool/TMalign /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein1.pdb /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template2/template2.rec.1m9xB.pdb -o /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template2/original_TMalign_output/protein1.sup  > /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template2/original_TMalign_output/protein1.sup.align
+
+Reformat alignment file done: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template2/original_TMalign_output/protein1.sup.aligned_resiNum generated.
+seqResNum in /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template2/original_TMalign_output/protein1.sup.aligned_resiNum is replaced with atomResNum.
+
+
+
+Align lig to template ...
+
+
+TMALIGN COMMAND: /home/lxue/tools/TMtool/TMalign /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein2.pdb /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template2/template2.lig.1m9xC.pdb -o /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template2/original_TMalign_output/protein2.sup  > /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template2/original_TMalign_output/protein2.sup.align
+
+Reformat alignment file done: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template2/original_TMalign_output/protein2.sup.aligned_resiNum generated.
+seqResNum in /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template2/original_TMalign_output/protein2.sup.aligned_resiNum is replaced with atomResNum.
+
+
+
+callTMalign done.
+
+
+Extracting the new coordinates of rec/lig PDB FL from TMalign output ....
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template2/protein1.sup.pdb generated.
+
+Add HETATM to /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template2/protein1.sup.pdb
+
+Extracting the new coordinates of rec/lig PDB FL from TMalign output ....
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template2/protein2.sup.pdb generated.
+
+Add HETATM to /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template2/protein2.sup.pdb
+
+Combine the coordinates of lig and rec into one PDB file...
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template2/finalSup.1m9xB_1m9xC.pdb generated. Chn A is rec, and Chn B is lig.
+
+
+	--------------------------------------------------------------
+
+		Generate superimposed model based on template3 ... 
+
+	--------------------------------------------------------------
+
+Template rec PDB: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template3.rec.1m9xE.pdb
+Template lig PDB: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template3.lig.1m9xH.pdb
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template3.rec.1m9xE.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template3.lig.1m9xH.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+
+
+*** Superimpose rec and lig to the template... ***
+
+
+
+Align rec to template ...
+
+
+TMALIGN COMMAND: /home/lxue/tools/TMtool/TMalign /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein1.pdb /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template3/template3.rec.1m9xE.pdb -o /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template3/original_TMalign_output/protein1.sup  > /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template3/original_TMalign_output/protein1.sup.align
+
+Reformat alignment file done: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template3/original_TMalign_output/protein1.sup.aligned_resiNum generated.
+seqResNum in /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template3/original_TMalign_output/protein1.sup.aligned_resiNum is replaced with atomResNum.
+
+
+
+Align lig to template ...
+
+
+TMALIGN COMMAND: /home/lxue/tools/TMtool/TMalign /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein2.pdb /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template3/template3.lig.1m9xH.pdb -o /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template3/original_TMalign_output/protein2.sup  > /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template3/original_TMalign_output/protein2.sup.align
+
+Reformat alignment file done: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template3/original_TMalign_output/protein2.sup.aligned_resiNum generated.
+seqResNum in /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template3/original_TMalign_output/protein2.sup.aligned_resiNum is replaced with atomResNum.
+
+
+
+callTMalign done.
+
+
+Extracting the new coordinates of rec/lig PDB FL from TMalign output ....
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template3/protein1.sup.pdb generated.
+
+Add HETATM to /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template3/protein1.sup.pdb
+
+Extracting the new coordinates of rec/lig PDB FL from TMalign output ....
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template3/protein2.sup.pdb generated.
+
+Add HETATM to /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template3/protein2.sup.pdb
+
+Combine the coordinates of lig and rec into one PDB file...
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template3/finalSup.1m9xE_1m9xH.pdb generated. Chn A is rec, and Chn B is lig.
+
+
+	--------------------------------------------------------------
+
+		Generate superimposed model based on template4 ... 
+
+	--------------------------------------------------------------
+
+Template rec PDB: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template4.rec.1m9xF.pdb
+Template lig PDB: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template4.lig.1m9xG.pdb
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template4.rec.1m9xF.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template4.lig.1m9xG.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+
+
+*** Superimpose rec and lig to the template... ***
+
+
+
+Align rec to template ...
+
+
+TMALIGN COMMAND: /home/lxue/tools/TMtool/TMalign /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein1.pdb /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template4/template4.rec.1m9xF.pdb -o /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template4/original_TMalign_output/protein1.sup  > /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template4/original_TMalign_output/protein1.sup.align
+
+Reformat alignment file done: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template4/original_TMalign_output/protein1.sup.aligned_resiNum generated.
+seqResNum in /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template4/original_TMalign_output/protein1.sup.aligned_resiNum is replaced with atomResNum.
+
+
+
+Align lig to template ...
+
+
+TMALIGN COMMAND: /home/lxue/tools/TMtool/TMalign /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein2.pdb /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template4/template4.lig.1m9xG.pdb -o /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template4/original_TMalign_output/protein2.sup  > /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template4/original_TMalign_output/protein2.sup.align
+
+Reformat alignment file done: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template4/original_TMalign_output/protein2.sup.aligned_resiNum generated.
+seqResNum in /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template4/original_TMalign_output/protein2.sup.aligned_resiNum is replaced with atomResNum.
+
+
+
+callTMalign done.
+
+
+Extracting the new coordinates of rec/lig PDB FL from TMalign output ....
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template4/protein1.sup.pdb generated.
+
+Add HETATM to /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template4/protein1.sup.pdb
+
+Extracting the new coordinates of rec/lig PDB FL from TMalign output ....
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template4/protein2.sup.pdb generated.
+
+Add HETATM to /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template4/protein2.sup.pdb
+
+Combine the coordinates of lig and rec into one PDB file...
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template4/finalSup.1m9xF_1m9xG.pdb generated. Chn A is rec, and Chn B is lig.
+
+
+	--------------------------------------------------------------
+
+		Generate superimposed model based on template5 ... 
+
+	--------------------------------------------------------------
+
+Template rec PDB: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template5.rec.1m9xA.pdb
+Template lig PDB: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template5.lig.1m9xD.pdb
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template5.rec.1m9xA.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template5.lig.1m9xD.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+
+
+*** Superimpose rec and lig to the template... ***
+
+
+
+Align rec to template ...
+
+
+TMALIGN COMMAND: /home/lxue/tools/TMtool/TMalign /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein1.pdb /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template5/template5.rec.1m9xA.pdb -o /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template5/original_TMalign_output/protein1.sup  > /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template5/original_TMalign_output/protein1.sup.align
+
+Reformat alignment file done: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template5/original_TMalign_output/protein1.sup.aligned_resiNum generated.
+seqResNum in /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template5/original_TMalign_output/protein1.sup.aligned_resiNum is replaced with atomResNum.
+
+
+
+Align lig to template ...
+
+
+TMALIGN COMMAND: /home/lxue/tools/TMtool/TMalign /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein2.pdb /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template5/template5.lig.1m9xD.pdb -o /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template5/original_TMalign_output/protein2.sup  > /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template5/original_TMalign_output/protein2.sup.align
+
+Reformat alignment file done: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template5/original_TMalign_output/protein2.sup.aligned_resiNum generated.
+seqResNum in /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template5/original_TMalign_output/protein2.sup.aligned_resiNum is replaced with atomResNum.
+
+
+
+callTMalign done.
+
+
+Extracting the new coordinates of rec/lig PDB FL from TMalign output ....
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template5/protein1.sup.pdb generated.
+
+Add HETATM to /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template5/protein1.sup.pdb
+
+Extracting the new coordinates of rec/lig PDB FL from TMalign output ....
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template5/protein2.sup.pdb generated.
+
+Add HETATM to /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template5/protein2.sup.pdb
+
+Combine the coordinates of lig and rec into one PDB file...
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template5/finalSup.1m9xA_1m9xD.pdb generated. Chn A is rec, and Chn B is lig.
+
+
+	--------------------------------------------------------------
+
+		Generate superimposed model based on template6 ... 
+
+	--------------------------------------------------------------
+
+Template rec PDB: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template6.rec.1m9dA.pdb
+Template lig PDB: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template6.lig.1m9dD.pdb
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template6.rec.1m9dA.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template6.lig.1m9dD.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+
+
+*** Superimpose rec and lig to the template... ***
+
+
+
+Align rec to template ...
+
+
+TMALIGN COMMAND: /home/lxue/tools/TMtool/TMalign /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein1.pdb /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template6/template6.rec.1m9dA.pdb -o /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template6/original_TMalign_output/protein1.sup  > /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template6/original_TMalign_output/protein1.sup.align
+
+Reformat alignment file done: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template6/original_TMalign_output/protein1.sup.aligned_resiNum generated.
+seqResNum in /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template6/original_TMalign_output/protein1.sup.aligned_resiNum is replaced with atomResNum.
+
+
+
+Align lig to template ...
+
+
+TMALIGN COMMAND: /home/lxue/tools/TMtool/TMalign /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein2.pdb /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template6/template6.lig.1m9dD.pdb -o /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template6/original_TMalign_output/protein2.sup  > /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template6/original_TMalign_output/protein2.sup.align
+
+Reformat alignment file done: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template6/original_TMalign_output/protein2.sup.aligned_resiNum generated.
+seqResNum in /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template6/original_TMalign_output/protein2.sup.aligned_resiNum is replaced with atomResNum.
+
+
+
+callTMalign done.
+
+
+Extracting the new coordinates of rec/lig PDB FL from TMalign output ....
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template6/protein1.sup.pdb generated.
+
+Add HETATM to /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template6/protein1.sup.pdb
+
+Extracting the new coordinates of rec/lig PDB FL from TMalign output ....
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template6/protein2.sup.pdb generated.
+
+Add HETATM to /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template6/protein2.sup.pdb
+
+Combine the coordinates of lig and rec into one PDB file...
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template6/finalSup.1m9dA_1m9dD.pdb generated. Chn A is rec, and Chn B is lig.
+
+
+	--------------------------------------------------------------
+
+		Generate superimposed model based on template7 ... 
+
+	--------------------------------------------------------------
+
+Template rec PDB: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template7.rec.1m9dB.pdb
+Template lig PDB: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template7.lig.1m9dC.pdb
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template7.rec.1m9dB.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template7.lig.1m9dC.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+
+
+*** Superimpose rec and lig to the template... ***
+
+
+
+Align rec to template ...
+
+
+TMALIGN COMMAND: /home/lxue/tools/TMtool/TMalign /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein1.pdb /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template7/template7.rec.1m9dB.pdb -o /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template7/original_TMalign_output/protein1.sup  > /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template7/original_TMalign_output/protein1.sup.align
+
+Reformat alignment file done: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template7/original_TMalign_output/protein1.sup.aligned_resiNum generated.
+seqResNum in /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template7/original_TMalign_output/protein1.sup.aligned_resiNum is replaced with atomResNum.
+
+
+
+Align lig to template ...
+
+
+TMALIGN COMMAND: /home/lxue/tools/TMtool/TMalign /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein2.pdb /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template7/template7.lig.1m9dC.pdb -o /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template7/original_TMalign_output/protein2.sup  > /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template7/original_TMalign_output/protein2.sup.align
+
+Reformat alignment file done: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template7/original_TMalign_output/protein2.sup.aligned_resiNum generated.
+seqResNum in /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template7/original_TMalign_output/protein2.sup.aligned_resiNum is replaced with atomResNum.
+
+
+
+callTMalign done.
+
+
+Extracting the new coordinates of rec/lig PDB FL from TMalign output ....
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template7/protein1.sup.pdb generated.
+
+Add HETATM to /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template7/protein1.sup.pdb
+
+Extracting the new coordinates of rec/lig PDB FL from TMalign output ....
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template7/protein2.sup.pdb generated.
+
+Add HETATM to /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template7/protein2.sup.pdb
+
+Combine the coordinates of lig and rec into one PDB file...
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template7/finalSup.1m9dB_1m9dC.pdb generated. Chn A is rec, and Chn B is lig.
+
+
+	--------------------------------------------------------------
+
+		Generate superimposed model based on template8 ... 
+
+	--------------------------------------------------------------
+
+Template rec PDB: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template8.rec.4dgaA.pdb
+Template lig PDB: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template8.lig.4dgaC.pdb
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template8.rec.4dgaA.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template8.lig.4dgaC.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+
+
+*** Superimpose rec and lig to the template... ***
+
+
+
+Align rec to template ...
+
+
+TMALIGN COMMAND: /home/lxue/tools/TMtool/TMalign /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein1.pdb /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template8/template8.rec.4dgaA.pdb -o /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template8/original_TMalign_output/protein1.sup  > /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template8/original_TMalign_output/protein1.sup.align
+
+Reformat alignment file done: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template8/original_TMalign_output/protein1.sup.aligned_resiNum generated.
+seqResNum in /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template8/original_TMalign_output/protein1.sup.aligned_resiNum is replaced with atomResNum.
+
+
+
+Align lig to template ...
+
+
+TMALIGN COMMAND: /home/lxue/tools/TMtool/TMalign /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein2.pdb /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template8/template8.lig.4dgaC.pdb -o /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template8/original_TMalign_output/protein2.sup  > /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template8/original_TMalign_output/protein2.sup.align
+
+Reformat alignment file done: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template8/original_TMalign_output/protein2.sup.aligned_resiNum generated.
+seqResNum in /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template8/original_TMalign_output/protein2.sup.aligned_resiNum is replaced with atomResNum.
+
+
+
+callTMalign done.
+
+
+Extracting the new coordinates of rec/lig PDB FL from TMalign output ....
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template8/protein1.sup.pdb generated.
+
+Add HETATM to /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template8/protein1.sup.pdb
+
+Extracting the new coordinates of rec/lig PDB FL from TMalign output ....
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template8/protein2.sup.pdb generated.
+
+Add HETATM to /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template8/protein2.sup.pdb
+
+Combine the coordinates of lig and rec into one PDB file...
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template8/finalSup.4dgaA_4dgaC.pdb generated. Chn A is rec, and Chn B is lig.
+
+
+	--------------------------------------------------------------
+
+		Generate superimposed model based on template9 ... 
+
+	--------------------------------------------------------------
+
+Template rec PDB: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template9.rec.4dgaB.pdb
+Template lig PDB: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template9.lig.4dgaD.pdb
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template9.rec.4dgaB.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+
+
+Cleaning PDB file: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/TemplatesUsed/pdb/template9.lig.4dgaD.pdb ..
+
+Add TER done.
+Check HETATM atoms done.
+
+Cleaning PDB file done.
+
+
+
+*** Superimpose rec and lig to the template... ***
+
+
+
+Align rec to template ...
+
+
+TMALIGN COMMAND: /home/lxue/tools/TMtool/TMalign /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein1.pdb /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template9/template9.rec.4dgaB.pdb -o /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template9/original_TMalign_output/protein1.sup  > /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template9/original_TMalign_output/protein1.sup.align
+
+Reformat alignment file done: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template9/original_TMalign_output/protein1.sup.aligned_resiNum generated.
+seqResNum in /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template9/original_TMalign_output/protein1.sup.aligned_resiNum is replaced with atomResNum.
+
+
+
+Align lig to template ...
+
+
+TMALIGN COMMAND: /home/lxue/tools/TMtool/TMalign /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/protein2.pdb /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template9/template9.lig.4dgaD.pdb -o /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template9/original_TMalign_output/protein2.sup  > /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template9/original_TMalign_output/protein2.sup.align
+
+Reformat alignment file done: /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template9/original_TMalign_output/protein2.sup.aligned_resiNum generated.
+seqResNum in /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template9/original_TMalign_output/protein2.sup.aligned_resiNum is replaced with atomResNum.
+
+
+
+callTMalign done.
+
+
+Extracting the new coordinates of rec/lig PDB FL from TMalign output ....
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template9/protein1.sup.pdb generated.
+
+Add HETATM to /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template9/protein1.sup.pdb
+
+Extracting the new coordinates of rec/lig PDB FL from TMalign output ....
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template9/protein2.sup.pdb generated.
+
+Add HETATM to /data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template9/protein2.sup.pdb
+
+Combine the coordinates of lig and rec into one PDB file...
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB/template9/finalSup.4dgaB_4dgaD.pdb generated. Chn A is rec, and Chn B is lig.
+
+
+--------
+/data/web_servers/lxue/PSHOMPPIv1.3/uploadData/Mon_Feb__9_07_13_01_2015.14.test1/A1_B1/superimposed_models/supUnbound2TemplatePDB generated.

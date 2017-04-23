@@ -1,0 +1,45 @@
+# Final contact file (filtered based on the alignment symbols.
+# NOTE: ONly the aligned residues (**, ***) are included in the haddock restaints!!
+
+# Alignment Symbol: 
+# *: not aligned
+# **: aligned but >=5 angstroms
+# ***: aligned but <5 angstroms
+PHE	A	  60	 	PRO	B	  90	 	9.76646	***	***
+PHE	A	  60	 	ALA	B	  92	 	8.11177	***	***
+MET	A	  61	 	PRO	B	  90	 	9.52975	***	***
+MET	A	 100	 	PRO	B	  90	 	9.63775	***	***
+ALA	A	 101	 	MET	B	  88	 	6.72071	***	***
+ALA	A	 101	 	ALA	B	  89	 	7.63573	***	***
+ALA	A	 101	 	PRO	B	  90	 	7.11385	***	***
+ASN	A	 102	 	ALA	B	  87	 	8.89973	***	***
+ASN	A	 102	 	MET	B	  88	 	5.51838	***	***
+ASN	A	 102	 	ALA	B	  89	 	7.5576	***	***
+ASN	A	 102	 	PRO	B	  90	 	7.88385	***	***
+ALA	A	 103	 	VAL	B	  86	 	7.42996	***	***
+ALA	A	 103	 	ALA	B	  87	 	6.92233	***	***
+ALA	A	 103	 	MET	B	  88	 	4.69553	***	***
+ALA	A	 103	 	ALA	B	  89	 	7.35874	***	***
+ALA	A	 103	 	PRO	B	  90	 	8.84845	***	***
+GLY	A	 104	 	VAL	B	  86	 	9.98585	***	***
+GLY	A	 104	 	MET	B	  88	 	7.76025	***	***
+GLY	A	 104	 	ALA	B	  89	 	9.13654	***	***
+GLY	A	 104	 	PRO	B	  90	 	9.38832	***	***
+GLN	A	 111	 	MET	B	  88	 	9.19884	***	***
+PHE	A	 113	 	PRO	B	  90	 	9.48723	***	***
+THR	A	 119	 	PRO	B	  90	 	9.53473	***	***
+THR	A	 119	 	ILE	B	  91	 	9.62322	***	***
+THR	A	 119	 	ALA	B	  92	 	8.26134	***	***
+THR	A	 119	 	PRO	B	  93	 	8.80661	***	***
+GLU	A	 120	 	PRO	B	  93	 	9.95333	***	***
+TRP	A	 121	 	PRO	B	  90	 	9.17577	***	***
+TRP	A	 121	 	ILE	B	  91	 	8.13698	***	***
+TRP	A	 121	 	ALA	B	  92	 	8.10983	***	***
+TRP	A	 121	 	PRO	B	  93	 	7.7178	***	***
+LEU	A	 122	 	PRO	B	  90	 	6.84633	***	***
+LEU	A	 122	 	ILE	B	  91	 	7.4529	***	***
+LEU	A	 122	 	ALA	B	  92	 	8.63183	***	***
+LEU	A	 122	 	PRO	B	  93	 	9.80223	***	***
+LYS	A	 125	 	PRO	B	  90	 	8.07526	***	***
+LYS	A	 125	 	ILE	B	  91	 	9.5101	***	***
+HIS	A	 126	 	PRO	B	  90	 	7.85104	***	***
