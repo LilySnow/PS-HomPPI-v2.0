@@ -66,6 +66,8 @@ open STDERR, ">>$logFL" or die("Cannot write to $logFL:$!");
 #----------------------------------------------------------------#
 
 #-------- 1. prepare jobDIR       ---------#
+my $jobID = &genJobID($jobtitle);
+my $jobDIR = "$dataDIR/$jobID";
 my ($qryPairLstFL, $protSeqFL, $delFL, $seqInt_protFL) = &prepareJobDIR($jobDIR,      $qryIDpairs  ,     $qrySeqs  ,     $pdbFL_name  ,     $delLst  );
 
 #-- step 1a:  Print auto-refresh result page
@@ -82,9 +84,9 @@ my ($qryPairLstFL, $protSeqFL, $delFL, $seqInt_protFL) = &prepareJobDIR($jobDIR,
 
 
 #----------3. predict ------#
-#my $flag_prediction =
-#  &batch_PSHomPPI( $jobDIR, $qryPairLstFL, $protSeqFL, $delFL, $seqInt_protFL,
-#    $intDef, $atomDistThr, $rasaThr );
+my $flag_prediction =
+  &batch_PSHomPPI( $jobDIR, $qryPairLstFL, $protSeqFL, $delFL, $seqInt_protFL,
+    $intDef, $atomDistThr, $rasaThr );
 
 
 my $flag_prediction = 0;

@@ -1,0 +1,4 @@
+Using RF (mtry = 4.5826, 5 fold cv, ntree = 200): 
+
+predicted_CC = 0.69
+actual_aveCC = - 0.045

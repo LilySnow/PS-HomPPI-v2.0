@@ -1075,5 +1075,135 @@ sub sendResultEmail {
     return;
 }
 
+sub uploadZipFile {
+
+    #save uploaded zipped file as $proteinFL
+    #Author: Xue, Li
+    #date: May, 2009
+    #
+    #This script is part of RNA-protein interface predictioin
+    #
+    #This script is to upload FASTA query file into $ProteinToBePredictedDIR
+    #The maximum upload filesize is 100K
+
+    use strict;
+    use CGI ":standard";
+    $CGI::needs_binmode = 1;
+
+    #use CGI ":standard";
+    my $masFLSize = 100;    # maximum upload filesize is 100K
+    $CGI::POST_MAX =
+      1024 * 10 * $masFLSize;    # maximum upload filesize is 100K * 10
+
+    my $query = new CGI;
+
+    my $proteinFL      = shift @_;
+    my $uploadFLhandle = shift @_;
+
+    my $jobDIR = dirname($proteinFL);
+
+    if ( !-d $jobDIR ) {
+        mkdir $jobDIR;
+    }
+
+    #----- Look for uploads that exceed $CGI::POST_MAX-------
+
+    if ( !$query->param('pdbFL') && $query->cgi_error() ) {
+        print $query->cgi_error();
+        print p,
+"The file you are attempting to upload exceeds the maximum allowable file size $masFLSize K.",
+          p, 'Please refer to your system administrator', p;
+        print $query->hr, $query->end_html;
+        exit 0;
+    }
+
+    #----- Upload file-------
+
+    my $upload_filehandle = $query->upload($uploadFLhandle);
+
+    unlink $proteinFL if ( -e $proteinFL );
+
+    open UPLOADFILE, ">>$proteinFL" || die("Cannot open $proteinFL:$!");
+    binmode UPLOADFILE;
+
+    my $buffer;
+
+    while ( read( $upload_filehandle, $buffer, 1024 ) ) {
+        print UPLOADFILE $buffer;
+    }
+    close UPLOADFILE;
+
+    if ( !-e $proteinFL ) {
+        die("No uploaded file saved:$!");
+    }
+    print LOG "Qry pdb files saved as: $proteinFL.\n";
+
+}
+
+sub unzipFL {
+    use strict;
+    use File::Basename;
+    use lib '/home/lxue/perl5/lib/perl5';
+    use Archive::Extract;
+    use File::Copy;
+    use File::Path;
+
+    my $zippedFL = shift @_;
+    my ( $name, $path, $suffix ) =
+      fileparse( $zippedFL, ( '.gz', '.zip', '.tar.gz' ) );
+    ($name) = $name =~ /(.+)\.$/;
+    my $outputDIR = $path;
+
+    #check file type and uncompress input file
+
+    my $ae = Archive::Extract->new( archive => $zippedFL );
+    if ( $ae->is_tgz || $ae->is_gz || $ae->is_zip || $ae->is_bz2 ) {
+
+        $ae->extract( to => $outputDIR )
+          or die("Cannot unzip $zippedFL to $outputDIR:$!");
+        my $outdir = $ae->extract_path;    #extracted folder
+
+   #        print header, start_html('debug'),
+   #          "<font size=\"5\">extracting $zippedFL  to $outputDIR.</font>", p,
+   #          "outdir: $outdir",
+   #          end_html();
+
+        #put all the extracted files directly under $output dir
+
+        if ( $outdir ne $outputDIR ) {
+
+            my $command = "mv $outdir/* $outputDIR";
+            $command =~ /(.+)/;
+            system("$command");
+        }
+
+        my $files = $ae->files;
+
+        #        #--remove the original extracted folder
+
+        #        if ( $outdir ne $outputDIR ) {
+        #            rmtree($outdir);
+        #        }
+
+        #        #move the zip file to
+        #        my $upperDIR = dirname($outputDIR);
+        #        move( $zippedFL, $upperDIR )
+        #          || die("Cannot move $zippedFL to $upperDIR:$!");
+        #
+        print LOG "$zippedFL is unzipped to $outputDIR\n";
+
+        return $outputDIR;
+    }
+    else {
+        print header, start_html('warning'),
+"<font size=\"5\">Warning: Please input a compressed file in the format of .tar.gz, .gz or .zip. </font>",
+          p, end_html();
+        exit 1;
+    }
+
+}
+
+
+
 #------------
 1;
