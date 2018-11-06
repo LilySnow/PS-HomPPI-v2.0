@@ -39,15 +39,15 @@ scriptDIR=`pwd`
 cd $DIR
 
 
-#--- if there is only one structure under $DIR
+#--- if there is only one structure under $DIR='finalSup'
 
 if [ $num_pdb == 1 ];then
-    rm -rf cluster1
-    mkdir cluster1
+    rm -rf ../cluster1
+    mkdir -p ../cluster1
 
     echo "Copy files for template1 into the folder of cluster1 "
-    cp template_pdbs/template1.rec_lig*.pdb cluster1
-    mv *template1.aligned_resiNum cluster1
+    cp ../template_pdbs/template1.rec_lig*.pdb ../cluster1
+    mv ../*template1.aligned_resiNum ../cluster1
 
     cd $scriptDIR
     exit 0
@@ -110,13 +110,16 @@ if [ -d cluster1 ];then
     rm -rf cluster*
 fi
 
-for clusterID in `awk '{print $2}' Clusters.lst`;do
+#-- current working dir: final/finalSup
+cd .. #now change to final
+for clusterID in `awk '{print $2}' finalSup/Clusters.lst`;do
     mkdir cluster$clusterID
     echo "cluster$clusterID generated"
 
-    for templateID in `awk -v row=$clusterID '{if (NR==row) {$1=$2=$3="";print $0 } }' Clusters.lst`;do
+    for templateID in `awk -v row=$clusterID '{if (NR==row) {$1=$2=$3="";print $0 } }' finalSup/Clusters.lst`;do
         echo "Copy files for template$templateID into the folder of cluster$clusterID "
         cp template_pdbs/template$templateID.rec_lig*.pdb cluster$clusterID
+        cp finalSup/finalSup.*.template$templateID.pdb cluster$clusterID
         mv *template$templateID.aligned_resiNum cluster$clusterID
     done
 done

@@ -3,3 +3,7 @@
 
 1. map predicted interface onto structures.
 1. build PPIDB
+
+Bug:
+
+hhfilter at /data/web_servers/lxue/call_hhpred/SOFTWARE/hhsuite/hhsuite-3.0.1-Source/scripts/addss.pl line 239 fails when running "perl PSHomPPI_local.cgi test1" 

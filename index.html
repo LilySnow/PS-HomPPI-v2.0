@@ -262,6 +262,7 @@ VHQAISPRTLNAWVKVVEEKAFSPEVIPMFSALSEGATPQDLNTMLNTVGGHQAAMQMLKETINEEAAEWDRVHPVHAGP
 
 <p></p>
 <b>Paste the deletion file (optional)</b>
+<a href="http://ailab1.ist.psu.edu/PSHOMPPIv2.0/overview.html" title="click for detailed descriptions">Click here for file format</a>
 <p></p>
 <textarea name="delFL"  rows="10" cols="60" wrap="virtual">
 Q:P => 1m9xE:1m9xC,1m9eB:1m9eC,2x2dB:2x2dE
@@ -398,11 +399,11 @@ X-RAY <input type="checkbox" name="method_XRAY" value="1" checked/></input>
     </tr>
     <tr>
         <th>E-value cutoff for PDB search</th>
-        <th><input type="text" name="evalThr_hhpredPDB70" size="8" value=1> </th>
+        <th><input type="text" name="evalThr_hhpredPDB70" size="8" value=0.1> </th>
     </tr>
     <tr>
-        <th>min coverarge (the -cov option of hhpred) for PDB search</th>
-        <th><input type="text" name="miniCov_hhpredPDB70" size="8" value=5> </th>
+        <th>min coverarge with query (%) (the -cov option of hhpred) for PDB search</th>
+        <th><input type="text" name="miniCov_hhpredPDB70" size="8" value=50> </th>
     </tr>
     <tr>
         <th>max sequence identity (the -id option of hhpred) for PDB search (for less redundancy)</th>
@@ -410,11 +411,11 @@ X-RAY <input type="checkbox" name="method_XRAY" value="1" checked/></input>
     </tr>
     <tr>
         <th>min hhpred probability cutoff for PDB search</th>
-        <th><input type="text" name="PvalThr_hhpredPDB70" size="8" value=40> </th>
+        <th><input type="text" name="PvalThr_hhpredPDB70" size="8" value=90> </th>
     </tr>
     <tr>
         <th>minimal residue number in alignment</th>
-        <th><input type="text" name="minResNum_in_alignment" size="8" value=1> </th>
+        <th><input type="text" name="minResNum_in_alignment" size="8" value=5> </th>
     </tr>
 </table>
 

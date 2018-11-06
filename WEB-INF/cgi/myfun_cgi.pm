@@ -167,7 +167,7 @@ sub prepareJobDIR {
     my $qryIDpairs = shift @_;
     my $qrySeqs    = shift @_;
     my $pdbFL_name = shift @_;
-    my $delLst     = shift @_;
+    my $delLst     = shift @_; # is a string
 
     if (!-d $jobDIR){
         mkdir $jobDIR;
@@ -205,7 +205,7 @@ sub prepareJobDIR {
         }
 
         &uploadZipFile( $ori_pdbFL, 'pdbFL' )
-          ;    #save uploaded file as $ori_dockFL;
+          ;    #save uploaded file as $ori_pdbFL;
 
         my $outdir =
           &unzipFL($ori_pdbFL);    #$outdir: the files are extracted to $outdir
@@ -305,9 +305,9 @@ sub validate_input {
         #if the user uploaded the wrong format, then exit the program!
         print LOG "User upload pdb files for queries:  $pdbFL_name\n";
         print header, start_html('warning'),
-'<font size="5">Warning: <font color="red">Please upload PDB formated files of your docked models in the format of *.tar.gz OR *.zip. And try again.</font>',
+'<font size="5">Warning: <font color="red">Please upload your query PDB files in the format of *.tar.gz OR *.zip. And try again.</font>',
           p, end_html();
-        exit;
+          exit;
     }
 
     #-------- check email ---------#
@@ -601,11 +601,9 @@ sub writeThankYouHtml {
 
     our $serverName;
 
-    my (
-        $jobtitle, $jobID, $email,
-        $intDef, $atomDistThr, $k, $flag_rmSameProt, $flag_QryPDBFL, $pdbFL_name
+    my @params =  @{ shift @_ };
 
-    ) = @{ shift @_ };
+    my ( $email, $jobtitle, $jobID,  $qryIDpairs, $qrySeqs, $pdbFL_name, $delLst, $rasaThr, $atomDistThr, $safeMode_thr, $twiMode_thr1, $twiMode_thr2, $twiMode_thr3, $darkMode_thr, $hhpred_param, $flag_QryPDBFL,  $flag_rmSameProt) = @params;
 
     #	my $method = &getMethod($methodCode);
 
@@ -629,16 +627,16 @@ sub writeThankYouHtml {
             print ' <p> </p>';
             print "Please check <font color=\"red\">$email </font>is correct.";
             print ' <p> </p>';
-            print ' <h3> Query Parameters </h3>';
-            print ' <TABLE border = 0> ';
-            print
-"<TR> <TD><FONT COLOR=\"Blue\"> CA-CA distance Threshold</FONT></TD><TD> $atomDistThr  &#197</TD></TR>";
+#            print ' <h3> Query Parameters </h3>';
+#            print ' <TABLE border = 0> ';
+#            print
+#"<TR> <TD><FONT COLOR=\"Blue\"> CA-CA distance Threshold</FONT></TD><TD> $atomDistThr  &#197</TD></TR>";
 
         #print "TR> <TD><FONT COLOR=\"Blue\"> <hr /></FONT></TD><TD></TD></TR>";
-            print
-"<TR> <TD><FONT COLOR=\"Blue\"> K in K-nearest homologs</FONT></TD><TD> $k</TD></TR>";
-            print
-"<TR> <TD><FONT COLOR=\"Blue\"> User provided query PDB files: </FONT></TD><TD> $flag_QryPDBFL</TD></TR>";
+#            print
+#"<TR> <TD><FONT COLOR=\"Blue\"> K in K-nearest homologs</FONT></TD><TD> $k</TD></TR>";
+#            print
+#"<TR> <TD><FONT COLOR=\"Blue\"> User provided query PDB files: </FONT></TD><TD> $flag_QryPDBFL</TD></TR>";
 
 #			print
 #"<TR> <TD><FONT COLOR=\"Blue\"> Types of Homologs to be used: </FONT></TD><TD> $method </TD></TR>";
@@ -648,7 +646,7 @@ sub writeThankYouHtml {
 #"<TR> <TD><FONT COLOR=\"Blue\"> X-RAY resolution threshold </FONT></TD><TD> $resolutionThr </TD></TR>";
 #			}
 
-            print ' </TABLE>';
+#            print ' </TABLE>';
         }
         else {
             print "$_";
@@ -793,7 +791,7 @@ sub jobSubmitEmail_todo {
 
 }
 
-sub resultEmail {
+sub resultSuccessEmail {
 
     use strict;
     use warnings;
@@ -818,14 +816,14 @@ sub resultEmail {
   my ( $email, $jobtitle, $jobID, $qryIDpairs, $qrySeqs, $pdbFL_name, $delLst, $rasaThr, $atomDistThr, $safeMode_thr, $twiMode_thr1, $twiMode_thr2, $twiMode_thr3, $darkMode_thr, $hhpred_param,  $flag_QryPDBFL,  $flag_rmSameProt) = @$params_ref;
 
 
-    #------------------- for debug -------------------#
-    print header,
-          start_html('debug'),
-    "flag_rmSameProt = $flag_rmSameProt, flag_qryPDB=$flag_QryPDBFL, pdbFL_name = $pdbFL_name",
-          p,
-          end_html();
-          exit;
-    #------------------- debug done ------------------#
+    #------------------- debug begin -------------------#
+#    print header,
+#          start_html('debug'),
+#    "flag_rmSameProt = $flag_rmSameProt, flag_qryPDB=$flag_QryPDBFL, pdbFL_name = $pdbFL_name",
+#          p,
+#          end_html();
+#          exit;
+#    #------------------- debug done ------------------#
 
     #get the type of homolog: X-RAY or NMR
     #	my $method = &getMethod($methodCode);
@@ -840,10 +838,10 @@ sub resultEmail {
 
     my $statFLname;
     if ( $flag_rmSameProt == 1 ) {
-        $statFLname = 'statistics_qryIDpair_wo_sameProt.txt';
+        $statFLname = 'statistics_wo_sameProt.txt';
     }
     else {
-        $statFLname = 'statistics_qryIDpair.txt';
+        $statFLname = 'statistics.txt';
     }
 
     my $EmailContent;
@@ -864,11 +862,11 @@ sub resultEmail {
         <h4>User input Data</h4>
 
         <p></p>
-        The fasta file of the query proteins is  <a href=\"http://ailab1.ist.psu.edu/$serverName/uploadData/$jobID/qrySeqs.fasta.txt\">here</a>.<p></p>
+        The fasta file of the query proteins is  <a href=\"http://ailab1.ist.psu.edu/$serverName/uploadData/$jobID/input/qrySeqs.fasta.txt\">here</a>.<p></p>
         <p></p>
-        The PDB files of the query proteins are <a  href=\"http://ailab1.ist.psu.edu/$serverName/uploadData/$jobID/pdb/$pdbFL_name\">here</a>.<p></p>
+        The PDB files of the query proteins are <a  href=\"http://ailab1.ist.psu.edu/$serverName/uploadData/$jobID/input/pdb/$pdbFL_name\">here</a>.<p></p>
         <p></p>
-        The query ID pair file is  <a href=\"http://ailab1.ist.psu.edu/$serverName/uploadData/$jobID/qryIDpair.lst\">here</a>.<p></p>";
+        The query ID pair file is  <a href=\"http://ailab1.ist.psu.edu/$serverName/uploadData/$jobID/input/qryIDpair.lst\">here</a>.<p></p>";
 
     }
     else {
@@ -888,14 +886,14 @@ sub resultEmail {
         <h4>User input Data</h4>
 
         <p></p>
-        The fasta file of the query proteins is  <a href=\"http://ailab1.ist.psu.edu/$serverName/uploadData/$jobID/qrySeqs.fasta.txt\">here</a>.<p></p>
+        The fasta file of the query proteins is  <a href=\"http://ailab1.ist.psu.edu/$serverName/uploadData/$jobID/input/qrySeqs.fasta.txt\">here</a>.<p></p>
         <p></p>
-        The query ID pair file is  <a href=\"http://ailab1.ist.psu.edu/$serverName/uploadData/$jobID/qryIDpair.lst\">here</a>.<p></p>";
+        The query ID pair file is  <a href=\"http://ailab1.ist.psu.edu/$serverName/uploadData/$jobID/input/qryIDpair.lst\">here</a>.<p></p>";
 
     }
 
     my $delFL_line =
-"<p></p>The delete file is <a href=\"http://ailab1.ist.psu.edu/$serverName/uploadData/$jobID/delete.lst\">here</a>.<p></p>";
+"<p></p>The delete file is <a href=\"http://ailab1.ist.psu.edu/$serverName/uploadData/$jobID/input/delete.lst\">here</a>.<p></p>";
 
     if ( $flag_rmSameProt == 1 ) {
 
@@ -981,10 +979,10 @@ sub resultFailEmail {
 
     my $statFLname;
     if ( $flag_rmSameProt == 1 ) {
-        $statFLname = 'statistics_qryIDpair_wo_sameProt.txt';
+        $statFLname = 'statistics_wo_sameProt.txt';
     }
     else {
-        $statFLname = 'statistics_qryIDpair.txt';
+        $statFLname = 'statistics.txt';
     }
 
     my $EmailContent = "<h3>Thank you for using $serverName.</h3>
@@ -1001,10 +999,10 @@ BMC Bioinformatics 2011, 12:244.</ul>
 <p></p>
 
 <p></p>
-The fasta files of the query proteins is  <a href=\"http://ailab1.ist.psu.edu/$serverName/uploadData/$jobID/qrySeqs.fasta.txt\">here</a>.<p></p>
-The PDB files of the query proteins are <a  href=\"http://ailab1.ist.psu.edu/$serverName/uploadData/$jobID/pdb/$pdbFL_name\">here</a>.<p></p>
+The fasta files of the query proteins is  <a href=\"http://ailab1.ist.psu.edu/$serverName/uploadData/$jobID/input/qrySeqs.fasta.txt\">here</a>.<p></p>
+The PDB files of the query proteins are <a  href=\"http://ailab1.ist.psu.edu/$serverName/uploadData/$jobID/input/pdb/$pdbFL_name\">here</a>.<p></p>
 <p></p>
-The query ID pair file is  <a href=\"http://ailab1.ist.psu.edu/$serverName/uploadData/$jobID/qryIDpair.lst\">here</a>.<p></p>
+The query ID pair file is  <a href=\"http://ailab1.ist.psu.edu/$serverName/uploadData/$jobID/input/qryIDpair.lst\">here</a>.<p></p>
 
 	The statistics of sequence similarity of query and its homo-interologs can be downloaded <a href=\"http://ailab1.ist.psu.edu/$serverName/uploadData/$jobID/$statFLname\">here</a>. Please note that not all the homo-interologs listed in this file was used by $serverName.
 <p></p>
@@ -1063,7 +1061,7 @@ sub sendResultEmail {
 #         $flag_prediction=0: at least one of the protein pairs have homo-interologs in $FullStatFL
 #send prediction result email
 
-        &resultEmail( \@params, $logFL );
+        &resultSuccessEmail( \@params, $logFL );
 
     }
 
@@ -1097,8 +1095,8 @@ sub uploadZipFile {
 
     my $query = new CGI;
 
-    my $proteinFL      = shift @_;
-    my $uploadFLhandle = shift @_;
+    my $proteinFL      = shift @_; # output file name
+    my $html_tagName = shift @_; # 'pdbFL'
 
     my $jobDIR = dirname($proteinFL);
 
@@ -1108,7 +1106,7 @@ sub uploadZipFile {
 
     #----- Look for uploads that exceed $CGI::POST_MAX-------
 
-    if ( !$query->param('pdbFL') && $query->cgi_error() ) {
+    if ( !$query->param($html_tagName) && $query->cgi_error() ) {
         print $query->cgi_error();
         print p,
 "The file you are attempting to upload exceeds the maximum allowable file size $masFLSize K.",
@@ -1119,20 +1117,26 @@ sub uploadZipFile {
 
     #----- Upload file-------
 
-    my $upload_filehandle = $query->upload($uploadFLhandle);
+    print LOG "html_tagName = $html_tagName";
+
+    my $upload_filehandle = $query->upload($html_tagName); # $query->upload('pdbFL')
 
     unlink $proteinFL if ( -e $proteinFL );
 
-    open UPLOADFILE, ">>$proteinFL" || die("Cannot open $proteinFL:$!");
+    open UPLOADFILE, ">>$proteinFL" || die("Cannot save the pdb tar.gz to $proteinFL:$!");
     binmode UPLOADFILE;
 
-    my $buffer;
-
-    while ( read( $upload_filehandle, $buffer, 1024 ) ) {
-        print UPLOADFILE $buffer;
+    while(<$upload_filehandle>){
+        print UPLOADFILE;
     }
     close UPLOADFILE;
-
+#    my $buffer;
+#
+#    while ( read( $upload_filehandle, $buffer, 1024 ) ) {
+#        print UPLOADFILE $buffer;
+#    }
+#    close UPLOADFILE;
+#
     if ( !-e $proteinFL ) {
         die("No uploaded file saved:$!");
     }

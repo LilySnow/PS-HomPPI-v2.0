@@ -36,7 +36,7 @@ num_pdbFL=0
 #-------------------------------------------------------
 #-- step 1 and 2: Calculate CA-CA contacts for each template pdb file
 
-for i in `ls $DIR/*pdb`;do
+for i in `ls $DIR/template*.pdb`;do
     printf "Calculate CA-CA contact file from $i \n"
     (( num_pdbFL= num_pdbFL+1 ))
     filename=`basename $i ".pdb"`
