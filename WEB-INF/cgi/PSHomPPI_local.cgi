@@ -4,7 +4,8 @@
 #        Li Xue, L.Xue@uu.nl
 #        11/30/2016 05:50:43 PM
 #
-#  DESCRIPTION: cgi for PS-HomPPI v2.0
+#  DESCRIPTION: local version for PS-HomPPI v2.0
+#  EXAMPLE: perl PSHomPPI_local.cgi test1 > xue.log
 #
 #===============================================================================
 

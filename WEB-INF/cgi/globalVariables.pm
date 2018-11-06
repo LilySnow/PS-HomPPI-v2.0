@@ -104,7 +104,7 @@ our $profit = '/home/lxue/tools/profit';
 #------------------ hhpred related parameters -------------------#
 # See example configure file: /home/mwalter/project/v0.0.02/projectfiles/CODE-PPI-HHPRED/configExample.txt
 #
-our $PYTHON = '/usr/bin/python';
+our $PYTHON = '/home/lxue/tools/miniconda2/bin/python2.7'; #/usr/bin/python';
 our $callHHpredPY ='/data/web_servers/lxue/call_hhpred/MICKSCODE/runquery_abs_report_all.py';
 our $flag_hhpredrun = 'TRUE'; #if false, abort on error. if true, ignore and attempt to continue
 #our $hhpredConfigTemplateFL = '/home/mwalter/project/v0.0.02/projectfiles/CODE-PPI-HHPRED/configExample.txt';

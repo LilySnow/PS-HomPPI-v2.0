@@ -22,7 +22,7 @@
 <meta name="robots" content="noodp, noydir">
 <link rel="canonical" href="file:///Users/yme2/Downloads/This%20is%20Penn%20State_files/This%20is%20Penn%20State.html">
   <!-- YASSER: ADD TITLE AND KEYWORDS -->
-  <title>PS-HomPPI v1.3</title>
+  <title>PS-HomPPI v2.0</title>
   <META content="PS-HomPPI, Partner-Specific Protein-Protein Interface Residue Predictor" name=keywords>
 
   <link type="text/css" rel="stylesheet" href="./imgs/css_pbm0lsQQJ7A7WCCIMgxLho6mI_kBNgznNUWmTWcnfoE.css" media="all">
@@ -127,7 +127,7 @@
 
     <!-- YASSER: ADD YOUR TITLE HERE -->
 
-      <h1 id="page-title" class="title">PS-HomPPI v1.3: Partner-Specific Protein-Protein Interface Residue Predictor</h1>    </div>
+      <h1 id="page-title" class="title">PS-HomPPI v2.0: Partner-Specific Protein-Protein Interface Residue Predictor</h1>    </div>
   </div>
 </div>  </div>
 </div>  </div>
@@ -231,6 +231,35 @@ User may input query sequence(s) or PDB ID(s) and Chain ID(s).
 <h4><a name="art">Interface residue definition</a></h4>
 <b>CA-CA distance Threshold</b> <i>CA-CA distance threshold</i> is to determine a residue an interface residue or not. A residue is considered an interfacial residue if its alpha carbon (CA) is within <i> CA-CA distance threshold</i> from the alpha carbon (CA) of any residue in another protein chain.
 <p></p>
+<h4><a name="art">Deletion file format</a></h4>
+Users can choose to exclude specific templates from being used by PS-HomPPI when making interface predictions. Here is the acceptable file format:<p></p>
+query_ID1:query_ID2 => pdbID_chainID1:pdbID_chainID2<p></p>
+note:<p></p>
+<li> query_ID1 and query_ID2 <b>have to</b> be the same as used in the list of query ID pairs and the fasta file.<p></p></li>
+<li> query_IDs are "freely" named by the users. No space and specially characters should be included.<p></p></li>
+<li> template IDs <b>have to</b> follow the format of pdbID_chainID.<p></p></li>
+<li> => has to be used to separate query and template IDs.<p></p></li>
+
+<p></p>
+For example, <p></p>
+<p></p>
+1a2kA:1a2kC =><p></p>
+1a14H:1a14N => 1NMBH:1NMBN,1A14H:1A14N,1NMAH:1NMAN<p></p>
+A:B => 1NMBH:1NMBN,1NMAH:1NMAN
+C:D => 3fclB:*,1lqmA:*
+qry1:qry2 => 3fcl*
+CatS:FeB => 3fcl*:3fcl*
+E:F => 3fclA:3fcl*
+<p></p>
+
+For the query pair 1a2kA:1a2kC, no templates are excluded.
+For the query pair 1a14H:1a14N, 3 templates are excluded.
+For the query pair A:B, wildcards are used. This means that all dimer templates that include 3fcl_B or 1lqm_A are excluded.
+<p></p>
+
+<b>CA-CA distance Threshold</b> <i>CA-CA distance threshold</i> is to determine a residue an interface residue or not. A residue is considered an interfacial residue if its alpha carbon (CA) is within <i> CA-CA distance threshold</i> from the alpha carbon (CA) of any residue in another protein chain.
+<p></p>
+
 <h4><a name="art">Algorithm parameters</a></h4>
 <!--
 <b>Expected value threshold for BLAST (E-VAL)</b> E-VAL is a parameter that probability that a homolog returned by BLASTP is a random hit when searching a database of a particular size. The lower the E-VAL value, the more significant the score. Homologs with E-VAL less than this threshold will be passed onto further prediction process of PS-HomPPI.

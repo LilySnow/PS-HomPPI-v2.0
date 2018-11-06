@@ -78,6 +78,10 @@ if ( $skip ne 1 ) {
         mkdir "$supUnbound2TemplatePDB_DIR/final/template_pdbs";
     }
 
+    if ( !-d "$supUnbound2TemplatePDB_DIR/final/finalSup" ) {
+        mkdir "$supUnbound2TemplatePDB_DIR/final/finalSup";
+    }
+
     foreach my $j (`ls $supUnbound2TemplatePDB_DIR/template*/finalSup*`) {
 
         $j =~ s/[\n\r]//mg;
@@ -88,7 +92,7 @@ if ( $skip ne 1 ) {
 
         #--
         copy( $j,
-            "$supUnbound2TemplatePDB_DIR/final/$filename.$templateID.pdb" );
+            "$supUnbound2TemplatePDB_DIR/final/finalSup/$filename.$templateID.pdb" );
 
         #--copy alignment symbol files to 'final'
         copy(
@@ -136,7 +140,7 @@ if ( $skip ne 1 ) {
     printf "======================================================\n\n";
 
     my $command =
-      "bash clusterStructures_oneCase.sh $supUnbound2TemplatePDB_DIR/final";
+      "bash clusterStructures_oneCase.sh $supUnbound2TemplatePDB_DIR/final/finalSup";
     print "COMMAND: $command\n";
     system($command) == 0 or die("FAiled: $command:$!");
 
@@ -147,6 +151,7 @@ if ( $skip ne 1 ) {
 
 #------------------------------------
 # 2. -- calculate the distance restraints from each cluster of templates and combine them
+#    -- For each cluster output: final_caca.txt, final_caca.pml, restraints_4haddock.CaCa.txt
 
 $skip = 0;
 
@@ -220,6 +225,8 @@ if ( $skip ne 1 ) {
                 "$clusterDIR/restraints_4haddock.CaCa.txt",
                 "$outputDIR/$clusterID\_restraints.tbl"
             );
+            copy( "$clusterDIR/final_caca.pml",
+                "$outputDIR/$clusterID\_Ca_Ca_distance.pml" );
             $num_good_cluster++;
         }
         else {

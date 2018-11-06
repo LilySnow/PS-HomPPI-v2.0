@@ -15,3 +15,11 @@ searchLocalAlignFL
 note:
 The start and end of qry and homologs have different definitions by Mick!
 Modified readHHpredOUTPUTFL_userProtDB{}:  'send', 'qend'
+
+#---
+To test Mick's hhpred code:
+/data/web_servers/lxue/call_hhpred/MICKSCODE/runquery_abs_report_all.py ../../uploadData/test1/P:Q/P/hhpred_raw_result
+
+or,
+
+perl test_callHHpred.pl

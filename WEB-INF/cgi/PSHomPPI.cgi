@@ -66,7 +66,6 @@ open STDERR, ">>$logFL" or die("Cannot write to $logFL:$!");
 #----------------------------------------------------------------#
 
 #-------- 1. prepare jobDIR       ---------#
-my $jobID = &genJobID($jobtitle);
 my $jobDIR = "$dataDIR/$jobID";
 my ($qryPairLstFL, $protSeqFL, $delFL, $seqInt_protFL) = &prepareJobDIR($jobDIR,      $qryIDpairs  ,     $qrySeqs  ,     $pdbFL_name  ,     $delLst  );
 
@@ -77,19 +76,16 @@ my ($qryPairLstFL, $protSeqFL, $delFL, $seqInt_protFL) = &prepareJobDIR($jobDIR,
 #my $indexHtml_template = '../html/result.indexHtml';
 #copy($indexHtml_template, "$jobDIR/result.html");
 #&autoRefreshResultPage($jobID);
-#&writeThankYouHtml( \@params );
+&writeThankYouHtml( \@params );
 
 #--------- 2. send an email to the user-----#
-#&jobSubmitEmail( \@params );
+#&jobSubmitEmail( \@params ); # no need
 
 
 #----------3. predict ------#
 my $flag_prediction =
   &batch_PSHomPPI( $jobDIR, $qryPairLstFL, $protSeqFL, $delFL, $seqInt_protFL,
     $intDef, $atomDistThr, $rasaThr );
-
-
-my $flag_prediction = 0;
 
 #----------4. send result email ------#
 #-- $flag_prediction=1: none of the query pairs have homo-interologs in $FullStatFL

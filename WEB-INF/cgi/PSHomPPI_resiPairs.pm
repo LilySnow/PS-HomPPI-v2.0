@@ -736,9 +736,7 @@ sub foldersGen1 {
     print LOG
 "\n$num_pair interacting-pair folders are generated! In each interacting-pair folder, there are two subfolders for the binding partners. In each subfolder, there is a fasta file and an interface file.\n\n";
 
-    print LOG "$num_qrypairs_inPairFL qry pairs listed in $protPairFL.\n";
-    print LOG
-"Qry pairs that are duplicated listed in $protPairFL are:@duplicatedQrypairs\n\n";
+    print LOG "$num_qrypairs_inPairFL qry pairs listed in $protPairFL. There are $num_qrypairs_final unique query pairs.\n";
 
     return \@QRYpairs_final;
 
@@ -868,7 +866,7 @@ sub call_hhpred {
     my $hhpredParam = shift @_; # a hash ref
 
     #--- prepare hhpred_raw_result folder
-#    my $dataDIR       = File::Spec->rel2abs( dirname($qryFstFL) );
+    #my $dataDIR       = File::Spec->rel2abs( dirname($qryFstFL) );
     my $dataDIR = dirname($qryFstFL);
     my $raw_resultDIR = "$dataDIR/hhpred_raw_result";
     mkdir $raw_resultDIR if ( !-d $raw_resultDIR );
@@ -881,13 +879,14 @@ sub call_hhpred {
     #-- call hhpred
 
     my $logFL_tmp = "$logFL.hhpredtmp";
-    my @command =
-      ( $PYTHON, $callHHpredPY, $raw_resultDIR, " >> $logFL_tmp" );
-#    my $command =
-#      "$PYTHON $callHHpredPY $raw_resultDIR ". '>>'. "$logFL_tmp" ;
+    #my @command =
+    #  ( $PYTHON, $callHHpredPY, $raw_resultDIR );
 
-    print LOG "CALL HHPRED COMMAND: @command\n";
-    system(@command) == 0 or die("ERROR: @command failed:$?");
+    my $command =
+    " $PYTHON $callHHpredPY $raw_resultDIR > $logFL_tmp ";
+    print LOG "CALL HHPRED COMMAND: $command\n";
+
+    system($command) == 0 or die("ERROR: $command failed:$?"); # there is a bug in addss.pl (see TODO)
 
     #-- copy final result files to $dataDIR
     my $qryID = basename( $qryFstFL, ( '.fa', '.fasta', '.fasta.txt' ) );
@@ -3625,6 +3624,7 @@ sub cluster_PS_resiPair {
 sub addHeader2CaCaFLs {
 
     # add header to Ca-Ca files
+    # save the Ca-Ca files to $outputDIR
 
     use strict;
     use File::Basename;
@@ -3678,6 +3678,14 @@ sub addHeader2CaCaFLs {
             &finalPredictionFLheader( $outputFL, $startTime, $endTime,
                 $timeUsed );
             &writeFinalCaCaPredictionFL( $outputFL, $ca_caFL_ori, $zone );
+
+
+            #-- copy tbl and pml to $outputDIR
+            my @tbl_pml_files = glob ("$Ca_CaDIR/*tbl $Ca_CaDIR/*pml");
+            foreach (@tbl_pml_files){
+               copy($_, $outputDIR_pair) or die "Copy failed: $!";;
+            }
+
 
             print LOG
 "All predictions for proteins in $jobDIR are put into $outputFL(usr-friendly format).\n ";
@@ -5691,7 +5699,7 @@ sub belong_new {
 
     #print LOG "Whether $pair belongs to @homointerologsToBeDel...\n";
 
-    #---------- convert pdb ID to lower case
+    #---------- convert pdb ID of $pair to lower case
     my ( $a, $b ) = split( /:/, $pair );
     my $pdbID = lc( substr( $a, 0, 4 ) );
     my $chn = substr( $a, 4, 1 );
@@ -5719,24 +5727,24 @@ sub belong_new {
 
         s/\s+//g;
 
-        if (/[\w^\*]{5}:[\w^\*]{5}/) {
+        if (/\w{5}:\w{5}/) {
 
             #		case 0: $_ = '1okbB:1okbC'
             $ans = &belong_case0( $pair, $_ );
         }
-        elsif ( /[\w^\*]{5}:\*$/ || /[\w\*]{5}:[\w^\*]{4}\*$/ ) {
+        elsif ( /\w{5}:\*$/ || /\w{5}:\w{4}\*$/ ) {
 
             #		case 1: $_ = '1okbB:*'
             $ans = &belong_case1( $pair, $_ );
         }
-        elsif ( /^\*:[\w^\*]{5}/ || /[\w^\*]{4}\*:[\w^\*]{5}/ ) {
+        elsif ( /^\*:\w{5}/ || /\w{4}\*:\w{5}/ ) {
 
             #		case 2: $_ = '*:1lqmH', '1ahj*:1ahjB'
             $ans = &belong_case2( $pair, $_ );
         }
-        elsif ( /^\w{4}\*$/ || /^\w{4}\*:\w{4}\*/ ) {
+        elsif ( /^\w{4}\*$/ || /^\w{4}\*:\w{4}\*$/  ) {
 
-            #		case 3: $_ = '1ahj*', '1ahj*:1ahj*'
+            #		case 3: $_ = '1ahj*','1ahj*:1ahj*'
             $ans = &belong_case3( $pair, $_ );
         }
         else {
@@ -5820,11 +5828,6 @@ sub belong_case3 {
     my $ans = 0;
 
 #    print "case3: pair = $pair, homointerologToBeDel = $homointerologToBeDel\n";
-    if ( length($homointerologToBeDel) ne 5 ) {
-        die(
-"This does not belong to case 3. Check homointerologsToBeDel= $homointerologToBeDel:$!"
-        );
-    }
 
     my $pdbID_pair = substr( $pair, 0, 4 );
     my $pdbID_del = substr( $homointerologToBeDel, 0, 4 );
@@ -6028,6 +6031,7 @@ sub collectPredictionFLsIntoOneFL2 {
 sub collectPredictedResiPairFLsIntoOneFolder {
     my ( $jobDIR, $QRYpairs, $outputCACA_DIR, $startTime, $endTime, $timeUsed )
       = @_;
+    # add header to CA-CA files and save them to $outputDIR
     &addHeader2CaCaFLs( $jobDIR, $QRYpairs, $startTime, $endTime, $timeUsed );
     system("tar -czf $outputCACA_DIR.tar.gz -C $outputCACA_DIR .") == 0
       or die("compress final ca-ca dir failed: $outputCACA_DIR:$!");

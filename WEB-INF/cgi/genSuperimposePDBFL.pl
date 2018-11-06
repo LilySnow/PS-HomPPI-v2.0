@@ -61,7 +61,7 @@ my $PSHomPPIoutputDIR =
   shift @ARGV;    #../../uploadData/Tue_Jan_27_09_37_36_2015.15.T80/C:D
 #$PSHomPPIoutputDIR=File::Spec::Unix->abs2rel($PSHomPPIoutputDIR);
 
-my $jobDIR = dirname($PSHomPPIoutputDIR); # ../../uploadData/Tue_Jan_27_09_37_36_2015.15.T80
+my $jobDIR = dirname($PSHomPPIoutputDIR); # ../../uploadData/201811050856_21_1cgi
 my $IDpair = basename ($PSHomPPIoutputDIR); #C:D
 
 
@@ -72,7 +72,7 @@ rmtree($superimDIR) if (-d $superimDIR );
 mkdir($superimDIR);
 mkdir $outputDIR;
 
-#--prepare template pdb files
+#--prepare template pdb files, output a folder of TemplatesUsed
 
 &TemplateUsedByPSHomPPI_oneCase_new($PSHomPPIoutputDIR);
 
@@ -135,10 +135,12 @@ foreach my $FLname (@templateFLnames) {
 #-- choose the query PDB files: either use User-uploaded ones or use template 1
 
 my ( $unbound_r_PDBFL, $unbound_l_PDBFL );
-if (!-d "$jobDIR/pdb"){
+if (!-d "$jobDIR/input/pdb"){
 
     #-- user did NOT upload query PDB file
     #-- treat Template 1 as the structure of the query and superimpose it to other templates
+
+    print "User did not upload query PDB files. Now use Template 1 as the structure of the query and superimpose it to the other templates\n";
 
     my $rec_pdbFL_template1 =
     "$templatePDBDIR/$templateFLname->{'template1'}->{'rec'}"
@@ -155,8 +157,8 @@ if (!-d "$jobDIR/pdb"){
 else{
     #-- user provided query PDB files
     my ($rec,$lig) = split(/:/, $IDpair);
-    my $rec_pdbFL_qry = "$jobDIR/pdb/$rec.pdb";
-    my $lig_pdbFL_qry = "$jobDIR/pdb/$lig.pdb";
+    my $rec_pdbFL_qry = "$jobDIR/input/pdb/$rec.pdb";
+    my $lig_pdbFL_qry = "$jobDIR/input/pdb/$lig.pdb";
 
      ( $unbound_r_PDBFL, $unbound_l_PDBFL ) =
     &preparePDBFLs4qry( $rec_pdbFL_qry, $lig_pdbFL_qry,
@@ -165,6 +167,7 @@ else{
     #--$unbound_r_PDBFL and $unbound_l_PDBFL is the pdb file that will be used as query PDB, which are used later to generate superimposed models
 }
 
+print "$unbound_r_PDBFL and $unbound_l_PDBFL generated. They will be used to generate superimposed models.\n";
 
 #-------------------------------------------------
 
@@ -1266,7 +1269,7 @@ sub TemplateUsedByPSHomPPI_oneCase_new {
 # 	A	B		C
 # 	1awcA	1awcB	1awcE
 #
-#  OUTPUT 2: TemplatesUsed folder
+#  OUTPUT 2: the folder of TemplatesUsed
 #
 #  NOTE: TemplateUsedByPSHomPPI_oneCase_new() and TemplateUsedByPSHomPPI_oneCase_old() differs
 #  in the way to generate $templateFL = "$outputDIR_case/templates.lst".
@@ -3111,6 +3114,7 @@ sub preparePDBFLs4qry {
 
     &cleanPDBFL( $unbound_l_PDBFL, "$unbound_l_PDBFL.tmp" );
     &cleanPDBFL( $unbound_r_PDBFL, "$unbound_r_PDBFL.tmp" );
+
     move( "$unbound_r_PDBFL.tmp", $unbound_r_PDBFL ) or die("Failed:$!");
     move( "$unbound_l_PDBFL.tmp", $unbound_l_PDBFL );
     move( "$unbound_r_PDBFL.tmp.HETATM", "$unbound_r_PDBFL.HETATM" )
